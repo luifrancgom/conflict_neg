@@ -139,7 +139,7 @@ tibble(Week = c(1:12),
 
 - September 28
 
-    + __Questionare 1 Opening__
+    + __Questionnaire 1 Opening__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review [@lewicki_essentials_2016, Chapters 1 & 2]
@@ -154,10 +154,10 @@ tibble(Week = c(1:12),
             
 - October 4
 
-    + __Questionare 1 Closing__
+    + __Questionnaire 1 Closing__
         + __Closing time__: 22:00 hours
         + __Prerequisites__: 
-            + Have answered the Questionare 1 before 22:00 hours
+            + Have answered the Questionnaire 1 before 22:00 hours
             
 - October 5 
 
@@ -189,7 +189,7 @@ tibble(Week = c(1:12),
 
 - October 12
 
-    + __Questionare 2 Opening__
+    + __Questionnaire 2 Opening__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review [@lewicki_essentials_2016, Chapters 4 & 6]
@@ -212,10 +212,10 @@ tibble(Week = c(1:12),
             
 - October 25
 
-    + __Questionare 2 Closing__
+    + __Questionnaire 2 Closing__
         + __Closing time__: 22:00 hours
         + __Prerequisites__: 
-            + Have answered the Questionare 2 before 22:00 hours
+            + Have answered the Questionnaire 2 before 22:00 hours
             
 - October 26 
 
@@ -247,7 +247,7 @@ tibble(Week = c(1:12),
 
 - November 2
 
-    + __Questionare 3 Opening__
+    + __Questionnaire 3 Opening__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review [@lewicki_essentials_2016, Chapters 8 & 5]
@@ -270,10 +270,10 @@ tibble(Week = c(1:12),
             
 - November 15
 
-    + __Questionare 3 Closing__
+    + __Questionnaire 3 Closing__
         + __Closing time__: 22:00 hours
         + __Prerequisites__: 
-            + Have answered the Questionare 2 before 22:00 hours
+            + Have answered the Questionnaire 2 before 22:00 hours
             
 - November 16 
 
@@ -307,22 +307,22 @@ tibble(Week = c(1:12),
 
 - __Primer corte__: 30%
 
-    + __Questionare 1__: 10% 
+    + __Questionnaire 1__: 10% 
     + __Midterm Exam Three Party Coalition Exercise Round 1__: 20% 
 
 - __Segundo corte__: 30%
 
-    + __Questionare 2__: 10% 
+    + __Questionnaire 2__: 10% 
     + __Midterm Exam Three Party Coalition Exercise Round 2__: 20%
 
 - __Tercer corte__: 40%
 
-    + __Questionare 3__: 10%
+    + __Questionnaire 3__: 10%
     + __Final Exam Three Party Coalition Exercise Modified__: 30 %
     
 ## Process in case of no presentation
 
-- Students who do not present a __Questionare__ due to force majeure or illness, must send the respective excuse scanned to __luis.gomezl@unimilitar.edu.co__. If it is not sent, the note will be zero. Once the excuse has been satisfactorily received, the student should __not__ present the activity and the corresponding grade will be equal to the immediately subsequent grade obtained in the __Midterm Exam 1__ or __Midterm Exam 2__ or __Final Exam__ according to the case.
+- Students who do not present a __Questionnaire__ due to force majeure or illness, must send the respective excuse scanned to __luis.gomezl@unimilitar.edu.co__. If it is not sent, the note will be zero. Once the excuse has been satisfactorily received, the student should __not__ present the activity and the corresponding grade will be equal to the immediately subsequent grade obtained in the __Midterm Exam 1__ or __Midterm Exam 2__ or __Final Exam__ according to the case.
 
 - Students who do not present a __Midterm Exam 1__ or __Midterm Exam 2__ or the __Final Exam__, must send and email to __admon.distancia@unimilitar.edu.co__ two days before or two days after the closing date of these activities. However, this request can be made only once during the course. If it is not requested under these conditions, the grade will be zero.
 
