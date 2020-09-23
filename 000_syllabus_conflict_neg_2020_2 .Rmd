@@ -96,7 +96,7 @@ Develop in students, negotiation conflict skills in diverse scenarios through th
 
 lewicki <- rep("[@lewicki_essentials_2016]", times = 3)
 
-tibble(Week = c(1:12),
+tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
        Material        = rep(c(lewicki, 
                                "[@program_of_negotiation_three_2008]"), 
                              times = 3),
@@ -113,7 +113,7 @@ tibble(Week = c(1:12),
 
 - September 21
 
-    + Start Block 1
+    + Start Block 2
     
 - September 22
 
