@@ -131,7 +131,7 @@ Understand the definition of negotiation, the elements in general of this proces
     
 + __Integrative Negotiation Approach__: attempts are made to find solutions so that both parties feel satisfied and reach their goals.
     
-    + Tactic: __claim value__[^5] by finding the way for the parties involved to achieve their objectives by obtaining more resources
+    + Tactic: __create value__[^5] by finding the way for the parties involved to achieve their objectives by obtaining more resources
     
 [^4]: For more details check out [@spangler_creating_2003]
 [^5]: For more details check out [@spangler_creating_2003]
@@ -182,7 +182,7 @@ conflic_diag <- tibble(Dimension   = rep(c("Simmetry of conflict",
                        "Distributive situation",
                        "Big consequences",
                        "Fundamental principles")) %>% 
-    mutate(Level = as_factor(Level))
+    mutate(Level = as.factor(Level))
 
 # Data auxiliary
 conflic_diag_level <- conflic_diag %>% 
