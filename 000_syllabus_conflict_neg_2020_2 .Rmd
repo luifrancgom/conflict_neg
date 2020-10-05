@@ -98,7 +98,7 @@ lewicki <- rep("[@lewicki_essentials_2016]", times = 3)
 
 tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
        Material        = rep(c(lewicki, 
-                               "[@program_of_negotiation_three_2008]"), 
+                               "[@program_on_negotiation_three_2008]"), 
                              times = 3),
        `Chapter/Round` = c("1","2","3", "I", "4", "6", "7", "II", "8", "5", "12", "III"),
        `Initial page`  = c("1", "28", "60", " ", "89", "139", "165", " ", "182", "114", "273", " "),
@@ -158,14 +158,14 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
     + __Instructions Opening Midterm Exam Three Party Coalition Exercise Round 1__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
 
 - October 8
 
     + __Virtual meeting Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1__
         + __Meeting time__: 19:00 - 19:45 hours
         + __Prerequisites__: 
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 3]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
@@ -175,7 +175,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
         + __Opening time__: 07:00 hours
         + __Closing time__: 11:30 hours
         + __Prerequisites__: 
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 3]
             + Have a headset with a built-in microphone to isolate noise from the environment
 
@@ -216,14 +216,14 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
     + __Instructions Opening Midterm Exam Three Party Coalition Exercise Round 2__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             
 - October 29
 
     + __Virtual meeting Communication and Three-Party Coalition Exercise Round 2__
         + __Meeting time__: 19:00 - 19:45 hours
         + __Prerequisites__: 
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 7]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
@@ -233,7 +233,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
         + __Opening time__: 07:00 hours
         + __Closing time__: 11:30 hours
         + __Prerequisites__: 
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 7]
             + Have a headset with a built-in microphone to isolate noise from the environment
 
@@ -274,14 +274,14 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
     + __Instructions Opening Final Exam Three Party Coalition Exercise Modified__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             
 - November 19 
 
     + __Virtual meeting Best Practices in Negotiations and Three-Party Coalition Exercise Modified__
         + __Meeting time__: 19:00 - 19:45 hours
         + __Prerequisites__: 
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 12]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
@@ -291,7 +291,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
         + __Opening time__: 07:00 hours
         + __Closing time__: 11:30 hours
         + __Prerequisites__: 
-            + Read and review role play instructions [@program_of_negotiation_three_2008]
+            + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 12]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
@@ -326,7 +326,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
     + You can find the book in the following __[link](https://drive.google.com/file/d/1VxKBh4rxaKUQiM8_Zp74ekTOyeW6rOqV/view)__
     
-- [@program_of_negotiation_three_2008]
+- [@program_on_negotiation_three_2008]
     
 # About plagiarism
 
