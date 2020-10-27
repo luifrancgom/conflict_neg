@@ -134,7 +134,7 @@ include_graphics(path = "005_muller_lLyer_circle.png")
 
 - Example of how __framing__ can change decisions depending on how information is presented [@tversky_framing_1981, p 453]:
 
-    + __Problem 2__ [N = 152][^4]: The same statement as __Problem 1__
+    + __Problem 2__ [N = 155][^4]: The same statement as __Problem 1__
     
         + If Program C is adopted, 400 people will die. __[22 percent]__[^5]
         + If Program D is adopted there is 1/3 probability that nobody will die, and 2/3 probability that 600 people will die. __[78 percent]__[^6]
@@ -293,7 +293,7 @@ digraph boxes_and_circles {
   node [shape = oval, color = '#CCBE93']
   
   'Lead the parties\ntoward more\nintegrative processes';
-  'Create a positive\nattitudetoward\nthe other side';
+  'Create a positive\nattitude toward\nthe other side';
   'Promote persistence';
   'Set the stage\nfor successful\nsubsequent negotiations';
   
@@ -302,7 +302,7 @@ digraph boxes_and_circles {
   'Positive\nemotions' -> 'Generate positive\nconsequences for\nnegotiations';
   
   'Generate positive\nconsequences for\nnegotiations' -> 'Lead the parties\ntoward more\nintegrative processes';
-  'Generate positive\nconsequences for\nnegotiations' -> 'Create a positive\nattitudetoward\nthe other side';
+  'Generate positive\nconsequences for\nnegotiations' -> 'Create a positive\nattitude toward\nthe other side';
   'Generate positive\nconsequences for\nnegotiations' -> 'Promote persistence';
   'Generate positive\nconsequences for\nnegotiations' -> 'Set the stage\nfor successful\nsubsequent negotiations';
   
