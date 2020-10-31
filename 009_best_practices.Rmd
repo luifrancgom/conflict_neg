@@ -1,7 +1,7 @@
 ---
-title: "Communication and Three-Party Coalition Exercise Round 2"
+title: "Best Practices in Negotiations"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-10-27
+date: 2020-10-31
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -49,10 +49,9 @@ library(DiagrammeR)
 
 - Please Read Me
 - Purpose
-- Three Party Coalition Exercise Round 2
-- What Is Communicated during Negotiation?
-- How People Communicate in Negotiation
-- How to Improve Communication in Negotiation
+- Final Exam Three Party Coalition Exercise Modified
+- Best Practices in Negotiations
+- What next?
 - Acknowledgments
 - References
 
@@ -64,15 +63,15 @@ library(DiagrammeR)
 
 - The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
 
-- This presentation is based on [@lewicki_essentials_2016, Chapter 7]
+- This presentation is based on [@lewicki_essentials_2016, Chapter 12]
 
 # Purpose
 
-Explore the tools and practices to improve communication processes in a negotiation.
+Explore best practices in negotiation and conflict management to achieve successful negotiation.
 
-# Three Party Coalition Exercise Round 2
+# Final Exam Three Party Coalition Exercise Modified
 
-- Why the Midterm Exams are simulations and in group?
+- Why the Final Exam using BlackBoard Collaborate and with the participation of the entire course?
 
     + The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people. 
     
@@ -80,9 +79,9 @@ Explore the tools and practices to improve communication processes in a negotiat
     
     + It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
     
-- Before taking part, students should review the instructions of the Midterm Exam that can be checked at:
-
-    + Segundo corte 30% > Learning Activities > Midterm Exam Three Party Coalition Exercise Round 2
+- Before taking part, students should review the general and specific instructions of the Midterm Exam that can be checked at:
+    
+    + Tercer corte 40% > Learning Activities > Final Exam Three Party Coalition Exercise Modified
     
 - Also check out in the __Links of interest__ the video
     
@@ -90,7 +89,7 @@ Explore the tools and practices to improve communication processes in a negotiat
     
 [^1]: The video is in english and is a recording of the Three-Party Coalition Exercise simulation
     
-# Three Party Coalition Exercise Round 2
+# Final Exam Three Party Coalition Exercise Modified
 
 - Before the Midterm Exam begins each student of the group, that has been formed, will be randomly assigned to one and only one role as a negotiator of an organization. If there is a group of 4 students, then a
 role will be played by 2 students. The respective roles are:
@@ -101,7 +100,7 @@ role will be played by 2 students. The respective roles are:
     
 - The objective of the negotiation is to obtain the highest number of points and determine how they will be divided. This will be reflected in the grade obtained by each student.
 
-# Three Party Coalition Exercise Round 2
+# Final Exam Three Party Coalition Exercise Modified
 
 - If an agreement is not reached between the parties of the negotiation, each __Group__ obtains __0 points__ and the grade for each student will be __20__ out of 50:
 
@@ -115,7 +114,7 @@ tibble(Group  = c("A", "B", "C"),
   row_spec(row = 0, bold = TRUE)
 ```
 
-# Three Party Coalition Exercise Round 2
+# Final Exam Three Party Coalition Exercise Modified
 
 - If an agreement is reached, it can be obtained between 2 or 3 __Groups__:
 
@@ -129,7 +128,7 @@ tibble(Group  = c("A", "B", "C"),
         
         + __Case 4__: __A__, __B__ and __C__ decide to reach an agreement to work together, they obtain __121 points__ and must decide how to distribute these points. Nobody is excluded.
         
-# Three Party Coalition Exercise Round 2
+# Final Exam Three Party Coalition Exercise Modified
 
 - Grades
 
@@ -143,7 +142,7 @@ tibble(Group  = c("A", "B", "C"),
         + __B__ obtains a grade of __30__ out of 50. 
         + The grade of __A__ and __C__ will depend on who gets the most of the __84 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __A__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
         
-# Three Party Coalition Exercise Round 2
+# Final Exam Three Party Coalition Exercise Modified
 
 - Grades
 
@@ -156,16 +155,22 @@ tibble(Group  = c("A", "B", "C"),
     
         + The __Group__ that obtains the highest amount of points will have a grade of __50__ out of 50, the __Group__ that obtains the second highest amount of points obtains a grade of __40__ out of 50 and the __Group__ that obtains the lowest amount of points obtains a grade of __30__ out of 50. In case of a tie between any of the __Groups__, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 __Groups__.
         
-# Three Party Coalition Exercise Round 2
+# Final Exam Three Party Coalition Exercise Modified
 
 - Before, during and after the Midterm Exam remember:
 
     + __Before__
 
-        + To form groups where this task is the responsibility of students and read the instructions.
+        + To coordinate __with all the participants of the course or those who eventually attend__ a single group since the activity will consist of a great negotion role play where each student will adopt a role.
         
+        + To decide whether to appoint one representative per __Group__ and the remaining students act as __constituents__ or if all the members of the __Group__ participate in the discussion.
+        
+# Final Exam Three Party Coalition Exercise Modified
+
+- Before, during and after the Midterm Exam remember:
+
     + __During__
-    
+
         + You have to make 2 decisions: Who do you want to work with? How will the points be divided?
         + Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
         + If an agreement is reached and the same amount of points is obtained as another __Group__ then the highest grade will be assigned randomly within the __Groups__ that obtained the same amount of points.
@@ -173,9 +178,9 @@ tibble(Group  = c("A", "B", "C"),
 
     + __After__
     
-        + Once the negotiation is over, which should last a maximum of 20 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
+        + Once the negotiation is over, which should last a maximum of 30 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
         
-# What Is Communicated during Negotiation?
+# Best Practices in Negotiations
 
 ```{r fig_1, out.width = '100%'}
 
@@ -187,62 +192,50 @@ grViz(diagram = '
       
       node[shape = circle, color = "#2C3E50"]
       
-      "Communication\nCategories";
+      "Best\nPractices";
       
       node[shape = oval, color = "#E31A1C"]
       
-      "Offers and\nCounteroffers";
-      "BATNAs";
-      "Outcomes";
-      "Social\nAccounts";
-      "Communication\nabout Process"
+      Planning;
+      "Structure of\nthe Negotiation";
+      BATNA;
+      "Negotiation is\nnot necessarily the\nonly option";
+      "Handling the apparently opposite\naspects of negotiation";
       
       node[shape = oval, color = "#18BC9C"]
       
-      "Related to\nthe Mutual\nAdjustment Process";
-      "Strategic advantages\nof having\nalternatives";
-      "Negotiators’ evaluations\nof their own\noutcomes";
-      "Mitigating\ncircumstances";
-      "Exonerating\ncircumstances";
-      "Reframing";
-      "Trivial “small talk”\nthat breaks\nthe ice"
+      "Own aspects"
+      "Other parties aspects"
+      "Distributive";
+      "Integrative";
+      "Blend of both";
+      "Claiming value vs Creating Value";
+      "Core principles vs Flexible thinking"
+      "Being Open vs Being Closed";
+      "Being Trusting vs Being Distrusting";
       
-      "Communication\nCategories" -> "Offers and\nCounteroffers";
-      "Communication\nCategories" -> "BATNAs";
-      "Communication\nCategories" -> "Outcomes";
-      "Communication\nCategories" -> "Social\nAccounts";
-      "Communication\nCategories" -> "Communication\nabout Process"
+       "Best\nPractices" -> Planning;
+       "Best\nPractices" -> "Structure of\nthe Negotiation";
+       "Best\nPractices" -> BATNA;
+       "Best\nPractices" -> "Negotiation is\nnot necessarily the\nonly option";
+       "Best\nPractices" -> "Handling the apparently opposite\naspects of negotiation";
+       
+       Planning -> "Own aspects"
+       Planning -> "Other parties aspects"
+      "Structure of\nthe Negotiation" -> "Distributive";
+      "Structure of\nthe Negotiation" -> "Integrative";
+      "Structure of\nthe Negotiation" -> "Blend of both";
+      "Handling the apparently opposite\naspects of negotiation" -> "Claiming value vs Creating Value";
+      "Handling the apparently opposite\naspects of negotiation" -> "Core principles vs Flexible thinking"
+      "Handling the apparently opposite\naspects of negotiation" -> "Being Open vs Being Closed";
+      "Handling the apparently opposite\naspects of negotiation" -> "Being Trusting vs Being Distrusting";
       
-      "Offers and\nCounteroffers" -> "Related to\nthe Mutual\nAdjustment Process";
-      "BATNAs" -> "Strategic advantages\nof having\nalternatives";
-      "Outcomes" -> "Negotiators’ evaluations\nof their own\noutcomes";
-      "Social\nAccounts" -> "Mitigating\ncircumstances";
-      "Social\nAccounts" -> "Exonerating\ncircumstances";
-      "Social\nAccounts" -> "Reframing";
-      "Communication\nabout Process" -> "Trivial “small talk”\nthat breaks\nthe ice";
-
       }
       
       ')
 ```
 
-# What Is Communicated during Negotiation?
-
-- 3 key questions and some answers based on the literature about negotiation
-
-    + Be a consistent or adaptive negotiator?
-    
-        + Be a consistent negotiator
-        
-    + What is said early in the negotiation is important?
-    
-        + The first 5 minutes have a large effect on the negotiated agreements
-        
-    + Is more information always better?
-    
-        + Simply exchanging information does not automatically lead to better understanding of the other party’s preferences or to better negotiation outcomes
-
-# How People Communicate in Negotiation
+# Best Practices in Negotiations
 
 ```{r fig_2, out.width = '100%'}
 
@@ -254,91 +247,63 @@ grViz(diagram = '
       
       node[shape = circle, color = "#2C3E50"]
       
-      Aspects;
+      "Best\nPractices";
       
       node[shape = oval, color = "#E31A1C"]
       
-      "Characteristics\nof Language";
-      "Nonverbal\nCommunication";
-      "Selection of a\nCommunication Channel";
+      "Remember intangible\nfactors";
+      "Managing Coalitions";
+      "Protect your reputation";
+      "Build fairness upon principles"
+      "Continue to Learn\nfrom Your Experience"
       
       node[shape = oval, color = "#18BC9C"]
       
-      "Logical level";
-      "Pragmatic level";
-      "Make Eye\nContact";
-      "Adjust Body\nPosition"
-      "Encourage or Discourage\nwhat the\nothers say"
-      "Face-to-face";
-      "Virtual negotiation"
+      "Against You";
+      "For You";
+      "Unknown";
+      "Establish clear principles";
+      "Use external benchmarks";
+      "Reach consensus about\nstandards of fairness"
       
-      node[shape = oval, color = "#CCBE93"]
-
-      "Related to\nproposals or\noffers";
-      "Semantics (Meaning)";
-      "Syntax (Structure)";
-      "Style\n(Way of communicating)";
-
-      Aspects -> "Characteristics\nof Language";
-      Aspects -> "Nonverbal\nCommunication";
-      Aspects -> "Selection of a\nCommunication Channel";
+       "Best\nPractices" -> "Remember intangible\nfactors";
+       "Best\nPractices" -> "Managing Coalitions";
+       "Best\nPractices" -> "Protect your reputation";
+       "Best\nPractices" -> "Build fairness upon principles";
+       "Best\nPractices" -> "Continue to Learn\nfrom Your Experience"
+       
+       "Managing Coalitions" -> "Against You";
+       "Managing Coalitions" -> "For You";
+       "Managing Coalitions" -> "Unknown"; 
       
-      "Characteristics\nof Language" -> "Logical level";
-      "Characteristics\nof Language" -> "Pragmatic level";
-      "Nonverbal\nCommunication" -> "Make Eye\nContact";
-      "Nonverbal\nCommunication" -> "Adjust Body\nPosition"
-      "Nonverbal\nCommunication" -> "Encourage or Discourage\nwhat the\nothers say"
-      "Selection of a\nCommunication Channel" -> "Face-to-face";
-      "Selection of a\nCommunication Channel" -> "Virtual negotiation";
-      
-      "Logical level" -> "Related to\nproposals or\noffers";
-      "Pragmatic level" -> "Semantics (Meaning)";
-      "Pragmatic level" -> "Syntax (Structure)";
-      "Pragmatic level" -> "Style\n(Way of communicating)";
+      "Build fairness upon principles" -> "Establish clear principles";
+      "Build fairness upon principles" -> "Use external benchmarks";
+      "Build fairness upon principles" -> "Reach consensus about\nstandards of fairness"
       
       }
       
       ')
 ```
 
-# How to Improve Communication in Negotiation[^2]
+# What next?
 
-```{r fig_3, out.width = '90%'}
+- Book
 
-grViz(diagram = '
-      
-      digraph boxes_and_circles {
-      
-      graph [rankdir = LR]
-      
-      node[shape = circle, color = "#2C3E50"]
-      
-      Techniques;
-      
-      node[shape = oval, color = "#E31A1C"]
-      
-      "Use of\nQuestions";
-      "Active\nlistening";
-      "Role\nReversal";
-      
-      node[shape = oval, color = "#18BC9C"]
-      
-      "Manageable\nQuestions";
-      "Origins:\nCarl R Rogers\nRichard Evans Farson";
-      
-      Techniques -> "Use of\nQuestions";
-      Techniques -> "Active\nlistening";
-      Techniques -> "Role\nReversal";
-      
-      "Use of\nQuestions" -> "Manageable\nQuestions";
-      "Active\nlistening" -> "Origins:\nCarl R Rogers\nRichard Evans Farson";
+    + Raiffa, H., & Richardson, J. (2007). Negotiation analysis: The science and art of collaborative decision making. Cambridge (Mass.: Harvard University Press.
+
+- Online resource
+
+    + The Program on Negotiation (PON): https://www.pon.harvard.edu/
+
+- Postgraduate education:
+
+    + __UMNG__: https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales
     
-      }
-      
-      ')
-```
-
-[^2]: For more information about active listening in the context of negotiation check out [@pon_staff_negotiation_2020] where active listening was developed by [@rogers_active_2015]
+        + __Maestría en Relaciones y Negocios Internacionales__: Negociación y relaciones empresariales, Resolución de conflictos y manejo de crisis, Negotiation Skills
+        
+    + __Uniandes__: https://administracion.uniandes.edu.co/index.php/es/programas/especializaciones/especializacion-en-negociacion/programa
+    
+        + __Especialización en Negociación__: programa de la Facultad de Administración
 
 # Acknowledgments
 
@@ -348,8 +313,10 @@ grViz(diagram = '
 
 - To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__,
+__[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
 
 - To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
-
+    
 # References
+

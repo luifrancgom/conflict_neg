@@ -1,0 +1,393 @@
+---
+title: "Ethics in Negotiation"
+author: "Luis Francisco Gomez Lopez"
+date: 2020-10-31
+output:
+  beamer_presentation:
+    colortheme: dolphin
+    fonttheme: structurebold
+    theme: AnnArbor
+    fig_caption: true
+  slidy_presentation: default
+bibliography: conflict_neg.bib
+link-citations: yes
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{longtable}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{pdflscape}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage{threeparttablex}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{makecell}
+  - \usepackage{xcolor}
+  - \usepackage{fontawesome5}
+  - \usepackage{xcolor}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo      = FALSE, 
+                      warning   = FALSE, 
+                      message   = FALSE,
+                      fig.align = "center")
+```
+
+```{r libraries}
+
+library(tidyverse)
+library(DiagrammeR)
+```
+
+# Contents
+
+- Please Read Me
+- Purpose
+- Ethics and its relationship with negotiation
+- Ethically ambiguous tactics
+- Motives and consequences of using deceptive tactics
+- Dealing with the use of deceptive tactics by the counterpart
+- Acknowledgments
+- References
+
+# Please Read Me
+
+- Check the message __Welcome greeting__ published in the News Bulletin Board.
+
+- Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+- This presentation is based on [@lewicki_essentials_2016, Chapter 5]
+
+# Purpose
+
+Explore and understand the ethical standards commonly accepted in a negotiation process in order to detect and deal with deceptive tactics.
+
+# Ethics and its relationship with negotiation
+
+- Ethics is understand as the social standards that are apply to examine what is right or wrong in a specific situation or a process to establish such standards [@lewicki_essentials_2016, Chapter 5, p 116].
+
+- The ethical considerations in a negotiation are related to how the exchange of information occurs [@lewicki_ethical_1998].
+
+    + Because the exchange of information in the negotiation process is vital, the analysis of ethics is associated with examining whether or not there is a dishonest communication.
+    
+# Ethics and its relationship with negotiation
+
+- To evaluate how ethical the strategies and tactics are in a negotiation, 4 standards can be used [@lewicki_essentials_2016, Chapter 5, p 118]:
+
+```{r fig_1, out.width = '90%'}
+
+grViz(diagram = '
+      
+      digraph boxes_and_circles {
+      
+      graph [rankdir = TB]
+      
+      node[shape = circle, color = "#2C3E50"]
+      
+      "Ethical standards";
+      
+      node[shape = oval, color = "#E31A1C"]
+      
+      "End-result ethics";
+      "Duty ethics";
+      "Social contract ethics";
+      "Personalistic ethics";
+      
+      node[shape = oval, color = "#18BC9C"]
+      
+      "Jeremy Bentham\nJohn Stuart Mill";
+      "Immanuel Kant";
+      "Jean-Jacques Rousseau";
+      "Martin Buber"
+      
+      "Ethical standards" -> "End-result ethics";
+      "Ethical standards" -> "Duty ethics";
+      "Ethical standards" -> "Social contract ethics";
+      "Ethical standards" -> "Personalistic ethics";
+      
+       "End-result ethics" -> "Jeremy Bentham\nJohn Stuart Mill";
+       "Duty ethics" -> "Immanuel Kant";
+       "Social contract ethics" -> "Jean-Jacques Rousseau";
+       "Personalistic ethics" -> "Martin Buber"
+      
+      }
+      
+      ')
+```
+
+# Ethically ambiguous tactics
+
+- There are tactics that are not ethical and that can be quickly identified, such as stealing confidential data from the counterpart. 
+
+    + These types of tactics must be removed from the negotiator's toolbox.
+
+- However, in the context of negotiation there are gray areas. These gray areas are known as ethically ambiguous tactics within the theory of negotiation. 
+
+    + These tactics are related to what the negotiators say or what they claim they will do concerning what they really do.
+    
+# Ethically ambiguous tactics
+
+- Gray areas within a negotiating context regarding ethically ambiguous tactics are presented due to the 2 dilemmas a negotiator faces:
+
+    + Dilemma of honesty
+    
+        + How much truth should be revealed to the counterpart?
+    
+    + Dilemma of trust
+    
+        + How much should a negotiator believe what the counterpart says?
+
+# Ethically ambiguous tactics
+
+- Types of ethically ambiguous tactics
+
+```{r fig_2, out.width = '100%'}
+
+grViz(diagram = '
+      
+      digraph boxes_and_circles {
+      
+      graph [rankdir = LR]
+      
+      node[shape = circle, color = "#2C3E50"]
+      
+      "Dimensions used\nin the assessment of\nethically ambiguous tactics";
+      
+      node[shape = oval, color = ForestGreen]
+      
+      "Appropriateness";
+      "Likelihood\nof using it";
+      "Perceived efficacy\nof using it";
+      
+      node[shape = circle, color = "#E31A1C"]
+      
+      "Types"
+      
+      node[shape = oval, color = "#18BC9C"]
+      
+      "Traditional competitive\nbargaining";
+      "Emotional\nmanipulation";
+      "Misrepresentation";
+      "Misrepresentation to\nopponent’s networks";
+      "Inappropriate information\ngathering";
+      "Bluffing";
+      
+      node[shape = oval, color = "#CCBE93"]
+      
+      "Perceived as\nappropriate and\nlikely to be used"
+      
+      "Dimensions used\nin the assessment of\nethically ambiguous tactics" -> "Appropriateness";
+      "Dimensions used\nin the assessment of\nethically ambiguous tactics" -> "Likelihood\nof using it";
+      "Dimensions used\nin the assessment of\nethically ambiguous tactics" -> "Perceived efficacy\nof using it";
+      
+      "Appropriateness" -> "Types";
+      "Likelihood\nof using it" -> "Types";
+      "Perceived efficacy\nof using it" -> "Types";
+
+      "Types" -> "Traditional competitive\nbargaining";
+      "Types" -> "Emotional\nmanipulation";
+      "Types" -> "Misrepresentation";
+      "Types" -> "Misrepresentation to\nopponent’s networks";
+      "Types" -> "Inappropriate information\ngathering";
+      "Types" -> "Bluffing";
+
+      "Traditional competitive\nbargaining" -> "Perceived as\nappropriate and\nlikely to be used";
+      "Emotional\nmanipulation" -> "Perceived as\nappropriate and\nlikely to be used";
+      
+      }
+      
+      ')
+```
+
+# Motives and consequences of using deceptive tactics
+
+```{r fig_3, out.width = '100%'}
+
+grViz(diagram = '
+      
+      digraph boxes_and_circles {
+      
+      graph [rankdir = TB]
+      
+      node[shape = circle, color = "#2C3E50"]
+      
+      "Deceptive\ntactics";
+      
+      node[shape = oval, color = "#E31A1C"]
+      
+      "Types"
+      
+      node[shape = oval, color = "#18BC9C"]
+      
+      "Active";
+      "Pasive";
+      
+      node[shape = oval, color = "#CCBE93"]
+      
+      "Misrepresent\nlying openly";
+      "Misrepresent by omission\nnot revealing information\nthat benefits the\ncounterpart";
+
+      "Deceptive\ntactics" -> "Types";
+      
+      "Types" -> "Active";
+      "Types" -> "Pasive";
+      
+      "Active" -> "Misrepresent\nlying openly";
+      "Pasive" -> "Misrepresent by omission\nnot revealing information\nthat benefits the\ncounterpart";
+
+      }
+      
+      ')
+```
+
+# Motives and consequences of using deceptive tactics
+
+- Why do negotiators use deceptive tactics in the context of a negotiation?
+
+    + Need to acquire greater power through the manipulation of information to get closer to the target point
+    
+    + Use of a more competitive negotiation style[^1]
+    
+[^1]: This aspect generates a greater probability of using this type of tactics
+
+# Motives and consequences of using deceptive tactics
+
+```{r fig_4, out.width = '100%'}
+
+grViz(diagram = '
+      
+      digraph boxes_and_circles {
+      
+      graph [rankdir = TB]
+      
+      node[shape = circle, color = "#2C3E50"]
+      
+      "Consequences of\nUnethical Conduct";
+      
+      node[shape = oval, color = "#E31A1C"]
+      
+      "Positive\nor Negative";
+      
+      node[shape = oval, color = "#18BC9C"]
+      
+      "Aspects";
+      
+      node[shape = oval, color = "#CCBE93"]
+      
+      "Effectiveness";
+      "Reactions of Others";
+      "Reactions of Self"
+
+      "Consequences of\nUnethical Conduct" -> "Positive\nor Negative";
+      
+      "Positive\nor Negative" -> "Aspects";
+      
+      "Aspects" -> "Effectiveness";
+      "Aspects" -> "Reactions of Others";
+      "Aspects" -> "Reactions of Self"
+
+      }
+      
+      ')
+```
+
+# Motives and consequences of using deceptive tactics
+
+- **Effectiveness**
+
+    + Deceptive tactics generate **positive consequences** when the outcome of the negotiation improves compared to whether a negotiator had acted ethically and if the conduct is not punished where the consequences materialize in the short run.
+    
+    + Deceptive tactics generate **negative consequences** because the reputation of the negotiator is damaged where the consequences materialize in the future.
+    
+# Motives and consequences of using deceptive tactics
+
+- **Reactions of Others**
+
+    + Deceptive tactics generate **positive consequences** only if constituents, indirect actors or interest observers considered appropriate to use this type of tactics[^2].
+    
+    + Deceptive tactics generate **negative consequences** because retaliations occur directly from the counterpart and possibly from the constituents, indirect actors or interest observers if they consider that the tactic used is inappropriate[^3]. 
+    
+[^2]: This is my own personal opinion and it is not mentioned in [@lewicki_essentials_2016, Chapter 5]
+[^3]: As a personal opinion in the case of the indirect actors or interest observers the retaliation is materialize through a social sanction.
+
+# Motives and consequences of using deceptive tactics
+
+- **Reactions of Self**
+
+    + Deceptive tactics generate **positive consequences** only if the negotiator does not suffer from guilt, remorse or discomfort.
+    
+    + Deceptive tactics generate **negative consequences** when the negotiator suffers from guilt, remorse or discomfort for having used these tactics[^4]
+
+[^4]: This issue directly affects the negotiation since the negotiator is willing to make greater concessions to the counterpart to compensate for using deceptive tactics.
+
+# Dealing with the use of deceptive tactics by the counterpart
+
+```{r fig_5, out.width = '100%'}
+
+grViz(diagram = '
+      
+      digraph boxes_and_circles {
+      
+      graph [rankdir = LR]
+      
+      node[shape = circle, color = "#2C3E50"]
+      
+      Options;
+      
+      node[shape = oval, color = "#E31A1C"]
+      
+      "Ask Probing Questions";
+      "Phrase Questions\nin Different Ways";
+      "Force the Other Party to\nLie or Back Off";
+      "Test the Other Party";
+      "“Call” the Tactic";
+      "Ignore the Tactic";
+      "Discuss What You See and Offer to\nHelp the Other Party Shift\nto More Honest Behaviors";
+      "Respond in Kind"
+      
+      Options -> "Ask Probing Questions";
+      Options -> "Phrase Questions\nin Different Ways";
+      Options -> "Force the Other Party to\nLie or Back Off";
+      Options -> "Test the Other Party";
+      Options -> "“Call” the Tactic";
+      Options -> "Ignore the Tactic";
+      Options -> "Discuss What You See and Offer to\nHelp the Other Party Shift\nto More Honest Behaviors";
+      Options -> "Respond in Kind"
+
+      }
+      
+      ')
+```
+
+# Dealing with the use of deceptive tactics by the counterpart
+
+- **My personal opinion**:
+
+    + Read the article [@adler_negotiating_2007]:
+    
+        + Before the Bargaining Begins
+        
+        + During the Bargaining Process
+        
+    + I think the best approach is to follow the recommendations in the section **Before the Bargaining Begins** because they are carried out during the planning stage of a negotiation where there is more time and information that can be collected in order to respond adequately to deceptive tactics.
+
+# Acknowledgments
+
+- To my family that supports me
+
+- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+
+- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+
+- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+
+- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
+
+# References
+ 
