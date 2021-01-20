@@ -338,4 +338,4 @@ _"La comprobación de todo fraude o intento de fraude en cualquier tipo de prueb
 
 _"Hacer plagio en cualquier tipo de documento o desplegar alguna conducta dolosa que viole el régimen de propiedad intelectual de la Universidad."_
 
-# Study material References
+# Study material references
