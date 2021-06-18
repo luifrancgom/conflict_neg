@@ -1,7 +1,7 @@
 ---
 title: "Negotiation: Strategy and Planning"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-10-15
+date: 2021-04-05 11:12:53 GMT -05:00
 output:
   beamer_presentation:
     colortheme: dolphin

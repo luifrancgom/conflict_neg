@@ -1,7 +1,7 @@
 ---
 title: "Communication and Three-Party Coalition Exercise Round 2"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-10-27
+date: 2021-04-05 11:28:31 GMT -05:00
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -84,11 +84,13 @@ Explore the tools and practices to improve communication processes in a negotiat
 
     + Segundo corte 30% > Learning Activities > Midterm Exam Three Party Coalition Exercise Round 2
     
-- Also check out in the __Links of interest__ the video
+# Three Party Coalition Exercise Round 1
     
-    + _Three-Party Coalition Exercise_[^1] [@program_on_negotiation_negotiation_2014]
+- Also check out in the __Links of interest__ the videos[^1]
     
-[^1]: The video is in english and is a recording of the Three-Party Coalition Exercise simulation
+    + _Three-Party Coalition Exercise_ [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
+    
+[^1]: The videos are in english and are recordings of the Three-Party Coalition Exercise simulation
     
 # Three Party Coalition Exercise Round 2
 
@@ -170,6 +172,10 @@ tibble(Group  = c("A", "B", "C"),
         + Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
         + If an agreement is reached and the same amount of points is obtained as another __Group__ then the highest grade will be assigned randomly within the __Groups__ that obtained the same amount of points.
         + It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
+        
+# Three Party Coalition Exercise Round 2
+
+- Before, during and after the Midterm Exam remember:
 
     + __After__
     
@@ -177,7 +183,7 @@ tibble(Group  = c("A", "B", "C"),
         
 # What Is Communicated during Negotiation?
 
-```{r fig_1, out.width = '100%'}
+```{r fig_1, out.width = '60%'}
 
 grViz(diagram = '
       

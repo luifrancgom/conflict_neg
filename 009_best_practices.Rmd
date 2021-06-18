@@ -1,7 +1,7 @@
 ---
 title: "Best Practices in Negotiations"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-10-31
+date: 2021-04-05 11:48:11 GMT -05:00
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -71,7 +71,6 @@ Explore best practices in negotiation and conflict management to achieve success
 
 # Final Exam Three Party Coalition Exercise Modified
 
-
 - Why the Final Exam is a simulations and with the participation of the entire course?
 
     + The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people. 
@@ -83,12 +82,14 @@ Explore best practices in negotiation and conflict management to achieve success
 - Before taking part, students should review the general and specific instructions of the Midterm Exam that can be checked at:
     
     + Tercer corte 40% > Learning Activities > Final Exam Three Party Coalition Exercise Modified
+
+# Final Exam Three Party Coalition Exercise Modified
     
-- Also check out in the __Links of interest__ the video
+- Also check out in the __Links of interest__ the videos[^1]
     
-    + _Three-Party Coalition Exercise_[^1] [@program_on_negotiation_negotiation_2014]
+    + _Three-Party Coalition Exercise_ [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
     
-[^1]: The video is in english and is a recording of the Three-Party Coalition Exercise simulation
+[^1]: The videos are in english and are recordings of the Three-Party Coalition Exercise simulation
     
 # Final Exam Three Party Coalition Exercise Modified
 
@@ -182,7 +183,7 @@ tibble(Group  = c("A", "B", "C"),
         
 # Best Practices in Negotiations
 
-```{r fig_1, out.width = '100%'}
+```{r fig_1, out.width = '95%'}
 
 grViz(diagram = '
       
@@ -319,4 +320,3 @@ __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](
 - To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
     
 # References
-

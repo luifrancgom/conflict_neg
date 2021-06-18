@@ -1,7 +1,7 @@
 ---
 title: "Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-10-05
+date: 2021-04-05 10:36:49 GMT -05:00
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -83,11 +83,13 @@ Understand the basic elements of an integrative negotiation situation, as well a
 
     + Primer corte 30% > Learning Activities > Midterm Exam Three Party Coalition Exercise Round 1
     
-- Also check out in the __Links of interest__ the video
+# Three Party Coalition Exercise Round 1
     
-    + _Three-Party Coalition Exercise_[^1] [@program_on_negotiation_negotiation_2014]
+- Also check out in the __Links of interest__ the videos[^1]
     
-[^1]: The video is in english and is a recording of the Three-Party Coalition Exercise simulation
+    + _Three-Party Coalition Exercise_ [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
+    
+[^1]: The videos are in english and are recordings of the Three-Party Coalition Exercise simulation
     
 # Three Party Coalition Exercise Round 1
 
@@ -171,6 +173,10 @@ tibble(Group  = c("A", "B", "C"),
         + Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
         + If an agreement is reached and the same amount of points is obtained as another __Group__ then the highest grade will be assigned randomly within the __Groups__ that obtained the same amount of points.
         + It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
+        
+# Three Party Coalition Exercise Round 1
+
+- Before, during and after the Midterm Exam remember:
 
     + __After__
     
@@ -206,7 +212,7 @@ tibble(Group  = c("A", "B", "C"),
 
 - Creating/Claiming Value and the Pareto Efficient Frontier [@lewicki_essentials_2016, p 64]
 
-```{r, out.width="75%", fig.cap="Creating or Claiming Value and the Pareto Efficient Frontier (Lewicki, Barry, and Saunders 2016, p 64)"}
+```{r, out.width="75%"}
 
 ggplot(data = tibble(x = c( 1, -1, -1, 0, 0, 4, 2.4),
                      y = c(-1,  1, -1, 0, 4, 0, 2.4))) +

@@ -1,7 +1,7 @@
 ---
 title: "Strategy and Tactics of Distributive Bargaining"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-09-28
+date: 2021-04-05 10:21:01 GMT -05:00
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -317,7 +317,7 @@ plot_dist_neg4
 
 # Strategies[^4]
 
-```{r, out.width="100%"}
+```{r, out.width="85%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -501,7 +501,7 @@ digraph boxes_and_circles {
 
 - The most common __hardball tactics__ are pointed out in [@lewicki_essentials_2016, Chapter 2, p 52-58]: Good Cop/Bad Cop, Lowball/Highball, Bogey, Nibble, Chicken, Intimidation, Aggressive Behavior and Snow Job.
 
-- In [@lewicki_essentials_2016, Chapter 2, p 51] 4 possible strategies to face these tactics are pointed out: discuss them, ignore them, respond in kind 10 and co-opt the other party.
+- In [@lewicki_essentials_2016, Chapter 2, p 51] 4 possible strategies to face these tactics are pointed out: discuss them, ignore them, respond in kind and co-opt the other party.
 
 # Acknowledgments
 

@@ -1,7 +1,7 @@
 ---
 title: "Finding and Using Negotiation Power"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-10-31
+date: 2021-04-05 11:33:46 GMT -05:00
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -114,7 +114,7 @@ grViz(diagram = '
 
 # Sources of power in a negotiation
 
-```{r fig_2, out.width = '100%'}
+```{r fig_2, out.width = '80%'}
 
 grViz(diagram = '
       
@@ -172,7 +172,7 @@ grViz(diagram = '
 
 # Sources of power in a negotiation
 
-```{r fig_3, out.width = '100%'}
+```{r fig_3, out.width = '75%'}
 
 grViz(diagram = '
       

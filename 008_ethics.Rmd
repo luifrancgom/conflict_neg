@@ -1,7 +1,7 @@
 ---
 title: "Ethics in Negotiation"
 author: "Luis Francisco Gomez Lopez"
-date: 2020-10-31
+date: 2021-04-05 11:41:20 GMT -05:00
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -207,7 +207,7 @@ grViz(diagram = '
 
 # Motives and consequences of using deceptive tactics
 
-```{r fig_3, out.width = '100%'}
+```{r fig_3, out.width = '60%'}
 
 grViz(diagram = '
       
@@ -258,7 +258,7 @@ grViz(diagram = '
 
 # Motives and consequences of using deceptive tactics
 
-```{r fig_4, out.width = '100%'}
+```{r fig_4, out.width = '65%'}
 
 grViz(diagram = '
       
@@ -328,7 +328,7 @@ grViz(diagram = '
 
 # Dealing with the use of deceptive tactics by the counterpart
 
-```{r fig_5, out.width = '100%'}
+```{r fig_5, out.width = '45%'}
 
 grViz(diagram = '
       
