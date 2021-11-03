@@ -1,7 +1,7 @@
 ---
 title: "The Nature of Negotiation"
 author: "Luis Francisco Gomez Lopez"
-date: 2021-04-05 10:17:36 GMT -05:00
+date: 2021-09-09 17:34:56
 output:
   beamer_presentation:
     colortheme: dolphin

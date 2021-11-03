@@ -1,7 +1,7 @@
 ---
 title: "Communication and Three-Party Coalition Exercise Round 2"
 author: "Luis Francisco Gomez Lopez"
-date: 2021-04-05 11:28:31 GMT -05:00
+date: 2021-09-09 17:41:01
 output:
   beamer_presentation:
     colortheme: dolphin

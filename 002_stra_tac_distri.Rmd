@@ -1,7 +1,7 @@
 ---
 title: "Strategy and Tactics of Distributive Bargaining"
 author: "Luis Francisco Gomez Lopez"
-date: 2021-04-05 10:21:01 GMT -05:00
+date: 2021-09-09 17:35:44
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -51,6 +51,7 @@ library(DiagrammeR)
 - Purpose
 - Elements of a distributive negotiation situation
 - Strategies
+- Tactics
 - Aspects about taking positions during a negotiation
 - Closing a deal
 - How to face hardball tactics?
