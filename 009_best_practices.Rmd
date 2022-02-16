@@ -1,7 +1,7 @@
 ---
 title: "Best Practices in Negotiations"
 author: "Luis Francisco Gomez Lopez"
-date: 2021-09-09 17:45:55
+date:  2022-02-14 09:30:34
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -135,12 +135,12 @@ tibble(Group  = c("A", "B", "C"),
 
     + __Case 1__: __A__ and __B__ work together but __C__ is excluded.
     
-        + __C__ obtains a grade of __30__ out of 50.
+        + __C__ obtains a grade of __35__ out of 50.
         + The grade of __A__ and __B__ will depend on who gets the most of the __118 points__. The __Group__ that gets the most points will have a grade of __50__ out of __50__ and the other __Group__ gets a grade of __40__ out of __50__. If __A__ and __B__ divide the points equally, whoever gets the highest grade will be assigned randomly.
         
     + __Case 2__: __A__ and __C__ work together but __B__ is excluded.
     
-        + __B__ obtains a grade of __30__ out of 50. 
+        + __B__ obtains a grade of __35__ out of 50. 
         + The grade of __A__ and __C__ will depend on who gets the most of the __84 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __A__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
         
 # Final Exam Three Party Coalition Exercise Modified
@@ -149,12 +149,12 @@ tibble(Group  = c("A", "B", "C"),
 
     + __Case 3__: __B__ and __C__ work together but __A__ is excluded.
     
-        + __A__ obtains a grade of __30__ out of 50.
+        + __A__ obtains a grade of __35__ out of 50.
         + The grade of __B__ and __C__ will depend on who gets the most of the __50 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __B__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
         
     + __Case 4__: __A__, __B__ and __C__ work together so nobody is excluded.
     
-        + The __Group__ that obtains the highest amount of points will have a grade of __50__ out of 50, the __Group__ that obtains the second highest amount of points obtains a grade of __40__ out of 50 and the __Group__ that obtains the lowest amount of points obtains a grade of __30__ out of 50. In case of a tie between any of the __Groups__, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 __Groups__.
+        + The __Group__ that obtains the highest amount of points will have a grade of __50__ out of 50, the __Group__ that obtains the second highest amount of points obtains a grade of __40__ out of 50 and the __Group__ that obtains the lowest amount of points obtains a grade of __35__ out of 50. In case of a tie between any of the __Groups__, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 __Groups__.
         
 # Final Exam Three Party Coalition Exercise Modified
 
