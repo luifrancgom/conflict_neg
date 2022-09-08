@@ -3,8 +3,6 @@ title: "Syllabus Electiva II: Negociación de Conflictos Module A AE"
 author: "Distance Learning Faculty (FAEDIS)"
 date: "2022-1"
 output:
-  pdf_document:
-    number_sections: yes
   html_document:
     df_print: paged
     highlight: tango
@@ -12,6 +10,8 @@ output:
     theme: flatly
     toc: yes
     toc_depth: 4
+  pdf_document:
+    number_sections: yes
 bibliography: conflict_neg.bib
 link-citations: yes
 ---
@@ -36,7 +36,7 @@ library(knitr)
 
 - __Communication through the virtual classroom__
 
-    + Every Sunday between 07:00 hours and 08:00 hours: 
+    + Every Sunday between 06:00 hours and 06:45 hours: 
     
         + _Primer Corte 30% > Virtual Meetings > Meeting hours with students_
     

@@ -1,7 +1,7 @@
 ---
 title: "Best Practices in Negotiations"
 author: "Luis Francisco Gomez Lopez"
-date:  2022-02-14 09:30:34
+date:  2022-06-10 12:04:43
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -79,7 +79,7 @@ Explore best practices in negotiation and conflict management to achieve success
     
     + It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
     
-- Before taking part, students should review the general and specific instructions of the Midterm Exam that can be checked at:
+- Before taking part, students should review the general and specific instructions of the Final Exam that can be checked at:
     
     + Tercer corte 40% > Learning Activities > Final Exam Three Party Coalition Exercise Modified
 
@@ -158,7 +158,7 @@ tibble(Group  = c("A", "B", "C"),
         
 # Final Exam Three Party Coalition Exercise Modified
 
-- Before, during and after the Midterm Exam remember:
+- Before, during and after the Final Exam remember:
 
     + __Before__
 
@@ -168,7 +168,7 @@ tibble(Group  = c("A", "B", "C"),
         
 # Final Exam Three Party Coalition Exercise Modified
 
-- Before, during and after the Midterm Exam remember:
+- Before, during and after the Final Exam remember:
 
     + __During__
 

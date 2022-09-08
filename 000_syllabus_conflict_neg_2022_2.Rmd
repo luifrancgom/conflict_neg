@@ -1,7 +1,7 @@
 ---
 title: "Syllabus Electiva II: Negociación de Conflictos Module A AE"
 author: "Distance Learning Faculty (FAEDIS)"
-date: "2020-2"
+date: "2022-2"
 output:
   pdf_document:
     number_sections: yes
@@ -36,15 +36,19 @@ library(knitr)
 
 - __Communication through the virtual classroom__
 
-    + Every Friday between 19:30 hours and 20:30 hours: 
+    + Every Sunday between 06:00 hours and 06:45 hours: 
     
         + _Primer Corte 30% > Virtual Meetings > Meeting hours with students_
     
-    + Doubts and concerns of the topics of the course, please send me an email to __luis.gomezl@unimilitar.edu.co__
+    + Doubts and concerns of the topics of the course, please use the _Forum: Questions or concerns_ that can be accessed at the top of the platform
+    
+        + In this way, doubts can be shared with all students and all course participants can contribute to the learning process
     
     + Complaints regarding grades, please send an email to __luis.gomezl@unimilitar.edu.co__
     
-        + To make any complaints, you are asked to wait first for the grades to be published and to be made based on the the evaluation parameters
+        + To make any complaints, you are asked to wait first for the grades to be published on the News Bulletin Board and to be made based on the feedbacks that will be made taking into account the evaluation parameters
+        
+        + Urgent issues, you can call me to +57 3124541536 Monday, Wednesday, and Friday between 14:00 hours and 15:00 hours. Please do not send me whatsapp messages or call me on weekends.
 
 # Presentation and objectives of the subject
 
@@ -54,7 +58,7 @@ library(knitr)
 - Type: Theoretical-Practice
 - Area of Knowledge: Professional
 - Semester: 8
-- Block: 2 (September 21 – November 21, 2020) 
+- Block: 2 (September 26 – November 28, 2022) 
 
 ## Justification
 
@@ -111,19 +115,15 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
 ### Primer corte 30%
 
-- September 21
-
-    + Start Block 2
-    
-- September 22
+- September 26
 
     + __Virtual meeting Presentation Syllabus__
         + __Meeting time__: 19:00 - 19:45 hours
         + __Prerequisites__:
-            + Review the course program in advance, which can be downloaded by following the route _Primer corte 30% > Learning Resources > Support material > Presentations > 000_syllabus_conflict_neg_2020_2_
+            + Review the course program in advance, which can be downloaded by following the route _Primer corte 30% > Support material - Primer corte 30% > 000_syllabus_conflict_neg_2021_1
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- September 24
+- September 28
 
     + __Virtual meeting The Nature of Negotiation__
         + __Meeting time__: 19:00 - 19:45 hours 
@@ -131,14 +131,12 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 1]
             + Have a headset with a built-in microphone to isolate noise from the environment
 
-- September 28
+- October 3
 
     + __Questionnaire 1 Opening__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review [@lewicki_essentials_2016, Chapters 1 & 2]
-
-- October 1
 
     + __Virtual meeting Strategy and Tactics of Distributive Bargaining__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -146,21 +144,19 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 2]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- October 4
+- October 9
 
     + __Questionnaire 1 Closing__
         + __Closing time__: 22:00 hours
         + __Prerequisites__: 
             + Have answered the Questionnaire 1 before 22:00 hours
             
-- October 5 
+- October 10 
 
     + __Instructions Opening Midterm Exam Three Party Coalition Exercise Round 1__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review role play instructions [@program_on_negotiation_three_2008]
-
-- October 8
 
     + __Virtual meeting Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -169,11 +165,11 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 3]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- October 10
+- October 15
 
     + __Midterm Exam Three Party Coalition Exercise Round 1__
-        + __Opening time__: 07:00 hours
-        + __Closing time__: 11:30 hours
+        + __Opening time__: 15:30 hours
+        + __Closing time__: 17:30 hours
         + __Prerequisites__: 
             + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 3]
@@ -181,14 +177,12 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
 ### Segundo corte 30%
 
-- October 12
+- October 17
 
     + __Questionnaire 2 Opening__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review [@lewicki_essentials_2016, Chapters 4 & 6]
-
-- October 15
 
     + __Virtual meeting Negotiation: Strategy and Planning__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -196,7 +190,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 4]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- October 22
+- October 24
 
     + __Virtual meeting Perception, Cognition, and Emotion__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -204,21 +198,19 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 6]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- October 25
+- October 30 
 
     + __Questionnaire 2 Closing__
         + __Closing time__: 22:00 hours
         + __Prerequisites__: 
             + Have answered the Questionnaire 2 before 22:00 hours
             
-- October 26 
+- October 31 
 
     + __Instructions Opening Midterm Exam Three Party Coalition Exercise Round 2__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review role play instructions [@program_on_negotiation_three_2008]
-            
-- October 29
 
     + __Virtual meeting Communication and Three-Party Coalition Exercise Round 2__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -227,11 +219,11 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 7]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- October 31
+- November 5
 
     + __Midterm Exam Three Party Coalition Exercise Round 2__
-        + __Opening time__: 07:00 hours
-        + __Closing time__: 11:30 hours
+        + __Opening time__: 15:30 hours
+        + __Closing time__: 17:30 hours
         + __Prerequisites__: 
             + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 7]
@@ -239,14 +231,12 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
 ### Tercer corte 40%
 
-- November 2
+- November 7
 
     + __Questionnaire 3 Opening__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review [@lewicki_essentials_2016, Chapters 8 & 5]
-
-- November 5
 
     + __Virtual meeting Negotiation: Finding and Using Negotiation Power__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -254,7 +244,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 8]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- November 12
+- November 14
 
     + __Virtual meeting Ethics in Negotiation__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -262,21 +252,19 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 5]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- November 15
+- November 20
 
     + __Questionnaire 3 Closing__
         + __Closing time__: 22:00 hours
         + __Prerequisites__: 
             + Have answered the Questionnaire 2 before 22:00 hours
-            
-- November 16 
+
+- November 21
 
     + __Instructions Opening Final Exam Three Party Coalition Exercise Modified__
         + __Opening time__: 00:00 hours
         + __Prerequisites__:
             + Read and review role play instructions [@program_on_negotiation_three_2008]
-            
-- November 19 
 
     + __Virtual meeting Best Practices in Negotiations and Three-Party Coalition Exercise Modified__
         + __Meeting time__: 19:00 - 19:45 hours
@@ -285,11 +273,11 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
             + Read and review [@lewicki_essentials_2016, Chapter 12]
             + Have a headset with a built-in microphone to isolate noise from the environment
             
-- November 21
+- November 26 
 
     + __Final Exam Three Party Coalition Exercise Modified__
-        + __Opening time__: 07:00 hours
-        + __Closing time__: 11:30 hours
+        + __Opening time__: 15:30 hours
+        + __Closing time__: 17:30 hours
         + __Prerequisites__: 
             + Read and review role play instructions [@program_on_negotiation_three_2008]
             + Read and review [@lewicki_essentials_2016, Chapter 12]
@@ -301,18 +289,18 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
 - __Primer corte__: 30%
 
-    + __Questionnaire 1__: 10% 
-    + __Midterm Exam Three Party Coalition Exercise Round 1__: 20% 
+    + __Questionnaire 1__: 15% 
+    + __Midterm Exam Three Party Coalition Exercise Round 1__: 15% 
 
 - __Segundo corte__: 30%
 
-    + __Questionnaire 2__: 10% 
-    + __Midterm Exam Three Party Coalition Exercise Round 2__: 20%
+    + __Questionnaire 2__: 15% 
+    + __Midterm Exam Three Party Coalition Exercise Round 2__: 15%
 
 - __Tercer corte__: 40%
 
-    + __Questionnaire 3__: 10%
-    + __Final Exam Three Party Coalition Exercise Modified__: 30 %
+    + __Questionnaire 3__: 15%
+    + __Final Exam Three Party Coalition Exercise Modified__: 25%
     
 ## Process in case of no presentation
 
@@ -324,9 +312,11 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
 - [@lewicki_essentials_2016, Chapters 1, 2, 3, 4, 6, 7, 8, 5 & 12]
 
-    + You can find the book in the following __[link](https://drive.google.com/file/d/1VxKBh4rxaKUQiM8_Zp74ekTOyeW6rOqV/view)__
+    + The book can be consulted through the virtual classroom
     
 - [@program_on_negotiation_three_2008]
+
+    + The document can be consulted through the virtual classroom
     
 # About plagiarism
 
