@@ -1,7 +1,7 @@
 ---
 title: "Finding and Using Negotiation Power"
 author: "Luis Francisco Gomez Lopez"
-date: 2022-06-13 10:29:10
+date: 2023-01-08 20:41:10
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -77,7 +77,7 @@ Understand the role of power and the different sources from which this element a
 
 - Perspectives about power[^1]
 
-```{r fig_1, out.width = '85%'}
+```{r fig_1, out.width = '160%'}
 
 grViz(diagram = '
       
@@ -114,7 +114,7 @@ grViz(diagram = '
 
 # Sources of power in a negotiation
 
-```{r fig_2, out.width = '80%'}
+```{r fig_2, out.width = '160%'}
 
 grViz(diagram = '
       
@@ -172,7 +172,7 @@ grViz(diagram = '
 
 # Sources of power in a negotiation
 
-```{r fig_3, out.width = '75%'}
+```{r fig_3, out.width = '160%'}
 
 grViz(diagram = '
       

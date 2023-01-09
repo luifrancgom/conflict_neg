@@ -1,7 +1,7 @@
 ---
 title: "Perception, Cognition, and Emotion"
 author: "Luis Francisco Gomez Lopez"
-date: 2022-06-13 10:26:43
+date: 2023-01-08 20:33:43
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -159,7 +159,7 @@ include_graphics(path = "005_muller_lLyer_circle.png")
 
 - A __cognitive bias__ is defined as a systematic error that affects the decisions and judgments. In [@lewicki_essentials_2016, p 150-156] 12 __cognitive bias__ that may occur in the context of a negotiation are described[^7]:
 
-```{r, out.width="70%"}
+```{r, out.width="130%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -211,7 +211,7 @@ digraph boxes_and_circles {
 
 - A __cognitive bias__ is defined as a systematic error that affects the decisions and judgments. In [@lewicki_essentials_2016, p 150-156] 12 __cognitive bias__ that may occur in the context of a negotiation are described[^8]:
 
-```{r, out.width="70%"}
+```{r, out.width="130%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -271,7 +271,7 @@ digraph boxes_and_circles {
 
 - Positive emotions and positive consequences for negotiations [@lewicki_essentials_2016, p 157-158]:
 
-```{r, out.width="90%"}
+```{r, out.width="130%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -314,7 +314,7 @@ digraph boxes_and_circles {
 
 - Aspects of the negotiation process and positive emotions [@lewicki_essentials_2016, p 159]:
 
-```{r, out.width="90%"}
+```{r, out.width="130%"}
 
 grViz("
 digraph boxes_and_circles {

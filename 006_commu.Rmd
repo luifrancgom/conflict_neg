@@ -1,7 +1,7 @@
 ---
 title: "Communication and Three-Party Coalition Exercise Round 2"
 author: "Luis Francisco Gomez Lopez"
-date: 2022-06-13 10:27:24
+date: 2023-01-08 20:39:24
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -183,7 +183,7 @@ tibble(Group  = c("A", "B", "C"),
         
 # What Is Communicated during Negotiation?
 
-```{r fig_1, out.width = '60%'}
+```{r fig_1, out.width = '160%'}
 
 grViz(diagram = '
       
@@ -250,7 +250,7 @@ grViz(diagram = '
 
 # How People Communicate in Negotiation
 
-```{r fig_2, out.width = '100%'}
+```{r fig_2, out.width = '160%'}
 
 grViz(diagram = '
       
@@ -309,7 +309,7 @@ grViz(diagram = '
 
 # How to Improve Communication in Negotiation[^2]
 
-```{r fig_3, out.width = '90%'}
+```{r fig_3, out.width = '160%'}
 
 grViz(diagram = '
       

@@ -1,7 +1,7 @@
 ---
 title: "Negotiation: Strategy and Planning"
 author: "Luis Francisco Gomez Lopez"
-date: 2022-06-13 10:24:10
+date: 2023-01-08 20:31:10
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -105,7 +105,7 @@ Understand and explore the main elements of the negotiation strategy, the proces
 
 - Relationship between key steps in the planning Process [@lewicki_essentials_2016, Chapter 4, p 90]
 
-```{r, out.width="100%"}
+```{r, out.width="160%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -167,7 +167,7 @@ digraph boxes_and_circles {
 
 - Different engagement strategies in a negotiation context[^6]
 
-```{r, out.width="85%"}
+```{r, out.width="160%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -197,7 +197,7 @@ digraph boxes_and_circles {
 
 - Key steps in the planning process [@lewicki_essentials_2016, Chapter 4, p 96-112]
 
-```{r, out.width="95%"}
+```{r, out.width="160%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -252,7 +252,7 @@ digraph boxes_and_circles {
 
 - Key steps in the planning process [@lewicki_essentials_2016, Chapter 4, p 96-112]
 
-```{r, out.width="95%"}
+```{r, out.width="155%"}
 
 grViz("
 digraph boxes_and_circles {

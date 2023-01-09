@@ -1,7 +1,7 @@
 ---
 title: "Strategy and Tactics of Distributive Bargaining"
 author: "Luis Francisco Gomez Lopez"
-date: 2022-06-10 11:59:21
+date: 2023-01-20 20:22:21
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -318,7 +318,7 @@ plot_dist_neg4
 
 # Strategies[^4]
 
-```{r, out.width="85%"}
+```{r, out.width="160%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -351,7 +351,7 @@ digraph boxes_and_circles {
 
 # Tactics[^5]
 
-```{r, out.width="100%"}
+```{r, out.width="160%"}
 
 grViz("
 digraph boxes_and_circles {
@@ -406,7 +406,7 @@ digraph boxes_and_circles {
 
 # Tactics[^6]
 
-```{r, out.width="100%"}
+```{r, out.width="160%"}
 
 grViz("
 digraph boxes_and_circles {

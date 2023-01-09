@@ -1,7 +1,7 @@
 ---
 title: "Best Practices in Negotiations"
 author: "Luis Francisco Gomez Lopez"
-date:  2022-06-10 12:04:43
+date:  2023-01-08 20:48:43
 output:
   beamer_presentation:
     colortheme: dolphin
@@ -183,7 +183,7 @@ tibble(Group  = c("A", "B", "C"),
         
 # Best Practices in Negotiations
 
-```{r fig_1, out.width = '95%'}
+```{r fig_1, out.width = '160%'}
 
 grViz(diagram = '
       
@@ -238,7 +238,7 @@ grViz(diagram = '
 
 # Best Practices in Negotiations
 
-```{r fig_2, out.width = '100%'}
+```{r fig_2, out.width = '160%'}
 
 grViz(diagram = '
       
