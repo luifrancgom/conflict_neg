@@ -1,0 +1,519 @@
+---
+title: "Strategy and Tactics of Distributive Bargaining"
+author: "Luis Francisco Gomez Lopez"
+date: 2023-07-14
+format:
+  beamer:
+    colortheme: dolphin
+    fonttheme: structurebold
+    theme: AnnArbor
+    link-citations: true
+    linkcolor: blue
+    include-in-header:
+      - text: |
+          \usepackage{booktabs}
+          \usepackage{longtable}
+          \usepackage{array}
+          \usepackage{multirow}
+          \usepackage{wrapfig}
+          \usepackage{float}
+          \usepackage{colortbl}
+          \usepackage{pdflscape}
+          \usepackage{tabu}
+          \usepackage{threeparttable}
+          \usepackage{threeparttablex}
+          \usepackage[normalem]{ulem}
+          \usepackage{makecell}
+          \usepackage{xcolor}
+          \usepackage{fontawesome5}
+bibliography: conflict_neg.bib
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo      = FALSE, 
+                      warning   = FALSE, 
+                      message   = FALSE,
+                      fig.align = "center")
+```
+
+```{r libraries}
+
+library(tidyverse)
+library(tidyquant)
+library(ggrepel)
+library(DiagrammeR)
+```
+
+# Contents
+
+- Please Read Me
+- Purpose
+- Elements of a distributive negotiation situation
+- Strategies
+- Tactics
+- Aspects about taking positions during a negotiation
+- Closing a deal
+- How to face hardball tactics?
+- Acknowledgments
+- References
+
+# Please Read Me
+
+- Check the message __Welcome greeting__ published in the News Bulletin Board.
+
+- Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+- This presentation is based on [@lewicki_essentials_2016, Chapter 2]
+
+# Purpose
+
+Understand the basic elements of a distributive negotiation situation, as well as the strategies and tactics that can be applied in this context.
+
+# Elements of a distributive negotiation situation
+
+\definecolor{red}{RGB}{227, 26, 28}
+\definecolor{blue}{RGB}{44, 62, 80}
+
+- Buyer: Jackson (\textcolor{blue}{J}) and Seller: Sofia (\textcolor{red}{S})[^1]
+
+    + Resistance point \textcolor{blue}{J}, \textcolor{blue}{Rp\_J}: 150K USD
+    + Resistance point \textcolor{red}{S}, \textcolor{red}{Rp\_S}: 130K USD
+
+```{r, fig.height= 1.7, fig.width=4.5}
+
+# Data
+dist_neg1 <- tibble(x            = c(130, 150),
+                    y            = rep(x = 0, times = 2),
+                    negotiator   = c("Sofia", "Jackson"),
+                    label_text   = c("Rp_S", "Rp_J"))
+
+# Plot
+plot_dist_neg1 <- dist_neg1 %>% 
+    ggplot() + 
+    geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+    geom_vline(aes(xintercept = x), 
+               linetype = "dashed") +
+    geom_point(aes(x = x, y = y, fill = negotiator),
+               shape       = 21,
+               size        = 5,
+               color       = "black", 
+               show.legend = FALSE) +
+    geom_label_repel(aes(x = x, y = y, label = label_text, fill = negotiator),
+                     color       = "white",
+                     alpha       = 0.9, 
+                     show.legend = FALSE) +
+    scale_x_continuous(breaks = dist_neg1$x, 
+                       labels = scales::number_format(prefix = "$", suffix = "K", accuracy = 1)) +
+    scale_fill_tq() +
+    theme(panel.border      = element_rect(fill = NA, color = "black"),
+          plot.background   = element_rect(fill = "#f3fcfc"),
+          panel.background  = element_rect(fill = "#f3f7fc"), 
+          panel.grid.major  = element_blank(),
+          panel.grid.minor  = element_blank(),
+          axis.title        = element_blank(),
+          axis.text.x       = element_text(face = "bold", angle = 90, vjust = 0.5),
+          axis.text.y       = element_blank(), 
+          axis.ticks.y      = element_blank())
+
+plot_dist_neg1 
+```
+
+[^1]: Both \textcolor{blue}{J} and \textcolor{red}{S} have a common interest in cooperating but conflicting interests on how exactly to cooperate. For that reason a negotiation situation arises [@muthoo_bargaining_1999]
+
+# Elements of a distributive negotiation situation
+
+\definecolor{red}{RGB}{227, 26, 28}
+\definecolor{blue}{RGB}{44, 62, 80}
+
+- Buyer: Jackson (\textcolor{blue}{J}) and Seller: Sofia (\textcolor{red}{S})
+
+    + Initial offer \textcolor{blue}{J}, \textcolor{blue}{Io\_J}: 133K USD
+    + Initial offer \textcolor{red}{S}, \textcolor{red}{Io\_S}: 145K USD
+
+```{r, fig.height= 1.7, fig.width=4.5}
+
+# Data
+dist_neg2 <- tibble(x            = c(130, 133, 145, 150),
+                    y            = rep(x = 0, times = 4),
+                    negotiator   = c("Sofia", "Jackson", "Sofia", "Jackson"),
+                    label_text   = c("Rp_S", "Io_J", "Io_S", "Rp_J"))
+
+# Plot
+plot_dist_neg2 <- dist_neg2 %>% 
+    ggplot() + 
+    geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+    geom_vline(aes(xintercept = x), 
+               linetype = "dashed") +
+    geom_point(aes(x = x, y = y, fill = negotiator),
+               shape       = 21,
+               size        = 5,
+               color       = "black", 
+               show.legend = FALSE) +
+    geom_label_repel(aes(x = x, y = y, label = label_text, fill = negotiator),
+                     color       = "white",
+                     alpha       = 0.9, 
+                     show.legend = FALSE) +
+    scale_x_continuous(breaks = dist_neg2$x, 
+                       labels = scales::number_format(prefix = "$", suffix = "K", accuracy = 1)) +
+    scale_fill_tq() +
+    theme(panel.border      = element_rect(fill = NA, color = "black"),
+          plot.background   = element_rect(fill = "#f3fcfc"),
+          panel.background  = element_rect(fill = "#f3f7fc"), 
+          panel.grid.major  = element_blank(),
+          panel.grid.minor  = element_blank(),
+          axis.title        = element_blank(),
+          axis.text.x       = element_text(face = "bold", angle = 90, vjust = 0.5),
+          axis.text.y       = element_blank(), 
+          axis.ticks.y      = element_blank())
+
+plot_dist_neg2 
+```
+
+# Elements of a distributive negotiation situation
+
+\definecolor{red}{RGB}{227, 26, 28}
+\definecolor{blue}{RGB}{44, 62, 80}
+
+- Buyer: Jackson (\textcolor{blue}{J}) and Seller: Sofia (\textcolor{red}{S})
+
+    + Target point \textcolor{blue}{J}, \textcolor{blue}{Tp\_J}: 135K USD
+    + Target point \textcolor{red}{S}, \textcolor{red}{Tp\_S}: 140K USD
+
+```{r, fig.height= 1.7, fig.width=4.5}
+
+# Data
+dist_neg3 <- tibble(x            = c(130, 133, 135, 140, 145, 150),
+                    y            = rep(x = 0, times = 6),
+                    negotiator   = c("Sofia", "Jackson", "Jackson", "Sofia", "Sofia", "Jackson"),
+                    label_text   = c("Rp_S", "Io_J", "Tp_J", "Tp_S", "Io_S", "Rp_J"))
+
+# Plot
+plot_dist_neg3 <- dist_neg3 %>% 
+    ggplot() + 
+    geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+    geom_vline(aes(xintercept = x), 
+               linetype = "dashed") +
+    geom_point(aes(x = x, y = y, fill = negotiator),
+               shape       = 21,
+               size        = 5,
+               color       = "black", 
+               show.legend = FALSE) +
+    geom_label_repel(aes(x = x, y = y, label = label_text, fill = negotiator),
+                     color       = "white",
+                     alpha       = 0.9, 
+                     show.legend = FALSE) +
+    scale_x_continuous(breaks = dist_neg3$x, 
+                       labels = scales::number_format(prefix = "$", suffix = "K", accuracy = 1)) +
+    scale_fill_tq() +
+    theme(panel.border      = element_rect(fill = NA, color = "black"),
+          plot.background   = element_rect(fill = "#f3fcfc"),
+          panel.background  = element_rect(fill = "#f3f7fc"), 
+          panel.grid.major  = element_blank(),
+          panel.grid.minor  = element_blank(),
+          axis.title        = element_blank(),
+          axis.text.x       = element_text(face = "bold", angle = 90, vjust = 0.5),
+          axis.text.y       = element_blank(), 
+          axis.ticks.y      = element_blank())
+
+plot_dist_neg3
+```
+
+# Elements of a distributive negotiation situation
+
+\definecolor{red}{RGB}{227, 26, 28}
+\definecolor{blue}{RGB}{44, 62, 80}
+
+- Buyer: Jackson (\textcolor{blue}{J}) and Seller: Sofia (\textcolor{red}{S})
+
+    + BATNA \textcolor{blue}{J}, \textcolor{blue}{Tp\_J}: 142K USD
+    + BATNA \textcolor{red}{S}, \textcolor{red}{Tp\_S}: 134K USD
+
+```{r, fig.height= 1.7, fig.width=4.5}
+
+# Data
+dist_neg4 <- tibble(x            = c(130, 133, 134, 135, 140, 142, 145, 150),
+                    y            = rep(x = 0, times = 8),
+                    negotiator   = c("Sofia", "Jackson", "Sofia", "Jackson", "Sofia", "Jackson", "Sofia", "Jackson"),
+                    label_text   = c("Rp_S", "Io_J", "BATNA_S", "Tp_J", "Tp_S", "BATNA_J", "Io_S", "Rp_J"))
+
+# Plot
+plot_dist_neg4 <- dist_neg4 %>% 
+    ggplot() + 
+    geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+    geom_vline(aes(xintercept = x), 
+               linetype = "dashed") +
+    geom_point(aes(x = x, y = y, fill = negotiator),
+               shape       = 21,
+               size        = 5,
+               color       = "black", 
+               show.legend = FALSE) +
+    geom_label_repel(aes(x = x, y = y, label = label_text, fill = negotiator),
+                     color       = "white",
+                     alpha       = 0.9, 
+                     show.legend = FALSE) +
+    scale_x_continuous(breaks = dist_neg4$x, 
+                       labels = scales::number_format(prefix = "$", suffix = "K", accuracy = 1)) +
+    scale_fill_tq() +
+    theme(panel.border      = element_rect(fill = NA, color = "black"),
+          plot.background   = element_rect(fill = "#f3fcfc"),
+          panel.background  = element_rect(fill = "#f3f7fc"), 
+          panel.grid.major  = element_blank(),
+          panel.grid.minor  = element_blank(),
+          axis.title        = element_blank(),
+          axis.text.x       = element_text(face = "bold", angle = 90, vjust = 0.5),
+          axis.text.y       = element_blank(), 
+          axis.ticks.y      = element_blank())
+
+plot_dist_neg4
+```
+
+# Elements of a distributive negotiation situation
+
+\definecolor{red}{RGB}{227, 26, 28}
+\definecolor{blue}{RGB}{44, 62, 80}
+
+- Buyer: Jackson (\textcolor{blue}{J}) and Seller: Sofia (\textcolor{red}{S})
+
+    + Bargaining range[^2]: $[\text{\$130K},\text{\$150K}]$
+    
+        + Is the result of $[\text{\$130K}, \infty) \cap [0, \text{\$150K}]$
+        + If the bargaining range is $\neq \emptyset$, $\text{Rp\_S} \leq \text{BATNA\_J}$ and $\text{BATNA\_S} \leq \text{Rp\_J}$ then an aggrement between \textcolor{blue}{J} and \textcolor{red}{S} is possible
+    
+[^2]: Also known as settlement range or zone of potential agreement
+
+```{r, fig.height= 1.7, fig.width=4.5}
+
+plot_dist_neg4
+```
+
+# Elements of a distributive negotiation situation
+
+\definecolor{red}{RGB}{227, 26, 28}
+\definecolor{blue}{RGB}{44, 62, 80}
+
+- Buyer: Jackson (\textcolor{blue}{J}) and Seller: Sofia (\textcolor{red}{S})
+
+    + In this example the settlement point $\in [\text{Tp\_J}, \text{Tp\_S}] = [\text{\$135K}, \text{\$140K}]$
+
+```{r, fig.height= 1.7, fig.width=4.5}
+
+plot_dist_neg4
+```
+
+# Elements of a distributive negotiation situation
+
+\definecolor{red}{RGB}{227, 26, 28}
+\definecolor{blue}{RGB}{44, 62, 80}
+
+- In the case of a distributive negotiation, it is most likely that the settlement point does not correspond to the target points of the participants in the negotiation.
+
+- In the example of \textcolor{blue}{J} and \textcolor{red}{S} it was implicitly assumed that the negotiation element was the price. This element is known as a __bargaining mix__[^3] where it does not necessarily have to be a single element.
+
+    + For example \textcolor{blue}{J} and \textcolor{red}{S} also can include in the bargaining mix the final date of the sale, whether or not renovations are included or if other items such as furniture and household appliances are added. 
+
+[^3]: It is define as the set of issues that will be negotiated
+
+# Strategies[^4]
+
+```{r, out.width="90%", dev='png'}
+
+grViz("
+digraph boxes_and_circles {
+
+  graph [rankdir = LR]
+
+  node [shape = circle, color = '#2C3E50']
+ 
+  'Strategies';
+
+  node [shape = oval, color = '#E31A1C']
+
+  'Discover\nor\nestimate\nthe\nresistance point';
+  'Influence\nthe\nresistance point\nof the\ncounterpart';
+  
+  node [shape = oval, color = '#18BC9C']
+  
+  '4 major\npropositions';
+  
+  'Strategies' -> 'Discover\nor\nestimate\nthe\nresistance point';
+  'Strategies' -> 'Influence\nthe\nresistance point\nof the\ncounterpart';
+  
+  'Influence\nthe\nresistance point\nof the\ncounterpart' -> '4 major\npropositions';
+  
+}
+")
+```
+
+[^4]: Check out [@lewicki_essentials_2016, Chapter 2, p 33-35]
+
+# Tactics[^5]
+
+```{r, out.width="90%", dev='png'}
+
+grViz("
+digraph boxes_and_circles {
+
+  graph [rankdir = LR]
+
+  node [shape = circle, color = '#2C3E50']
+ 
+  'Tactics';
+
+  node [shape = circle, color = '#E31A1C']
+
+  'Estimation';
+  'Control\ninformation\nsend';
+  
+  node [shape = oval, color = '#18BC9C']
+  
+  'Target\npoints';
+  'Resistance\npoints';
+  'Costs of\nending\nthe negotiation';
+  'Target and settlement\npoints';
+  
+  node [shape = oval, color = '#CCBE93']
+  
+  'Direct\nassessment';
+  'Indirect\nassessment';
+  'Screening\nactivities';
+  'Direct action or\nalter impressions';
+  
+  'Tactics' -> 'Estimation';
+  'Tactics' -> 'Control\ninformation\nsend';
+  
+  'Control\ninformation\nsend' -> 'Target and settlement\npoints';
+  
+  'Estimation' -> 'Target\npoints';
+  'Estimation' -> 'Resistance\npoints';
+  'Estimation' -> 'Costs of\nending\nthe negotiation';
+  
+  'Target\npoints' -> 'Direct\nassessment';
+  'Resistance\npoints' -> 'Direct\nassessment';
+  'Costs of\nending\nthe negotiation' -> 'Direct\nassessment';
+  'Target\npoints' -> 'Indirect\nassessment';
+  'Resistance\npoints' -> 'Indirect\nassessment';
+  'Costs of\nending\nthe negotiation' -> 'Indirect\nassessment';
+  'Target and settlement\npoints' -> 'Screening\nactivities';
+  'Target and settlement\npoints' -> 'Direct action or\nalter impressions';
+}
+")
+```
+
+[^5]: Check out [@lewicki_essentials_2016, Chapter 2, p 36-42]
+
+# Tactics[^6]
+
+```{r, out.width="90%", dev='png'}
+
+grViz("
+digraph boxes_and_circles {
+
+  graph [rankdir = LR]
+
+  node [shape = circle, color = '#2C3E50']
+ 
+  'Tactics';
+
+  node [shape = circle, color = '#E31A1C']
+
+  'Modify the\nperception';
+  'Increase the costs\nof delaying negotiations';
+  
+  node [shape = oval, color = '#18BC9C']
+  
+  'Target\npoints';
+  'Resistance\npoints';
+  'Costs of\nending\nthe negotiation';
+  
+  node [shape = oval, color = '#CCBE93']
+  
+  'Alter the impressions\nof the counterpart';
+  'Make demands and\npositions appear\nmore or less unattractive';
+  'Disruptive action';
+  'Alliance with outsiders';
+  'Schedule manipulation';
+  
+  'Tactics' -> 'Modify the\nperception';
+  'Tactics' -> 'Increase the costs\nof delaying negotiations';
+  
+  'Modify the\nperception' -> 'Target\npoints';
+  'Modify the\nperception' -> 'Resistance\npoints';
+  'Modify the\nperception' -> 'Costs of\nending\nthe negotiation';
+  
+  'Target\npoints' -> 'Alter the impressions\nof the counterpart';
+  'Resistance\npoints' -> 'Alter the impressions\nof the counterpart';
+  'Costs of\nending\nthe negotiation' -> 'Alter the impressions\nof the counterpart';
+  'Target\npoints' -> 'Make demands and\npositions appear\nmore or less unattractive';
+  'Resistance\npoints' -> 'Make demands and\npositions appear\nmore or less unattractive';
+  'Costs of\nending\nthe negotiation' -> 'Make demands and\npositions appear\nmore or less unattractive';
+  'Increase the costs\nof delaying negotiations' -> 'Disruptive action';
+  'Increase the costs\nof delaying negotiations' -> 'Alliance with outsiders';
+  'Increase the costs\nof delaying negotiations' -> 'Schedule manipulation';
+  
+}
+")
+```
+
+[^6]: Check out [@lewicki_essentials_2016, Chapter 2, p 36-42]
+
+# Aspects about taking positions during a negotiation
+
+- In [@lewicki_essentials_2016, Chapter 2, p 43-49] the recommended positions to be taken with regard to the following elements are pointed out:
+
+    + __Opening offers__
+    
+        + What should be the initial offer?
+        + Should the initial offer be near or far from our own resistance point?
+        
+    + __Opening stance__
+    
+        + Should a moderate or aggressive stance be taken?
+        
+    + __Initial concessions__
+    
+        + How wide should the initial concession be?
+
+    + __Final offer__
+    
+        + How to communicate that a particular offer is a final offer?
+        
+# Closing a deal
+
+- The negotiations seek to reach an agreement if possible[^7]. In order to achieve that goal with a greater probability, the following practices are recommended based on what is pointed out in [@lewicki_essentials_2016, Chapter 2, p 49-50]:
+
+    + Offer similar options to the other parties to make the negotiation more flexible.
+    
+    + Assume a closing technique or stance.
+    
+    + Split the difference when a __mutual adjustment__ process has been carried out.
+    
+    + Use __exploding offers__ that refers to setting a deadline where a specific proposal is in force for a limited time.
+    
+    + Use __sweeteners__ that refers to granting special concessions before closing.
+
+[^7]: Remember that negotiation as a form of decision making is not the only method that exists!
+
+# How to face hardball tactics?
+
+- Sometimes in negotiations people use __hardball tactics__. In general in [@lewicki_essentials_2016, Chapter 2, p 50] the authors recommend not to use them as they cause damage in the negotiation process. However, it is important to know them and know how to deal with them.
+
+- The most common __hardball tactics__ are pointed out in [@lewicki_essentials_2016, Chapter 2, p 52-58]: Good Cop/Bad Cop, Lowball/Highball, Bogey, Nibble, Chicken, Intimidation, Aggressive Behavior and Snow Job.
+
+- In [@lewicki_essentials_2016, Chapter 2, p 51] 4 possible strategies to face these tactics are pointed out: discuss them, ignore them, respond in kind and co-opt the other party.
+
+# Acknowledgments
+
+- To my family that supports me
+
+- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+
+- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+
+- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[tidyquant](https://CRAN.R-project.org/package=tidyquant)__, __[ggrepel](https://CRAN.R-project.org/package=ggrepel)__, __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+
+- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
+
+# References
+

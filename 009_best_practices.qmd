@@ -1,0 +1,320 @@
+---
+title: "Best Practices in Negotiations"
+author: "Luis Francisco Gomez Lopez"
+format:
+  beamer:
+    colortheme: dolphin
+    fonttheme: structurebold
+    theme: AnnArbor
+    link-citations: true
+    linkcolor: blue
+    include-in-header:
+      - text: |
+          \usepackage{booktabs}
+          \usepackage{longtable}
+          \usepackage{array}
+          \usepackage{multirow}
+          \usepackage{wrapfig}
+          \usepackage{float}
+          \usepackage{colortbl}
+          \usepackage{pdflscape}
+          \usepackage{tabu}
+          \usepackage{threeparttable}
+          \usepackage{threeparttablex}
+          \usepackage[normalem]{ulem}
+          \usepackage{makecell}
+          \usepackage{xcolor}
+          \usepackage{fontawesome5}
+bibliography: conflict_neg.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo      = FALSE, 
+                      warning   = FALSE, 
+                      message   = FALSE,
+                      fig.align = "center")
+```
+
+```{r libraries}
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(DiagrammeR)
+```
+
+# Contents
+
+- Please Read Me
+- Purpose
+- Final Exam Three Party Coalition Exercise Modified
+- Best Practices in Negotiations
+- What next?
+- Acknowledgments
+- References
+
+# Please Read Me
+
+- Check the message __Welcome greeting__ published in the News Bulletin Board.
+
+- Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+- This presentation is based on [@lewicki_essentials_2016, Chapter 12]
+
+# Purpose
+
+Explore best practices in negotiation and conflict management to achieve successful negotiation.
+
+# Final Exam Three Party Coalition Exercise Modified
+
+- Why the Final Exam is a simulations and with the participation of the entire course?
+
+    + The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people. 
+    
+    + It is not effective to learn individually and only theoretically. 
+    
+    + It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
+    
+- Before taking part, students should review the general and specific instructions of the Final Exam that can be checked at:
+    
+    + Tercer corte 40% > Learning Activities > Final Exam Three Party Coalition Exercise Modified
+
+# Final Exam Three Party Coalition Exercise Modified
+    
+- Also check out in the __Links of interest__ the videos[^1]
+    
+    + _Three-Party Coalition Exercise_ [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
+    
+[^1]: The videos are in english and are recordings of the Three-Party Coalition Exercise simulation
+    
+# Final Exam Three Party Coalition Exercise Modified
+
+- Before the Final Exam begins each student of the group, that has been formed, will be randomly assigned to one and only one role as a negotiator of an organization. The respective roles are:
+
+    + __Group A__
+    + __Group B__
+    + __Group C__
+    
+- The objective of the negotiation is to obtain the highest number of points and determine how they will be divided. This will be reflected in the grade obtained by each student.
+
+# Final Exam Three Party Coalition Exercise Modified
+
+- If an agreement is not reached between the parties of the negotiation, each __Group__ obtains __0 points__ and the grade for each student will be __20__ out of 50:
+
+```{r}
+
+tibble(Group  = c("A", "B", "C"),
+       Points = rep(x = 0, times = 3),
+       Grade  = rep(x = 20, times = 3)) %>% 
+  kable(format = "latex", booktabs = TRUE) %>% 
+  kable_styling(font_size = 9, latex_options = "striped") %>%
+  row_spec(row = 0, bold = TRUE)
+```
+
+# Final Exam Three Party Coalition Exercise Modified
+
+- If an agreement is reached, it can be obtained between 2 or 3 __Groups__:
+
+    + Possible agreements:
+
+        + __Case 1__: __A__ and __B__ decide to reach an agreement to work together, they obtain __118 points__ and must decide how to distribute these points. However, __C__ will be excluded.
+        
+        + __Case 2__: __A__ and __C__ decide to reach an agreement to work together, they obtain __84 points__ and must decide how to distribute these points. However, __B__ will be excluded.
+        
+        + __Case 3__: __B__ and __C__ decide to reach an agreement to work together, they obtain __50 points__ and must decide how to distribute these points. However, __A__ will be excluded.
+        
+        + __Case 4__: __A__, __B__ and __C__ decide to reach an agreement to work together, they obtain __121 points__ and must decide how to distribute these points. Nobody is excluded.
+        
+# Final Exam Three Party Coalition Exercise Modified
+
+- Grades
+
+    + __Case 1__: __A__ and __B__ work together but __C__ is excluded.
+    
+        + __C__ obtains a grade of __35__ out of 50.
+        + The grade of __A__ and __B__ will depend on who gets the most of the __118 points__. The __Group__ that gets the most points will have a grade of __50__ out of __50__ and the other __Group__ gets a grade of __40__ out of __50__. If __A__ and __B__ divide the points equally, whoever gets the highest grade will be assigned randomly.
+        
+    + __Case 2__: __A__ and __C__ work together but __B__ is excluded.
+    
+        + __B__ obtains a grade of __35__ out of 50. 
+        + The grade of __A__ and __C__ will depend on who gets the most of the __84 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __A__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
+        
+# Final Exam Three Party Coalition Exercise Modified
+
+- Grades
+
+    + __Case 3__: __B__ and __C__ work together but __A__ is excluded.
+    
+        + __A__ obtains a grade of __35__ out of 50.
+        + The grade of __B__ and __C__ will depend on who gets the most of the __50 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __B__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
+        
+    + __Case 4__: __A__, __B__ and __C__ work together so nobody is excluded.
+    
+        + The __Group__ that obtains the highest amount of points will have a grade of __50__ out of 50, the __Group__ that obtains the second highest amount of points obtains a grade of __40__ out of 50 and the __Group__ that obtains the lowest amount of points obtains a grade of __35__ out of 50. In case of a tie between any of the __Groups__, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 __Groups__.
+        
+# Final Exam Three Party Coalition Exercise Modified
+
+- Before, during and after the Final Exam remember:
+
+    + __Before__
+
+        + To coordinate __with all the participants of the course or those who eventually attend__ a single group since the activity will consist of a great negotion role play where each student will adopt a role.
+        
+        + To decide whether to appoint one representative per __Group__ and the remaining students act as __constituents__ or if all the members of the __Group__ participate in the discussion.
+        
+# Final Exam Three Party Coalition Exercise Modified
+
+- Before, during and after the Final Exam remember:
+
+    + __During__
+
+        + You have to make 2 decisions: Who do you want to work with? How will the points be divided?
+        + Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
+        + If an agreement is reached and the same amount of points is obtained as another __Group__ then the highest grade will be assigned randomly within the __Groups__ that obtained the same amount of points.
+        + It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
+
+    + __After__
+    
+        + Once the negotiation is over, which should last a maximum of 30 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
+        
+# Best Practices in Negotiations
+
+```{r fig_1, out.width="90%", dev='png'}
+
+grViz(diagram = '
+      
+      digraph boxes_and_circles {
+      
+      graph [rankdir = LR]
+      
+      node[shape = circle, color = "#2C3E50"]
+      
+      "Best\nPractices";
+      
+      node[shape = oval, color = "#E31A1C"]
+      
+      Planning;
+      "Structure of\nthe Negotiation";
+      BATNA;
+      "Negotiation is\nnot necessarily the\nonly option";
+      "Handling the apparently opposite\naspects of negotiation";
+      
+      node[shape = oval, color = "#18BC9C"]
+      
+      "Own aspects"
+      "Other parties aspects"
+      "Distributive";
+      "Integrative";
+      "Blend of both";
+      "Claiming value vs Creating Value";
+      "Core principles vs Flexible thinking"
+      "Being Open vs Being Closed";
+      "Being Trusting vs Being Distrusting";
+      
+       "Best\nPractices" -> Planning;
+       "Best\nPractices" -> "Structure of\nthe Negotiation";
+       "Best\nPractices" -> BATNA;
+       "Best\nPractices" -> "Negotiation is\nnot necessarily the\nonly option";
+       "Best\nPractices" -> "Handling the apparently opposite\naspects of negotiation";
+       
+       Planning -> "Own aspects"
+       Planning -> "Other parties aspects"
+      "Structure of\nthe Negotiation" -> "Distributive";
+      "Structure of\nthe Negotiation" -> "Integrative";
+      "Structure of\nthe Negotiation" -> "Blend of both";
+      "Handling the apparently opposite\naspects of negotiation" -> "Claiming value vs Creating Value";
+      "Handling the apparently opposite\naspects of negotiation" -> "Core principles vs Flexible thinking"
+      "Handling the apparently opposite\naspects of negotiation" -> "Being Open vs Being Closed";
+      "Handling the apparently opposite\naspects of negotiation" -> "Being Trusting vs Being Distrusting";
+      
+      }
+      
+      ')
+```
+
+# Best Practices in Negotiations
+
+```{r fig_2, out.width="90%", dev='png'}
+
+grViz(diagram = '
+      
+      digraph boxes_and_circles {
+      
+      graph [rankdir = LR]
+      
+      node[shape = circle, color = "#2C3E50"]
+      
+      "Best\nPractices";
+      
+      node[shape = oval, color = "#E31A1C"]
+      
+      "Remember intangible\nfactors";
+      "Managing Coalitions";
+      "Protect your reputation";
+      "Build fairness upon principles"
+      "Continue to Learn\nfrom Your Experience"
+      
+      node[shape = oval, color = "#18BC9C"]
+      
+      "Against You";
+      "For You";
+      "Unknown";
+      "Establish clear principles";
+      "Use external benchmarks";
+      "Reach consensus about\nstandards of fairness"
+      
+       "Best\nPractices" -> "Remember intangible\nfactors";
+       "Best\nPractices" -> "Managing Coalitions";
+       "Best\nPractices" -> "Protect your reputation";
+       "Best\nPractices" -> "Build fairness upon principles";
+       "Best\nPractices" -> "Continue to Learn\nfrom Your Experience"
+       
+       "Managing Coalitions" -> "Against You";
+       "Managing Coalitions" -> "For You";
+       "Managing Coalitions" -> "Unknown"; 
+      
+      "Build fairness upon principles" -> "Establish clear principles";
+      "Build fairness upon principles" -> "Use external benchmarks";
+      "Build fairness upon principles" -> "Reach consensus about\nstandards of fairness"
+      
+      }
+      
+      ')
+```
+
+# What next?
+
+- Book
+
+    + Raiffa, H., & Richardson, J. (2007). Negotiation analysis: The science and art of collaborative decision making. Cambridge (Mass.: Harvard University Press.
+
+- Online resource
+
+    + The Program on Negotiation (PON): [https://www.pon.harvard.edu/](https://www.pon.harvard.edu/)
+
+- Postgraduate education:
+
+    + __UMNG__: [https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales](https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales)
+    
+        + __Maestría en Relaciones y Negocios Internacionales__: Negociación Internacional
+        
+    + __Uniandes__: [https://administracion.uniandes.edu.co/programas/posgrados/especializacion-negociacion/](https://administracion.uniandes.edu.co/programas/posgrados/especializacion-negociacion/)
+    
+        + __Especialización en Negociación__: programa de la Facultad de Administración
+
+# Acknowledgments
+
+- To my family that supports me
+
+- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+
+- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+
+- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__,
+__[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+
+- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
+    
+# References
