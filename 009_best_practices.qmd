@@ -1,6 +1,10 @@
 ---
 title: "Best Practices in Negotiations"
 author: "Luis Francisco Gomez Lopez"
+date: 2024-01-27
+execute: 
+  echo: false
+  warning: false
 format:
   beamer:
     colortheme: dolphin
@@ -8,6 +12,7 @@ format:
     theme: AnnArbor
     link-citations: true
     linkcolor: blue
+    fig-align: center
     include-in-header:
       - text: |
           \usepackage{booktabs}
@@ -181,7 +186,9 @@ tibble(Group  = c("A", "B", "C"),
         
 # Best Practices in Negotiations
 
-```{r fig_1, out.width="90%", dev='png'}
+```{r }
+#| out-width: 90%
+#| fig-align: center
 
 grViz(diagram = '
       
@@ -236,7 +243,9 @@ grViz(diagram = '
 
 # Best Practices in Negotiations
 
-```{r fig_2, out.width="90%", dev='png'}
+```{r }
+#| out-width: 90%
+#| fig-align: center
 
 grViz(diagram = '
       
@@ -294,6 +303,8 @@ grViz(diagram = '
 
     + The Program on Negotiation (PON): [https://www.pon.harvard.edu/](https://www.pon.harvard.edu/)
 
+# What next?
+
 - Postgraduate education:
 
     + __UMNG__: [https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales](https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales)
@@ -312,7 +323,7 @@ grViz(diagram = '
 
 - To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__,
+- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__,
 __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
 
 - To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license

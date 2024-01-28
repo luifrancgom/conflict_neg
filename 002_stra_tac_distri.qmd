@@ -1,7 +1,10 @@
 ---
 title: "Strategy and Tactics of Distributive Bargaining"
 author: "Luis Francisco Gomez Lopez"
-date: 2023-07-14
+date: 2024-01-27
+execute: 
+  echo: false
+  warning: false
 format:
   beamer:
     colortheme: dolphin
@@ -9,6 +12,7 @@ format:
     theme: AnnArbor
     link-citations: true
     linkcolor: blue
+    fig-align: center
     include-in-header:
       - text: |
           \usepackage{booktabs}
@@ -29,15 +33,7 @@ format:
 bibliography: conflict_neg.bib
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo      = FALSE, 
-                      warning   = FALSE, 
-                      message   = FALSE,
-                      fig.align = "center")
-```
-
 ```{r libraries}
-
 library(tidyverse)
 library(tidyquant)
 library(ggrepel)
@@ -81,8 +77,9 @@ Understand the basic elements of a distributive negotiation situation, as well a
     + Resistance point \textcolor{blue}{J}, \textcolor{blue}{Rp\_J}: 150K USD
     + Resistance point \textcolor{red}{S}, \textcolor{red}{Rp\_S}: 130K USD
 
-```{r, fig.height= 1.7, fig.width=4.5}
-
+```{r }
+#| fig-height: 1.7
+#| fig-width: 4.5
 # Data
 dist_neg1 <- tibble(x            = c(130, 150),
                     y            = rep(x = 0, times = 2),
@@ -132,8 +129,9 @@ plot_dist_neg1
     + Initial offer \textcolor{blue}{J}, \textcolor{blue}{Io\_J}: 133K USD
     + Initial offer \textcolor{red}{S}, \textcolor{red}{Io\_S}: 145K USD
 
-```{r, fig.height= 1.7, fig.width=4.5}
-
+```{r }
+#| fig-height: 1.7
+#| fig-width: 4.5
 # Data
 dist_neg2 <- tibble(x            = c(130, 133, 145, 150),
                     y            = rep(x = 0, times = 4),
@@ -181,8 +179,9 @@ plot_dist_neg2
     + Target point \textcolor{blue}{J}, \textcolor{blue}{Tp\_J}: 135K USD
     + Target point \textcolor{red}{S}, \textcolor{red}{Tp\_S}: 140K USD
 
-```{r, fig.height= 1.7, fig.width=4.5}
-
+```{r }
+#| fig-height: 1.7
+#| fig-width: 4.5
 # Data
 dist_neg3 <- tibble(x            = c(130, 133, 135, 140, 145, 150),
                     y            = rep(x = 0, times = 6),
@@ -230,8 +229,9 @@ plot_dist_neg3
     + BATNA \textcolor{blue}{J}, \textcolor{blue}{Tp\_J}: 142K USD
     + BATNA \textcolor{red}{S}, \textcolor{red}{Tp\_S}: 134K USD
 
-```{r, fig.height= 1.7, fig.width=4.5}
-
+```{r }
+#| fig-height: 1.7
+#| fig-width: 4.5
 # Data
 dist_neg4 <- tibble(x            = c(130, 133, 134, 135, 140, 142, 145, 150),
                     y            = rep(x = 0, times = 8),
@@ -283,8 +283,9 @@ plot_dist_neg4
     
 [^2]: Also known as settlement range or zone of potential agreement
 
-```{r, fig.height= 1.7, fig.width=4.5}
-
+```{r }
+#| fig-height: 1.7
+#| fig-width: 4.5
 plot_dist_neg4
 ```
 
@@ -297,8 +298,9 @@ plot_dist_neg4
 
     + In this example the settlement point $\in [\text{Tp\_J}, \text{Tp\_S}] = [\text{\$135K}, \text{\$140K}]$
 
-```{r, fig.height= 1.7, fig.width=4.5}
-
+```{r }
+#| fig-height: 1.7
+#| fig-width: 4.5
 plot_dist_neg4
 ```
 
@@ -317,7 +319,9 @@ plot_dist_neg4
 
 # Strategies[^4]
 
-```{r, out.width="90%", dev='png'}
+```{r }
+#| out-width: 90%
+#| fig-align: center
 
 grViz("
 digraph boxes_and_circles {
@@ -350,7 +354,9 @@ digraph boxes_and_circles {
 
 # Tactics[^5]
 
-```{r, out.width="90%", dev='png'}
+```{r }
+#| out-width: 90%
+#| fig-align: center
 
 grViz("
 digraph boxes_and_circles {
@@ -405,7 +411,9 @@ digraph boxes_and_circles {
 
 # Tactics[^6]
 
-```{r, out.width="90%", dev='png'}
+```{r }
+#| out-width: 90%
+#| fig-align: center
 
 grViz("
 digraph boxes_and_circles {
@@ -511,9 +519,8 @@ digraph boxes_and_circles {
 
 - To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[tidyquant](https://CRAN.R-project.org/package=tidyquant)__, __[ggrepel](https://CRAN.R-project.org/package=ggrepel)__, __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[tidyquant](https://CRAN.R-project.org/package=tidyquant)__, __[ggrepel](https://CRAN.R-project.org/package=ggrepel)__, __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
 
 - To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
 
 # References
-

@@ -1,7 +1,10 @@
 ---
 title: "Perception, Cognition, and Emotion"
 author: "Luis Francisco Gomez Lopez"
-date: 2023-07-14
+date: 2024-01-27
+execute: 
+  echo: false
+  warning: false
 format:
   beamer:
     colortheme: dolphin
@@ -9,6 +12,7 @@ format:
     theme: AnnArbor
     link-citations: true
     linkcolor: blue
+    fig-align: center
     include-in-header:
       - text: |
           \usepackage{booktabs}
@@ -29,16 +33,7 @@ format:
 bibliography: conflict_neg.bib
 ---
 
-
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo      = FALSE, 
-                      warning   = FALSE, 
-                      message   = FALSE,
-                      fig.align = "center")
-```
-
 ```{r libraries}
-
 library(knitr)
 library(DiagrammeR)
 ```
@@ -82,19 +77,19 @@ Understand how perceptions, knowledge and emotions affect a negotiation process.
 
 - Example of a distortion in perception
 
-![Checker Shadow illusion [@adelson_checkershadow_1995]](005_checkershadow_double_full.jpg){#fig-checker_shadow_illusion fig-alt="Checker Shadow illusion" fig-align="center" width="400px" height="400px"}
+![Checker Shadow illusion [@adelson_checkershadow_1995]](005_checkershadow_double_full.jpg){#fig-checker-shadow-illusion fig-alt="Checker Shadow illusion" width="400px" height="400px"}
 
 # Perception
 
 - Example of a distortion in perception
 
-![Sander's parallelogram [@luckiesh_visual_2017]](005_sander_Illusion.png){#fig-sanders_parallelogram fig-alt="Sander's parallelogram" fig-align="center" width="400px" height="400px"}
+![Sander's parallelogram [@luckiesh_visual_2017]](005_sander_Illusion.png){#fig-sanders-parallelogram fig-alt="Sander's parallelogram" width="400px" height="400px"}
 
 # Perception
 
 - Example of a distortion in perception
 
-![Müller-Lyer Illusion [@zeman_muller-lyer_2013]](005_muller_lLyer_circle.png){#fig-muller_lyer_illusion fig-alt="Müller-Lyer Illusion" fig-align="center" width="300px" height="300px"}
+![Müller-Lyer Illusion [@zeman_muller-lyer_2013]](005_muller_lLyer_circle.png){#fig-muller-lyer-illusion fig-alt="Müller-Lyer Illusion" width="300px" height="300px"}
 
 # Framing
 
@@ -149,7 +144,9 @@ Understand how perceptions, knowledge and emotions affect a negotiation process.
 
 - A __cognitive bias__ is defined as a systematic error that affects the decisions and judgments. In [@lewicki_essentials_2016, p 150-156] 12 __cognitive bias__ that may occur in the context of a negotiation are described[^7]:
 
-```{r, out.width="70%", dev='png'}
+```{r }
+#| out-width: 70%
+#| fig-align: center
 
 grViz("
 digraph boxes_and_circles {
@@ -201,7 +198,9 @@ digraph boxes_and_circles {
 
 - A __cognitive bias__ is defined as a systematic error that affects the decisions and judgments. In [@lewicki_essentials_2016, p 150-156] 12 __cognitive bias__ that may occur in the context of a negotiation are described[^8]:
 
-```{r, out.width="70%", dev='png'}
+```{r }
+#| out-width: 70%
+#| fig-align: center
 
 grViz("
 digraph boxes_and_circles {
@@ -259,9 +258,10 @@ digraph boxes_and_circles {
 
 # An alternative approach: Mood and Emotion
 
-- Positive emotions and positive consequences for negotiations [@lewicki_essentials_2016, p 157-158]:
-
-```{r, out.width="90%", dev='png'}
+```{r }
+#| out-width: 90%
+#| fig-cap: Positive emotions and positive consequences for negotiations [@lewicki_essentials_2016, p 157-158]
+#| fig-align: center
 
 grViz("
 digraph boxes_and_circles {
@@ -302,9 +302,10 @@ digraph boxes_and_circles {
 
 # An alternative approach: Mood and Emotion
 
-- Aspects of the negotiation process and positive emotions [@lewicki_essentials_2016, p 159]:
-
-```{r, out.width="90%", dev='png'}
+```{r}
+#| out-width: 90%
+#| fig-cap: Aspects of the negotiation process and positive emotions [@lewicki_essentials_2016, p 159]
+#| fig-align: center
 
 grViz("
 digraph boxes_and_circles {
@@ -348,7 +349,7 @@ digraph boxes_and_circles {
 
 - To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__ and the authors and maintainers of the packages __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
 
 - To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
 
