@@ -155,7 +155,7 @@ Understand the definition of negotiation, the elements in general of this proces
 
 ```{r}
 #| label: fig-conflict-diagnostic-model
-#| fig-cap: Conflict Diagnostic Model [@lewicki_negociacion_2024, p 23] and [@greenhalgh_smr_1986, p 47]
+#| fig-cap: Conflict diagnostic model [@lewicki_negociacion_2024, p 23] and [@greenhalgh_smr_1986, p 47]
 
 conflic_diag <- tibble(Dimension   = rep(
                          c("Simmetry of conflict",
