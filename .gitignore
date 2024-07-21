@@ -49,4 +49,4 @@ _000_documents
 _000_files
 
 # Quarto files
-.quarto
+.quarto/
