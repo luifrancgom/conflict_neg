@@ -1,166 +1,173 @@
 ---
-title: "The Nature of Negotiation"
-author: "Luis Francisco Gomez Lopez"
-date: 2024-01-27
-execute: 
-  echo: false
-  warning: false
-format:
+title: The Nature of Negotiation
+author: 
+  - Luis Francisco Gómez López
+institute: 
+  - FAEDIS
+date: last-modified
+format: 
   beamer:
     colortheme: dolphin
     fonttheme: structurebold
     theme: AnnArbor
     link-citations: true
-    linkcolor: blue
+    colorlinks: true
+    toc: true
+    slide-level: 2
+    section-titles: false
+    keep-tex: true
     include-in-header:
-      - text: |
-          \usepackage{booktabs}
-          \usepackage{longtable}
-          \usepackage{array}
-          \usepackage{multirow}
-          \usepackage{wrapfig}
-          \usepackage{float}
-          \usepackage{colortbl}
-          \usepackage{pdflscape}
-          \usepackage{tabu}
-          \usepackage{threeparttable}
-          \usepackage{threeparttablex}
-          \usepackage[normalem]{ulem}
-          \usepackage{makecell}
-          \usepackage{xcolor}
+      file: 000_tex_files/preamble.tex
+fig-cap-location: bottom
+tbl-cap-location: top
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
 bibliography: conflict_neg.bib
 ---
 
-```{r libraries}
+```{r}
+#| label: libraries
+
 library(tidyverse)
 library(tidyquant)
+library(ggnewscale)
 ```
-
-# Contents
-
-- Please Read Me
-- Purpose
-- Definition of negotiation
-- Elements of negotiation situations
-- Interdependence
-- Approaches and tactics to negotiation
-- Conflict
-- Acknowledgments
-- References
 
 # Please Read Me
 
-- Check the message __Welcome greeting__ published in the News Bulletin Board.
+##
 
-- Dear student please edit your profile uploading a photo where your face is clearly visible.
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
 
-- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
 
-- This presentation is based on [@lewicki_essentials_2016, Chapter 1]
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 1]
 
 # Purpose
+
+##
 
 Understand the definition of negotiation, the elements in general of this process and the main types of negotiation that have been identified in the literature as well as the relationship between negotiation and conflict management.
 
 # Definition of negotiation
 
-- Definition of negotiation that is going to be adopted in the course:
+-   Definition of negotiation that is going to be adopted in the course:
 
-    + " *a form of __decision making__ in which two or more parties talk with one another in an effort to __resolve their opposing interests__.*" [@lewicki_essentials_2016, Chapter 1, p. 3]
-    
-    + Also check out in the __Links of interest__ the video
-    
-        + _How to negotiate properly?_[^1] [@magic_markers_como_2018]
-    
+    -   " *a form of **decision making** in which two or more parties talk with one another in an effort to **resolve their opposing interests**.*" [@lewicki_negociacion_2024, Chapter 1, p. 3]
+
+    -   Also check out in the **Links of interest** the video
+
+        -   *How to negotiate properly?*[^1] [@magic_markers_como_2018]
+
 [^1]: The video is in spanish
 
 # Elements of negotiation situations
 
-- 6 characteristics are mentioned in [@lewicki_essentials_2016, Chapter 1, p 6-9] 
+##
 
-    + Element 1 assumes that in a negotiation there are two or more parties involved (people, groups or organizations).
-    
-    + Elements 2, 3, 4 and 5 implies that there exist __interdependence__ between the parties involved[^2]: 
-    
-        + Parties depend on each other to achieve their own preferred outcome [@lewicki_essentials_2016, Chapter 1, p 10]
-        
-    + Element 6 considers that there are tangible and intangible aspects:
-    
-        + __Tangibles__: aspects of which it is sought to reach an agreement within the negotiation (prices, terms of a contract, product specifications).
-        
-        + __Intangibles__: psychological motivations implicit in a negotiation (personal values and emotions of the parties involved).
-        
-[^2]: Dear student if you don’t need to jointly agree with other parties to achieve your goals please don’t negotiate with them. Use another form of __decision making process__!
+-   6 characteristics are mentioned in [@lewicki_negociacion_2024, Chapter 1, p 6-9]
+
+    -   Element 1 assumes that in a negotiation there are two or more parties involved (people, groups or organizations).
+
+    -   Elements 2, 3, 4 and 5 implies that there exist **interdependence** between the parties involved[^2]:
+
+        -   Parties depend on each other to achieve their own preferred outcome [@lewicki_negociacion_2024, Chapter 1, p 10]
+
+    -   Element 6 considers that there are tangible and intangible aspects:
+
+        -   **Tangibles**: aspects of which it is sought to reach an agreement within the negotiation (prices, terms of a contract, product specifications).
+
+        -   **Intangibles**: psychological motivations implicit in a negotiation (personal values and emotions of the parties involved).
+
+[^2]: Dear student if you don’t need to jointly agree with other parties to achieve your goals please don’t negotiate with them. Use another form of **decision making process**
 
 # Interdependence
 
-- The type of interdependence that occurs between the parties affects the dynamics and the results of a negotiation:
+##
 
-    + __Zero-sum or distributive situation__: for one party to obtain a profit,it is necessary for another party to obtain a loss.
-    
-    + __Non-zero-sum or integrative situation__: there exists the __*possibility*__ that all parties involved can obtain a profit without a party obtaining a loss.
+-   The type of interdependence that occurs between the parties affects the dynamics and the results of a negotiation:
 
-- The alternatives shape the interdependence where one way to analyze the alternatives is through the concept of:
+    -   **Zero-sum or distributive situation**: for one party to obtain a profit,it is necessary for another party to obtain a loss.
 
-    + __Best Alternative to a Negotiated Agreement (BATAN)__[^3]
-    
+    -   **Non-zero-sum or integrative situation**: there exists the ***possibility*** that all parties involved can obtain a profit without a party obtaining a loss.
+
+-   The alternatives shape the interdependence where one way to analyze the alternatives is through the concept of:
+
+    -   **Best Alternative to a Negotiated Agreement (BATAN)**[^3]
+
 [^3]: For more details check out [@program_of_negotiation_batna_2012]
 
-# Interdependence
+##
 
-- Because the parties are interdependent during a negotiation there is a process called __mutual adjustment__ where the parties try to influence one another to reach an acceptable agreement.
+-   Because the parties are interdependent during a negotiation there is a process called **mutual adjustment** where the parties try to influence one another to reach an acceptable agreement.
 
-    + At the beginning each party proposes an initial level on the tangible aspects of negotiation.
-    
-    + Then there are replicas and concessions where the __bargaining range__ tends to be reduced.
-    
-    + If the __bargaining range__ is reduced enough to become a point, an agreement is reached.
+    -   At the beginning each party proposes an initial level on the tangible aspects of negotiation.
+
+    -   Then there are replicas and concessions where the **bargaining range** tends to be reduced.
+
+    -   If the **bargaining range** is reduced enough to become a point, an agreement is reached.
 
 # Approaches and tactics to negotiation
 
-- __Distributive Negotiation Approach__: it is conceived that there is only one winner in a particular situation and a course of action is sought to be the winner.
+##
 
-    + Tactic: __claim value__[^4] by doing whatever is necessary to claim the reward or gain the largest piece possible [@lewicki_essentials_2016, Chapter 1, p 16]
-    
-+ __Integrative Negotiation Approach__: attempts are made to find solutions so that both parties feel satisfied and reach their goals.
-    
-    + Tactic: __create value__[^5] by finding the way for the parties involved to achieve their objectives by obtaining more resources
-    
+-   **Distributive Negotiation Approach**: it is conceived that there is only one winner in a particular situation and a course of action is sought to be the winner.
+
+    -   Tactic: **claim value**[^4] by doing whatever is necessary to claim the reward or gain the largest piece possible [@lewicki_negociacion_2024, Chapter 1, p 16]
+
+-   **Integrative Negotiation Approach**: attempts are made to find solutions so that both parties feel satisfied and reach their goals.
+
+    -   Tactic: **create value**[^5] by finding the way for the parties involved to achieve their objectives by obtaining more resources
+
 [^4]: For more details check out [@spangler_creating_2003]
+
 [^5]: For more details check out [@spangler_creating_2003]
 
 # Conflict
 
-- For definitions of __conflict__ please check out [@lewicki_essentials_2016, Chapter 1, p 18] 
+##
 
-    + 3 different definitions that are related are mentioned
-    
-- For the different levels of __conflict__ please check out [@lewicki_essentials_2016, Chapter 1, p 19] 
+-   For definitions of **conflict** please check out [@lewicki_negociacion_2024, Chapter 1, p 20]
 
-    + 4 levels on conflict are mentioned
-    + We will not cover the first one in the course: 
-    
-      + _Intrapersonal or intrapsychic conflict_
-      
-- For dysfunctions and functions of __conflict__ please check out [@lewicki_essentials_2016, Chapter 1, p 19-21] 
+    -   3 different definitions that are related are mentioned
 
-    + Dysfunctions: negative aspects of conflict
-    + Functions: productive aspects of conflict
-    
-# Conflict
+-   For the different levels of **conflict** please check out [@lewicki_negociacion_2024, Chapter 1, pp. 20-21]
 
-```{r }
-#| out-width: 90%
-# Data
-conflic_diag <- tibble(Dimension   = rep(c("Simmetry of conflict",
+    -   4 levels on conflict are mentioned
+
+    -   We will not cover the first one in the course:
+
+        -   *Intrapersonal or intrapsychic conflict*
+
+-   For dysfunctions and functions of **conflict** please check out [@lewicki_negociacion_2024, Chapter 1, pp. 21-22]
+
+    -   Dysfunctions: negative aspects of conflict
+    -   Functions: productive aspects of conflict
+
+##
+
+```{r}
+#| label: fig-conflict-diagnostic-model
+#| fig-cap: Conflict Diagnostic Model [@lewicki_negociacion_2024, p 23] and [@greenhalgh_smr_1986, p 47]
+
+conflic_diag <- tibble(Dimension   = rep(
+                         c("Simmetry of conflict",
                            "Involment of third parties",
                            "Structure of the parties",
                            "Interaction",
                            "Interdependence",
                            "Size of stakes",
-                           "Issue in question"), times = 2),
+                           "Issue in question"), 
+                           times = 2),
        Level       = c(rep("Easy to resolve", times = 7),
-                       rep("Difficult to Resolve", times = 7)),
+                       rep("Difficult to resolve", times = 7)),
        label_text  = c("Equal damage",
                        "Trusted third parties",
                        "Strong Leadership",
@@ -174,38 +181,42 @@ conflic_diag <- tibble(Dimension   = rep(c("Simmetry of conflict",
                        "Single interaction",
                        "Distributive situation",
                        "Big consequences",
-                       "Fundamental principles")) %>% 
-    mutate(Level = as.factor(Level))
+                       "Fundamental principles")) |> 
+    mutate(Level = factor(Level, 
+                          levels = c("Easy to resolve", 
+                                     "Difficult to resolve")))
 
 # Data auxiliary
-conflic_diag_level <- conflic_diag %>% 
-    slice(1:7) %>%
-    select(-label_text) %>% 
-    set_names(nm = c("Dimension", "Level_easy")) %>% 
-    left_join(y = conflic_diag %>% 
-                  slice(8:14) %>%
-                  select(-label_text) %>% 
+conflic_diag_level <- conflic_diag |> 
+    slice(1:7) |>
+    select(-label_text) |> 
+    set_names(nm = c("Dimension", "Level_easy")) |> 
+    left_join(y = conflic_diag |> 
+                  slice(8:14) |>
+                  select(-label_text) |> 
                   set_names(nm = c("Dimension", "Level_difficult")),
-                            by = "Dimension")
+                            by = join_by(Dimension))
     
-conflic_diag %>% 
+conflic_diag |> 
     ggplot() +
     geom_segment(data = conflic_diag_level,
                  aes(x = Level_easy, xend = Level_difficult,
                      y = Dimension,  yend = Dimension)) +
-    geom_label(aes(x = Level, y = Dimension, label = label_text, fill = Dimension), 
+    geom_label(aes(x = Level, y = Dimension, 
+                   label = label_text, fill = Dimension), 
                show.legend = FALSE,
                fontface    = "bold",
                size        = 3, 
                nudge_y     = 0.4,
                alpha       = 0.4) +
-    geom_point(aes(x = Level, y = Dimension, color = Level),
-               size  = 5) + 
-    scale_color_tq() +
-    scale_fill_manual(values = palette_light()[4:10] %>% as.vector()) +
-    labs(x       = "",
-         title   = "Conflict Diagnostic Model",
-         caption = "Source: (Lewicki, Barry, and Saunders 2016, Chapter 1, p 22)") +
+    scale_fill_manual(values = unname(palette_light())[4:10]) +
+    ggnewscale::new_scale(new_aes = "fill") +
+    geom_point(aes(x = Level, y = Dimension, fill = Level),
+               size  = 5,
+               shape = 21, 
+               color = "black") + 
+    scale_fill_manual(values = unname(palette_light())[1:2]) +
+    labs(x       = NULL) +
     theme(panel.border      = element_rect(fill = NA, color = "black"),
           plot.background   = element_rect(fill = "#f3fcfc"),
           panel.background  = element_rect(fill = "#f3f7fc"),
@@ -219,16 +230,109 @@ conflic_diag %>%
           axis.text         = element_text(face = "bold"))
 ```
 
+# Effective Conflict Management
+
+## 
+
+```{r}
+#| label: fig-dual-concerns-model
+#| fig-cap: Dual concerns model [@lewicki_negociacion_2024, p 24] and [@pruitt_social_2004, p 41]
+
+dual_concern_model <- tibble(x = c(1, 1, 3, 5, 5),
+                             y = c(1, 5, 3, 1, 5),
+                             labels = c("Inaction",
+                                        "Yielding",
+                                        "Compromising",
+                                        "Contending",
+                                        "Problem solving"))
+
+dual_concern_model |> 
+    ggplot() + 
+    geom_label(aes(x = x, y = y, label = labels)) +
+    geom_segment(data = tibble(x = 0,
+                               y = 0,
+                               yend = 0, xend = 6),
+                 aes(x = x, y = y,
+                     xend = xend, yend = yend)) +
+    geom_segment(data = tibble(x = 0,
+                               y = 0,
+                               yend = 6, xend = 0),
+                 aes(x = 0, y = 0,
+                     yend = 6, xend = 0)) +
+    scale_x_continuous(limits = c(0, 6)) +
+    labs(x = "Concern about own outcomes",
+         y = "Concern about other’s outcomes") +
+    theme(panel.border      = element_rect(fill = NA, color = "black"),
+          plot.background   = element_rect(fill = "#f3fcfc"),
+          panel.background  = element_rect(fill = "#f3f7fc"),
+          legend.background = element_rect(fill = "#f3fcfc"),  
+          plot.title        = element_text(face = "bold"), 
+          axis.text.x       = element_blank(), 
+          axis.ticks.x      = element_blank(),
+          axis.text.y       = element_blank(), 
+          axis.ticks.y      = element_blank(),
+          axis.title.x      = element_text(face = "bold"),
+          axis.title.y      = element_text(face = "bold"),
+          legend.title      = element_text(face = "bold"),
+          legend.position   = "bottom", 
+          axis.text         = element_text(face = "bold"))
+```
+
+
+# Course and book structure
+
+##
+
+-  Cover in the course
+
+    -   Negotiation Fundamentals 
+    
+        -  [@lewicki_negociacion_2024, chapters 1-5]
+        
+    -   Negotiation Subprocesses
+    
+        -  [@lewicki_negociacion_2024, chapters 6-8]
+        
+    -   Concluding Comments
+    
+        -  [@lewicki_negociacion_2024, chapter 20]
+        
+##
+
+-  Not cover in the course
+        
+    -   Negotiation Subprocesses
+    
+        -  [@lewicki_negociacion_2024, chapter 9]
+        
+    -   Negotiation Contexts
+    
+        -  [@lewicki_negociacion_2024, chapters 10-13]
+        
+    -   Individual Differences
+    
+        -  [@lewicki_negociacion_2024, chapters 14-15]
+        
+    -   Negotiation across Cultures
+    
+        -  [@lewicki_negociacion_2024, chapter 16]
+
+    -   Resolving Differences
+    
+        -  [@lewicki_negociacion_2024, chapter 17-19]
+
 # Acknowledgments
 
-- To my family that supports me
+##
 
-- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+-   To my family that supports me
 
-- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[tidyquant](https://CRAN.R-project.org/package=tidyquant)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
 
-- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**tidyquant**](https://CRAN.R-project.org/package=tidyquant), [**ggnewscale**](https://CRAN.R-project.org/package=ggnewscale) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
 
-# References
+-   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
+
+# References {.allowframebreaks}
