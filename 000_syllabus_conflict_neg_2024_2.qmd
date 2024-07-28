@@ -88,7 +88,7 @@ Develop in students, negotiation conflict skills in diverse scenarios through th
 
     -   Plan negotiation strategies based on information from the environment to obtain collective benefits.
 
-    -  Recognize the importance of ethics in conflict negotiation to generate long-term relationships with the organization's stakeholders.
+    -   Recognize the importance of ethics in conflict negotiation to generate long-term relationships with the organization's stakeholders.
 
 -   Competencies SABE curriculum
 
@@ -112,7 +112,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
        `Chapter or Round` = c("1","2","3", "I", "4", "6", "7", "II", "8", "5", "20", "III"),
        `Initial page`  = c("1", "31", "69", " ", "102", "175", "210", " ", "235", "133", "555", " "),
        `Final page`    = c("30", "67", "100", " ", "131", "208", "234", " ", "261", "174", "564", " "),
-       `Number of pages` = c("30", "37", "32", " ", "30", "34", "25", " ", "27", "42", "10", " ")) %>% 
+       `Number of pages` = c("30", "37", "32", " ", "30", "34", "25", " ", "27", "42", "10", " ")) |> 
     kable()
 ```
 

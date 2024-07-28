@@ -1,114 +1,102 @@
 ---
-title: "Best Practices in Negotiations"
-author: "Luis Francisco Gomez Lopez"
-date: 2024-01-27
-execute: 
-  echo: false
-  warning: false
-format:
+title: Best Practices in Negotiations
+author: 
+  - Luis Francisco Gómez López
+institute: 
+  - FAEDIS
+date: last-modified
+format: 
   beamer:
     colortheme: dolphin
     fonttheme: structurebold
     theme: AnnArbor
     link-citations: true
-    linkcolor: blue
-    fig-align: center
+    colorlinks: true
+    toc: true
+    slide-level: 2
+    section-titles: false
+    keep-tex: true
     include-in-header:
-      - text: |
-          \usepackage{booktabs}
-          \usepackage{longtable}
-          \usepackage{array}
-          \usepackage{multirow}
-          \usepackage{wrapfig}
-          \usepackage{float}
-          \usepackage{colortbl}
-          \usepackage{pdflscape}
-          \usepackage{tabu}
-          \usepackage{threeparttable}
-          \usepackage{threeparttablex}
-          \usepackage[normalem]{ulem}
-          \usepackage{makecell}
-          \usepackage{xcolor}
-          \usepackage{fontawesome5}
+      file: 000_tex_files/preamble.tex
+fig-cap-location: bottom
+tbl-cap-location: top
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
 bibliography: conflict_neg.bib
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo      = FALSE, 
-                      warning   = FALSE, 
-                      message   = FALSE,
-                      fig.align = "center")
-```
-
-```{r libraries}
+```{r}
+#| label: libraries
 
 library(tidyverse)
 library(knitr)
 library(kableExtra)
-library(DiagrammeR)
 ```
-
-# Contents
-
-- Please Read Me
-- Purpose
-- Final Exam Three Party Coalition Exercise Modified
-- Best Practices in Negotiations
-- What next?
-- Acknowledgments
-- References
 
 # Please Read Me
 
-- Check the message __Welcome greeting__ published in the News Bulletin Board.
+## 
 
-- Dear student please edit your profile uploading a photo where your face is clearly visible.
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
 
-- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
 
-- This presentation is based on [@lewicki_essentials_2016, Chapter 12]
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 20]
 
 # Purpose
+
+##
 
 Explore best practices in negotiation and conflict management to achieve successful negotiation.
 
 # Final Exam Three Party Coalition Exercise Modified
 
-- Why the Final Exam is a simulations and with the participation of the entire course?
+##
 
-    + The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people. 
-    
-    + It is not effective to learn individually and only theoretically. 
-    
-    + It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
-    
-- Before taking part, students should review the general and specific instructions of the Final Exam that can be checked at:
-    
-    + Tercer corte 40% > Learning Activities > Final Exam Three Party Coalition Exercise Modified
+-   Why the Final Exam is a simulations and with the participation of the entire course?
 
-# Final Exam Three Party Coalition Exercise Modified
-    
-- Also check out in the __Links of interest__ the videos[^1]
-    
-    + _Three-Party Coalition Exercise_ [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
-    
+    -   The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people.
+
+    -   It is not effective to learn individually and only theoretically.
+
+    -   It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
+
+-   Before taking part, students should review the general and specific instructions of the Final Exam that can be checked at:
+
+    -   Tercer corte 40% \> Learning Activities \> Final Exam Three Party Coalition Exercise Modified
+
+##
+
+-   Also check out in the **Links of interest** the videos[^1]
+
+    -   *Three-Party Coalition Exercise* [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
+
 [^1]: The videos are in english and are recordings of the Three-Party Coalition Exercise simulation
-    
-# Final Exam Three Party Coalition Exercise Modified
 
-- Before the Final Exam begins each student of the group, that has been formed, will be randomly assigned to one and only one role as a negotiator of an organization. The respective roles are:
+##
 
-    + __Group A__
-    + __Group B__
-    + __Group C__
-    
-- The objective of the negotiation is to obtain the highest number of points and determine how they will be divided. This will be reflected in the grade obtained by each student.
+-   Before the Final Exam begins each student of the group, that has been formed, will be randomly assigned to one and only one role as a negotiator of an organization. The respective roles are:
 
-# Final Exam Three Party Coalition Exercise Modified
+    -   **Group A**
+    -   **Group B**
+    -   **Group C**
 
-- If an agreement is not reached between the parties of the negotiation, each __Group__ obtains __0 points__ and the grade for each student will be __20__ out of 50:
+-   The objective of the negotiation is to obtain the highest number of points and determine how they will be divided. This will be reflected in the grade obtained by each student.
+
+##
+
+-   If an agreement is not reached between the parties of the negotiation, each **Group** obtains **0 points** and the grade for each student will be **20** out of 50:
 
 ```{r}
+#| label: tbl-no-agreement
+#| tbl-cap: Results in case of no agreement
 
 tibble(Group  = c("A", "B", "C"),
        Points = rep(x = 0, times = 3),
@@ -118,81 +106,83 @@ tibble(Group  = c("A", "B", "C"),
   row_spec(row = 0, bold = TRUE)
 ```
 
-# Final Exam Three Party Coalition Exercise Modified
+##
 
-- If an agreement is reached, it can be obtained between 2 or 3 __Groups__:
+-   If an agreement is reached, it can be obtained between 2 or 3 **Groups**:
 
-    + Possible agreements:
+    -   Possible agreements:
 
-        + __Case 1__: __A__ and __B__ decide to reach an agreement to work together, they obtain __118 points__ and must decide how to distribute these points. However, __C__ will be excluded.
-        
-        + __Case 2__: __A__ and __C__ decide to reach an agreement to work together, they obtain __84 points__ and must decide how to distribute these points. However, __B__ will be excluded.
-        
-        + __Case 3__: __B__ and __C__ decide to reach an agreement to work together, they obtain __50 points__ and must decide how to distribute these points. However, __A__ will be excluded.
-        
-        + __Case 4__: __A__, __B__ and __C__ decide to reach an agreement to work together, they obtain __121 points__ and must decide how to distribute these points. Nobody is excluded.
-        
-# Final Exam Three Party Coalition Exercise Modified
+        -   **Case 1**: **A** and **B** decide to reach an agreement to work together, they obtain **118 points** and must decide how to distribute these points. However, **C** will be excluded.
 
-- Grades
+        -   **Case 2**: **A** and **C** decide to reach an agreement to work together, they obtain **84 points** and must decide how to distribute these points. However, **B** will be excluded.
 
-    + __Case 1__: __A__ and __B__ work together but __C__ is excluded.
-    
-        + __C__ obtains a grade of __35__ out of 50.
-        + The grade of __A__ and __B__ will depend on who gets the most of the __118 points__. The __Group__ that gets the most points will have a grade of __50__ out of __50__ and the other __Group__ gets a grade of __40__ out of __50__. If __A__ and __B__ divide the points equally, whoever gets the highest grade will be assigned randomly.
-        
-    + __Case 2__: __A__ and __C__ work together but __B__ is excluded.
-    
-        + __B__ obtains a grade of __35__ out of 50. 
-        + The grade of __A__ and __C__ will depend on who gets the most of the __84 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __A__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
-        
-# Final Exam Three Party Coalition Exercise Modified
+        -   **Case 3**: **B** and **C** decide to reach an agreement to work together, they obtain **50 points** and must decide how to distribute these points. However, **A** will be excluded.
 
-- Grades
+        -   **Case 4**: **A**, **B** and **C** decide to reach an agreement to work together, they obtain **121 points** and must decide how to distribute these points. Nobody is excluded.
 
-    + __Case 3__: __B__ and __C__ work together but __A__ is excluded.
-    
-        + __A__ obtains a grade of __35__ out of 50.
-        + The grade of __B__ and __C__ will depend on who gets the most of the __50 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __B__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
-        
-    + __Case 4__: __A__, __B__ and __C__ work together so nobody is excluded.
-    
-        + The __Group__ that obtains the highest amount of points will have a grade of __50__ out of 50, the __Group__ that obtains the second highest amount of points obtains a grade of __40__ out of 50 and the __Group__ that obtains the lowest amount of points obtains a grade of __35__ out of 50. In case of a tie between any of the __Groups__, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 __Groups__.
-        
-# Final Exam Three Party Coalition Exercise Modified
+##
 
-- Before, during and after the Final Exam remember:
+-   Grades
 
-    + __Before__
+    -   **Case 1**: **A** and **B** work together but **C** is excluded.
 
-        + To coordinate __with all the participants of the course or those who eventually attend__ a single group since the activity will consist of a great negotion role play where each student will adopt a role.
-        
-        + To decide whether to appoint one representative per __Group__ and the remaining students act as __constituents__ or if all the members of the __Group__ participate in the discussion.
-        
-# Final Exam Three Party Coalition Exercise Modified
+        -   **C** obtains a grade of **35** out of 50.
+        -   The grade of **A** and **B** will depend on who gets the most of the **118 points**. The **Group** that gets the most points will have a grade of **50** out of **50** and the other **Group** gets a grade of **40** out of **50**. If **A** and **B** divide the points equally, whoever gets the highest grade will be assigned randomly.
 
-- Before, during and after the Final Exam remember:
+    -   **Case 2**: **A** and **C** work together but **B** is excluded.
 
-    + __During__
+        -   **B** obtains a grade of **35** out of 50.
+        -   The grade of **A** and **C** will depend on who gets the most of the **84 points**. The **Group** that gets the most points will have a grade of **50** out of 50 and the other **Group** gets a grade of **40** out of 50. If **A** and **C** divide the points equally, whoever gets the highest grade will be assigned randomly.
 
-        + You have to make 2 decisions: Who do you want to work with? How will the points be divided?
-        + Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
-        + If an agreement is reached and the same amount of points is obtained as another __Group__ then the highest grade will be assigned randomly within the __Groups__ that obtained the same amount of points.
-        + It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
+##
 
-    + __After__
-    
-        + Once the negotiation is over, which should last a maximum of 30 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
-        
+-   Grades
+
+    -   **Case 3**: **B** and **C** work together but **A** is excluded.
+
+        -   **A** obtains a grade of **35** out of 50.
+        -   The grade of **B** and **C** will depend on who gets the most of the **50 points**. The **Group** that gets the most points will have a grade of **50** out of 50 and the other **Group** gets a grade of **40** out of 50. If **B** and **C** divide the points equally, whoever gets the highest grade will be assigned randomly.
+
+    -   **Case 4**: **A**, **B** and **C** work together so nobody is excluded.
+
+        -   The **Group** that obtains the highest amount of points will have a grade of **50** out of 50, the **Group** that obtains the second highest amount of points obtains a grade of **40** out of 50 and the **Group** that obtains the lowest amount of points obtains a grade of **35** out of 50. In case of a tie between any of the **Groups**, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 **Groups**.
+
+##
+
+-   Before, during and after the Final Exam remember:
+
+    -   **Before**
+
+        -   To coordinate **with all the participants of the course or those who eventually attend** a single group since the activity will consist of a great negotion role play where each student will adopt a role.
+
+        -   To decide whether to appoint one representative per **Group** and the remaining students act as **constituents** or if all the members of the **Group** participate in the discussion.
+
+##
+
+-   Before, during and after the Final Exam remember:
+
+    -   **During**
+
+        -   You have to make 2 decisions: Who do you want to work with? How will the points be divided?
+        -   Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
+        -   If an agreement is reached and the same amount of points is obtained as another **Group** then the highest grade will be assigned randomly within the **Groups** that obtained the same amount of points.
+        -   It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
+
+    -   **After**
+
+        -   Once the negotiation is over, which should last a maximum of 30 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
+
 # Best Practices in Negotiations
 
-```{r }
-#| out-width: 90%
-#| fig-align: center
+##
 
-grViz(diagram = '
-      
-      digraph boxes_and_circles {
+```{dot}
+//| label: fig-best-practices-for-negotiators-1
+//| fig-cap: Best Practices for Negotiators [@lewicki_negociacion_2024, pp 557-565]
+//| fig-width: 4.5
+//| fig-height: 2.5
+
+digraph boxes_and_circles {
       
       graph [rankdir = LR]
       
@@ -235,21 +225,18 @@ grViz(diagram = '
       "Handling the apparently opposite\naspects of negotiation" -> "Core principles vs Flexible thinking"
       "Handling the apparently opposite\naspects of negotiation" -> "Being Open vs Being Closed";
       "Handling the apparently opposite\naspects of negotiation" -> "Being Trusting vs Being Distrusting";
-      
-      }
-      
-      ')
+}
 ```
 
-# Best Practices in Negotiations
+##
 
-```{r }
-#| out-width: 90%
-#| fig-align: center
+```{dot}
+//| label: fig-best-practices-for-negotiators-2
+//| fig-cap: Best Practices for Negotiators [@lewicki_negociacion_2024, pp 557-565]
+//| fig-width: 4.5
+//| fig-height: 2.5
 
-grViz(diagram = '
-      
-      digraph boxes_and_circles {
+digraph boxes_and_circles {
       
       graph [rankdir = LR]
       
@@ -288,44 +275,45 @@ grViz(diagram = '
       "Build fairness upon principles" -> "Use external benchmarks";
       "Build fairness upon principles" -> "Reach consensus about\nstandards of fairness"
       
-      }
-      
-      ')
+}
 ```
 
 # What next?
 
-- Book
+##
 
-    + Raiffa, H., & Richardson, J. (2007). Negotiation analysis: The science and art of collaborative decision making. Cambridge (Mass.: Harvard University Press.
+-   Book
 
-- Online resource
+    -   Raiffa, H., & Richardson, J. (2007). Negotiation analysis: The science and art of collaborative decision making. Cambridge (Mass.: Harvard University Press.
 
-    + The Program on Negotiation (PON): [https://www.pon.harvard.edu/](https://www.pon.harvard.edu/)
+-   Online resource
 
-# What next?
+    -   The Program on Negotiation (PON): <https://www.pon.harvard.edu/>
 
-- Postgraduate education:
+##
 
-    + __UMNG__: [https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales](https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales)
-    
-        + __Maestría en Relaciones y Negocios Internacionales__: Negociación Internacional
-        
-    + __Uniandes__: [https://administracion.uniandes.edu.co/programas/posgrados/especializacion-negociacion/](https://administracion.uniandes.edu.co/programas/posgrados/especializacion-negociacion/)
-    
-        + __Especialización en Negociación__: programa de la Facultad de Administración
+-   Postgraduate education:
+
+    -   **UMNG**: <https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales>
+
+        -   **Maestría en Relaciones y Negocios Internacionales**: Negociación Internacional
+
+    -   **Uniandes**: <https://administracion.uniandes.edu.co/programas/posgrados/especializacion-negociacion/>
+
+        -   **Especialización en Negociación**: programa de la Facultad de Administración
 
 # Acknowledgments
 
-- To my family that supports me
+##
 
-- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+-   To my family that supports me
 
-- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__,
-__[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html)
 
-- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
-    
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**knitr**](https://CRAN.R-project.org/package=knitr), [**kableExtra**](https://CRAN.R-project.org/package=kableExtra), [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+-   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
+
 # References

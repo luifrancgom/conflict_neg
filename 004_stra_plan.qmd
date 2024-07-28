@@ -1,309 +1,333 @@
 ---
 title: "Negotiation: Strategy and Planning"
-author: "Luis Francisco Gomez Lopez"
-date: 2024-01-27
-execute: 
-  echo: false
-  warning: false
-format:
+author: 
+  - Luis Francisco Gómez López
+institute: 
+  - FAEDIS
+date: last-modified
+format: 
   beamer:
     colortheme: dolphin
     fonttheme: structurebold
     theme: AnnArbor
     link-citations: true
-    linkcolor: blue
-    fig-align: center
+    colorlinks: true
+    toc: true
+    slide-level: 2
+    section-titles: false
+    keep-tex: true
     include-in-header:
-      - text: |
-          \usepackage{booktabs}
-          \usepackage{longtable}
-          \usepackage{array}
-          \usepackage{multirow}
-          \usepackage{wrapfig}
-          \usepackage{float}
-          \usepackage{colortbl}
-          \usepackage{pdflscape}
-          \usepackage{tabu}
-          \usepackage{threeparttable}
-          \usepackage{threeparttablex}
-          \usepackage[normalem]{ulem}
-          \usepackage{makecell}
-          \usepackage{xcolor}
-          \usepackage{fontawesome5}
+      file: 000_tex_files/preamble.tex
+fig-cap-location: bottom
+tbl-cap-location: top
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
 bibliography: conflict_neg.bib
 ---
 
-```{r libraries}
-library(DiagrammeR)
+```{r}
+#| label: libraries
+
 library(tufte)
 ```
 
-# Contents
-
-- Please Read Me
-- Purpose
-- The importance of planning in negotiations
-- Key steps in the planning process
-- Goals
-- Strategies
-- Planning process
-- Acknowledgments
-- References
-
 # Please Read Me
 
-- Check the message __Welcome greeting__ published in the News Bulletin Board.
+##
 
-- Dear student please edit your profile uploading a photo where your face is clearly visible.
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
 
-- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
 
-- This presentation is based on [@lewicki_essentials_2016, Chapter 4]
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 4]
 
 # Purpose
+
+##
 
 Understand and explore the main elements of the negotiation strategy, the process to select a strategy as well as the way in which most negotiations evolve to effectively plan a negotiation.
 
 # The importance of planning in negotiations
 
-- Some quotes about planning:
+##
+
+-   Some quotes about planning:
+
+>
 
 > "Everyone has a plan until they get punched in the mouth"
->
-> `r tufte::quote_footer('--- Mike Tyson')`
+
+> `r tufte::quote_footer("--- Mike Tyson")`
 
 > "No battle plan ever survives contact with the enemy"
+
+> `r tufte::quote_footer("--- Helmuth von Moltke the Elder")`
+
 >
-> `r tufte::quote_footer('--- Helmuth von Moltke the Elder')`
 
-- Therefore, there is no need to plan? 
+-   Therefore, there is no need to plan?
 
-    + Absolutely not, but if your plan is not flexible you will get punched in the mouth and no part of your plan will survive when you negotiate with the counterpart.
-    
-    + Also don't expect everything will work millimetrically according to the plan because the counterpart might also have a plan and they will react strategically to your plan.
-    
-# The importance of planning in negotiations
+    -   Absolutely not, but if your plan is not flexible you will get punched in the mouth and no part of your plan will survive when you negotiate with the counterpart.
 
-- Without planning results occur more by chance than by negotiator effort
+    -   Also don"t expect everything will work millimetrically according to the plan because the counterpart might also have a plan and they will react strategically to your plan.
 
-    + Behaviour of Successful Negotiators: Find some successful  negotiators and watch them  during  actual  negotiations  to  find  how  they  do  it.
-        
-        + [@rackham_effective_1978]: planning is the foundation for any successful negotiation
-        + [@rackham_effective_1978-1]: exploration of options, common ground, long-term  implications, setting limits[^1] and use an issue  planning method over sequence planning[^2]
+##
 
-- Also check out in the __Links of interest__ the video: How to negotiate properly? [@magic_markers_como_2018]
+-   Without planning results occur more by chance than by negotiator effort
+
+    -   Behaviour of Successful Negotiators: Find some successful negotiators and watch them during actual negotiations to find how they do it.
+
+        -   [@rackham_effective_1978]: planning is the foundation for any successful negotiation
+        -   [@rackham_effective_1978-1]: exploration of options, common ground, long-term implications, setting limits[^1] and use an issue planning method over sequence planning[^2]
+
+-   Also check out in the **Links of interest** the video: How to negotiate properly? [@magic_markers_como_2018]
 
 [^1]: Plan in terms of a range and not around a fixed point
+
 [^2]: Issues are independent and not linked by a sequence
 
 # Key steps in the planning process
 
-```{r }
-#| out-width: 90%
-#| fig-cap: Relationship between key steps in the planning Process [@lewicki_essentials_2016, Chapter 4, p 90]
+##
 
-grViz("
+```{dot}
+//| label: fig-relation-ship-key-steps-planning-process
+//| fig-cap: Relationship between key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p 105]
+//| fig-width: 4.5
+//| fig-height: 2.5
+
 digraph boxes_and_circles {
 
   graph [rankdir = LR]
 
-  node [shape = circle, color = '#2C3E50']
+  node [shape = circle, color = "#2C3E50"]
  
-  'Goals';
+  "Goals";
 
-  node [shape = circle, color = '#E31A1C']
+  node [shape = circle, color = "#E31A1C"]
 
-  'Strategy';
+  "Strategy";
   
-  node [shape = circle, color = '#18BC9C']
+  node [shape = circle, color = "#18BC9C"]
   
-  'Planning';
+  "Planning";
   
-  'Goals' -> 'Strategy';
+  "Goals" -> "Strategy";
   
-  'Strategy' -> 'Planning'
+  "Strategy" -> "Planning"
 }
-")
 ```
 
-# Goals 
+# Goals
 
-- The first step to execute a negotiation strategy is to determine one’s goals.
+##
 
-    + __Substantive__: goals about tangible factors (price, terms of a contract, product specifications)
-    + __Intangible__: goals about intangible factors (personal values and emotions of the parties such as defeating the other party or reaching a conciliation at any cost)
-    + __Procedural__: goals about how the negotiation process occurs (define plans or just have a voice during the negotiation) 
-    
-- The negotiator must identify what kind of goals to pursue[^3]. What definitely cannot be ignored is the substantive goals given that it refers to the tangible aspects.
+-   The first step to execute a negotiation strategy is to determine one’s goals.
+
+    -   **Substantive**: goals about tangible factors (price, terms of a contract, product specifications)
+    -   **Intangible**: goals about intangible factors (personal values and emotions of the parties such as defeating the other party or reaching a conciliation at any cost)
+    -   **Procedural**: goals about how the negotiation process occurs (define plans or just have a voice during the negotiation)
+
+-   The negotiator must identify what kind of goals to pursue[^3]. What definitely cannot be ignored is the substantive goals given that it refers to the tangible aspects.
 
 [^3]: Identifying goals in practical terms simply means making a list to prioritize them
 
-# Goals 
+##
 
-- When defining goals take into account these 4 aspects [@lewicki_essentials_2016, Chapter 4, p 90-91]:
+-   When defining goals take into account these 4 aspects [@lewicki_negociacion_2024, Chapter 4, p 105-106]:
 
-    + Goals are specific objectives that are sought realistically.
-    + Own goals can potentially be linked to the goals of the other parties.[^4]
-    + If in identifying the goals these are not attainable then:
-    
-        + Modify them so that they are attainable
-        + Discard the negotiation as an option to reach an agreement[^5]
-        
-    + The goals that are identified must be concrete, specific and measurable so that it is easier to:
-    
-        + Communicate to the other party what you want to achieve
-        + Understand what the other parties want
-        + Determine if the proposed proposals satisfy what you want to achieve
-        
-[^4]:It is easier to reach an agreement if you have common goals
-[^5]: Remember that negotiation as a form of __decision making__ is not the only method that exists! 
+    -   Goals are specific objectives that are sought realistically.
+
+    -   Own goals can potentially be linked to the goals of the other parties.[^4]
+
+    -   If in identifying the goals these are not attainable then:
+
+        -   Modify them so that they are attainable
+        -   Discard the negotiation as an option to reach an agreement[^5]
+
+    -   The goals that are identified must be concrete, specific and measurable so that it is easier to:
+
+        -   Communicate to the other party what you want to achieve
+        -   Understand what the other parties want
+        -   Determine if the proposed proposals satisfy what you want to achieve
+
+[^4]: It is easier to reach an agreement if you have common goals
+
+[^5]: Remember that negotiation as a form of **decision making** is not the only method that exists!
 
 # Strategies
 
-```{r }
-#| out-width: 85%
-#| fig-cap: Different engagement strategies in a negotiation context  [@lewicki_essentials_2016, Chapter 4, p 94, Table 4.1]
+##
 
-grViz("
+```{dot}
+//| label: fig-engagement-strategies
+//| fig-cap: Different engagement strategies in a negotiation context  [@lewicki_negociacion_2024, Chapter 4, p 110]
+//| fig-width: 5.5
+//| fig-height: 2.5
+
 digraph boxes_and_circles {
 
   graph [rankdir = TB]
 
-  node [shape = circle, color = '#2C3E50']
+  node [shape = circle, color = "#2C3E50"]
  
-  'Strategy';
+  "Strategy";
 
-  node [shape = circle, color = '#E31A1C']
+  node [shape = circle, color = "#E31A1C"]
 
-  'Competitive\n(Distributive context)';
-  'Collaborative\n(Integrative context)';
-  'Accomodative';
+  "Competitive\n(Distributive context)";
+  "Collaborative\n(Integrative context)";
+  "Accomodative";
   
-  'Strategy' -> 'Competitive\n(Distributive context)';
-  'Strategy' -> 'Collaborative\n(Integrative context)';
-  'Strategy' -> 'Accomodative';
+  "Strategy" -> "Competitive\n(Distributive context)";
+  "Strategy" -> "Collaborative\n(Integrative context)";
+  "Strategy" -> "Accomodative";
 }
-")
 ```
+
+# Phases of negotiation
+
+##
+
+-  Before exploring the specific planning processes for negotiation, it is important to understand the typical phases in a negotiation
+
+    -  7 key steps to an ideal negotiation process [@greenhalgh_managing_2001, p 164]:
+
+        -  Preparation
+        -  Relationship building
+        -  Information gathering
+        -  Information using
+        -  Bidding
+        -  Closing the deal
+        -  Implementing the agreement
 
 # Planning process
 
-```{r }
-#| out-width: 90%
-#| fig-cap: Key steps in the planning process [@lewicki_essentials_2016, Chapter 4, p 96-112]
- 
-grViz("
+##
+
+```{dot}
+//| label: fig-key-steps-planning-process-1
+//| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p 114-128]
+//| fig-width: 4.5
+//| fig-height: 2.5
+
 digraph boxes_and_circles {
 
   graph [rankdir = LR]
 
-  node [shape = circle, color = '#2C3E50']
+  node [shape = circle, color = "#2C3E50"]
  
-  'Planning';
+  "Planning";
 
-  node [shape = oval, color = '#E31A1C']
+  node [shape = oval, color = "#E31A1C"]
 
-  'Defining the\nnegotiating goal';
-  'List of major issues';
-  'Organize Issues';
-  'Defining the Interests';
-  'Knowing Your BATNA'
+  "Defining the\nnegotiating goal";
+  "List of major issues";
+  "Organize Issues";
+  "Defining the Interests";
+  "Knowing Your BATNA"
   
-  node [shape = oval, color = '#18BC9C']
+  node [shape = oval, color = "#18BC9C"]
   
-  'Assembling';
-  'Prioritization';
-  'Substantive';
-  'Process-based';
-  'Relationship-based';
+  "Assembling";
+  "Prioritization";
+  "Substantive";
+  "Process-based";
+  "Relationship-based";
   
-  node [shape = oval, color = '#CCBE93']
+  node [shape = oval, color = "#CCBE93"]
   
-  'Ranking';
-  'Defining the\nBargaining Mix';
+  "Ranking";
+  "Defining the\nBargaining Mix";
   
-  'Planning' -> 'Defining the\nnegotiating goal';
-  'Planning' -> 'List of major issues';
-  'Planning' -> 'Organize Issues';
-  'Planning' -> 'Defining the Interests';
-  'Planning' -> 'Knowing Your BATNA'
+  "Planning" -> "Defining the\nnegotiating goal";
+  "Planning" -> "List of major issues";
+  "Planning" -> "Organize Issues";
+  "Planning" -> "Defining the Interests";
+  "Planning" -> "Knowing Your BATNA"
   
-  'Organize Issues' -> 'Assembling';
-  'Organize Issues' -> 'Prioritization';
-  'Defining the Interests' -> 'Substantive';
-  'Defining the Interests' -> 'Process-based';
-  'Defining the Interests' -> 'Relationship-based';
+  "Organize Issues" -> "Assembling";
+  "Organize Issues" -> "Prioritization";
+  "Defining the Interests" -> "Substantive";
+  "Defining the Interests" -> "Process-based";
+  "Defining the Interests" -> "Relationship-based";
   
-  'Prioritization' -> 'Ranking';
-  'Prioritization' -> 'Defining the\nBargaining Mix';
-  
+  "Prioritization" -> "Ranking";
+  "Prioritization" -> "Defining the\nBargaining Mix";
 }
-")
 ```
 
-# Planning process
+##
 
-```{r }
-#| out-width: 90%
-#| fig-cap: Key steps in the planning process [@lewicki_essentials_2016, Chapter 4, p 96-112]
+```{dot}
+//| label: fig-key-steps-planning-process-2
+//| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p 114-128]
+//| fig-width: 5.5
+//| fig-height: 2.5
 
-grViz("
 digraph boxes_and_circles {
 
   graph [rankdir = LR]
 
-  node [shape = circle, color = '#2C3E50']
+  node [shape = circle, color = "#2C3E50"]
  
-  'Planning';
+  "Planning";
 
-  node [shape = oval, color = '#E31A1C']
+  node [shape = oval, color = "#E31A1C"]
 
-  'Knowing your\nresistance point';
-  'Gathering information\nabout the other party';
-  'Setting one’s own targets\nand opening bids';
-  'Assessing the social\ncontext of negotiation';
-  'Presenting the issues\nto the other Party'
+  "Knowing your\nresistance point";
+  "Gathering information\nabout the other party";
+  "Setting one’s own targets\nand opening bids";
+  "Assessing the social\ncontext of negotiation";
+  "Presenting the issues\nto the other Party"
   
-  node [shape = oval, color = '#18BC9C']
+  node [shape = oval, color = "#18BC9C"]
   
-  'Direct actors';
-  'Opposition actors';
-  'Indirect actors';
-  'Interested observers';
-  'Environmental factors';
+  "Direct actors";
+  "Opposition actors";
+  "Indirect actors";
+  "Interested observers";
+  "Environmental factors";
   
-  node [shape = oval, color = '#CCBE93']
+  node [shape = oval, color = "#CCBE93"]
   
-  'Constituents';
+  "Constituents";
   
-  'Planning' -> 'Knowing your\nresistance point';
-  'Planning' -> 'Gathering information\nabout the other party';
-  'Planning' -> 'Setting one’s own targets\nand opening bids';
-  'Planning' -> 'Assessing the social\ncontext of negotiation';
-  'Planning' -> 'Presenting the issues\nto the other Party'
+  "Planning" -> "Knowing your\nresistance point";
+  "Planning" -> "Gathering information\nabout the other party";
+  "Planning" -> "Setting one’s own targets\nand opening bids";
+  "Planning" -> "Assessing the social\ncontext of negotiation";
+  "Planning" -> "Presenting the issues\nto the other Party"
   
-  'Assessing the social\ncontext of negotiation' -> 'Direct actors';
-  'Assessing the social\ncontext of negotiation' -> 'Opposition actors';
-  'Assessing the social\ncontext of negotiation' -> 'Indirect actors';
-  'Assessing the social\ncontext of negotiation' -> 'Interested observers';
-  'Assessing the social\ncontext of negotiation' -> 'Environmental factors';
+  "Assessing the social\ncontext of negotiation" -> "Direct actors";
+  "Assessing the social\ncontext of negotiation" -> "Opposition actors";
+  "Assessing the social\ncontext of negotiation" -> "Indirect actors";
+  "Assessing the social\ncontext of negotiation" -> "Interested observers";
+  "Assessing the social\ncontext of negotiation" -> "Environmental factors";
   
-  'Interested observers' -> 'Constituents';
-  
+  "Interested observers" -> "Constituents";
 }
-")
 ```
 
 # Acknowledgments
 
-- To my family that supports me
+##
 
-- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+-   To my family that supports me
 
-- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__, __[tufte](https://CRAN.R-project.org/package=tufte)__, and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
 
-- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tufte**](https://CRAN.R-project.org/package=tufte) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
 
-# References
+-   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
+
+# References {.allowframebreaks}

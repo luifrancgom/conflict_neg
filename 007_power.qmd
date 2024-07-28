@@ -1,84 +1,76 @@
 ---
-title: "Finding and Using Negotiation Power"
-author: "Luis Francisco Gomez Lopez"
-date: 2024-01-27
-execute: 
-  echo: false
-  warning: false
-format:
+title: Finding and Using Negotiation Power
+author: 
+  - Luis Francisco Gómez López
+institute: 
+  - FAEDIS
+date: last-modified
+format: 
   beamer:
     colortheme: dolphin
     fonttheme: structurebold
     theme: AnnArbor
     link-citations: true
-    linkcolor: blue
-    fig-align: center
+    colorlinks: true
+    toc: true
+    slide-level: 2
+    section-titles: false
+    keep-tex: true
     include-in-header:
-      - text: |
-          \usepackage{booktabs}
-          \usepackage{longtable}
-          \usepackage{array}
-          \usepackage{multirow}
-          \usepackage{wrapfig}
-          \usepackage{float}
-          \usepackage{colortbl}
-          \usepackage{pdflscape}
-          \usepackage{tabu}
-          \usepackage{threeparttable}
-          \usepackage{threeparttablex}
-          \usepackage[normalem]{ulem}
-          \usepackage{makecell}
-          \usepackage{xcolor}
-          \usepackage{fontawesome5}
+      file: 000_tex_files/preamble.tex
+fig-cap-location: bottom
+tbl-cap-location: top
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
 bibliography: conflict_neg.bib
 ---
 
-```{r libraries}
+```{r}
+#| label: libraries
+
 library(tidyverse)
-library(DiagrammeR)
 ```
-
-# Contents
-
-- Please Read Me
-- Purpose
-- Power in the context of a negotiation
-- Sources of power in a negotiation
-- Dealing with negotiators how have more power
-- Acknowledgments
-- References
 
 # Please Read Me
 
-- Check the message __Welcome greeting__ published in the News Bulletin Board.
+##
 
-- Dear student please edit your profile uploading a photo where your face is clearly visible.
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
 
-- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
 
-- This presentation is based on [@lewicki_essentials_2016, Chapter 8]
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 8]
 
 # Purpose
+
+##
 
 Understand the role of power and the different sources from which this element arises in a negotiation.
 
 # Power in the context of a negotiation
 
-- Power in the context of a negotiation refers to the ability of a negotiator to gain an advantage or increase the likelihood of approaching its target point.
+##
 
-- Power is important in a negotiation because it generates advantages and allows reaching a settlement point close to the target point.
+-   Power in the context of a negotiation refers to the ability of a negotiator to gain an advantage or increase the likelihood of approaching its target point.
 
-# Power in the context of a negotiation
+-   Power is important in a negotiation because it generates advantages and allows reaching a settlement point close to the target point.
 
-- Perspectives about power[^1]
+##
 
-```{r }
-#| out-width: 90%
-#| fig-align: center
+```{dot}
+//| label: fig-perspectives-about-power
+//| fig-cap: Perspectives about power[^1]
+//| fig-width: 4.5
+//| fig-height: 2.5
 
-grViz(diagram = '
-      
-      digraph boxes_and_circles {
+digraph boxes_and_circles {
       
       graph [rankdir = LR]
       
@@ -102,22 +94,22 @@ grViz(diagram = '
       "Power\nover" -> "Power is fundamentally\ndominating and coercive\nin nature";
       "Power\nwith" -> "Power holder jointly\ndevelops and shares power\nwith the other"
       
-      }
-      
-      ')
+}
 ```
 
-[^1]: Check out [@coleman_power_2014] if you want a general perspective about power and its relation with conflict 
+[^1]: Check out [@coleman_power_2014] if you want a general perspective about power and its relation with conflict
 
 # Sources of power in a negotiation
 
-```{r }
-#| out-width: 80%
-#| fig-align: center
+##
 
-grViz(diagram = '
-      
-      digraph boxes_and_circles {
+```{dot}
+//| label: fig-sources-of-power-1
+//| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp 242-260]
+//| fig-width: 4.5
+//| fig-height: 2.5
+
+digraph boxes_and_circles {
       
       graph [rankdir = LR]
       
@@ -163,21 +155,18 @@ grViz(diagram = '
       Hierarchy -> "Legitimate\npower"
       Hierarchy -> "Resource\nPower"
       "Location in\na Network" -> "Field:\nSocial network\nanalysis"
-      
-      }
-      
-      ')
+}
 ```
 
-# Sources of power in a negotiation
+##
 
-```{r }
-#| out-width: 75%
-#| fig-align: center
+```{dot}
+//| label: fig-sources-of-power-2
+//| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp 242-260]
+//| fig-width: 4.5
+//| fig-height: 2.5
 
-grViz(diagram = '
-      
-      digraph boxes_and_circles {
+digraph boxes_and_circles {
       
       graph [rankdir = LR]
       
@@ -207,31 +196,95 @@ grViz(diagram = '
       Contextual -> BATNAs;
       Contextual -> Culture;
       Contextual -> "Agents,\nConstituencies\nand\nExternal Audiences";
-      
-      }
-      
-      ')
+}
 ```
 
-# Dealing with negotatiors how have more power 
+# The Consequences of Unequal Power
 
-- Advice to negotiators who are in low-power positions based on [@lewicki_essentials_2016, Chapter 8, p 199-201]:
+##
 
-    + Diversify risk by entering into deals with several other partners.
-    + Deal with a variety of different individuals and departments in the high-power party (Divide and Conquer).
-    + Build coalitions with other low-power players to increase collective bargaining power.
-    + If you have something to offer, make sure you offer it to more than one high-power party to generate competition between them.
+```{dot}
+//| label: fig-consequences-of-unequal-power
+//| fig-cap: Consequences of unequal power in a negotiation [@lewicki_negociacion_2024, pp 260-261]
+//| fig-width: 4.5
+//| fig-height: 2.5
+
+digraph boxes_and_circles {
+      
+      graph [rankdir = LR]
+      
+      node[shape = circle, oval = "#2C3E50"]
+      
+      "Unequal\npower";
+      
+      node[shape = oval, color = "#E31A1C"]
+      
+      Consequences;
+      
+      node[shape = oval, color = "#18BC9C"]
+      
+      "Lead to significantly\ndifferent conflict orientations\nand behaviors";
+      "More likely to\nbehave contentiously";
+      "The more powerful\nparty has the capacity\nto determine the\nnegotiation outcome";
+
+      node[shape = oval, color = "#CCBE93"]
+      
+      "Avoid making\nthings worse"
+      "Exit the relationship"
+      "Hinder the other's actions"
+      
+      "Threats"
+      "Punishments"
+      "Exploitative behavior"
+    
+      "Unequal\npower" -> Consequences
+
+      Consequences -> "Lead to significantly\ndifferent conflict orientations\nand behaviors"
+      Consequences -> "More likely to\nbehave contentiously"
+      Consequences -> "The more powerful\nparty has the capacity\nto determine the\nnegotiation outcome"
+
+"Lead to significantly\ndifferent conflict orientations\nand behaviors" -> "Avoid making\nthings worse"
+"Lead to significantly\ndifferent conflict orientations\nand behaviors" -> "Exit the relationship"
+"Lead to significantly\ndifferent conflict orientations\nand behaviors" -> "Hinder the other's actions"
+
+"More likely to\nbehave contentiously" -> "Threats"
+"More likely to\nbehave contentiously" -> "Punishments"
+"More likely to\nbehave contentiously" -> "Exploitative behavior"
+
+}
+```
+
+# Dealing with negotatiors how have more power
+
+##
+
+-   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp 261-262]:
+
+    -   Diversify risk by entering into deals with several other partners.
+    -   Deal with a variety of different individuals and departments in the high-power party (Divide and Conquer).
+    -   Build coalitions with other low-power players to increase collective bargaining power.
+    -   Enter in early deals with high-power parties and maximize the visibility of those deals to other parties.
+
+##
+
+-   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp 261-262]:
+
+    -   If you have something to offer, make sure you offer it to more than one high-power party to generate competition between them.
+    -   Gather and leverage relevant information to strengthen your negotiation position and achieve better outcomes through persuasive communication.
+    -   Do what you can to manage the process (for example the agenda or location) to guide the negotiation towards a more favorable outcome.
 
 # Acknowledgments
 
-- To my family that supports me
+##
 
-- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+-   To my family that supports me
 
-- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[DiagrammeR](https://CRAN.R-project.org/package=DiagrammeR)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
 
-- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**DiagrammeR**](https://CRAN.R-project.org/package=DiagrammeR), [**knitr**](https://CRAN.R-project.org/package=knitr), [**kableExtra**](https://CRAN.R-project.org/package=kableExtra) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
 
-# References
+-   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
+
+# References {.allowframebreaks}

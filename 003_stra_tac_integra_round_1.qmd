@@ -1,213 +1,212 @@
 ---
-title: "Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1"
-author: "Luis Francisco Gomez Lopez"
-date: 2024-01-27
-execute: 
-  echo: false
-  warning: false
-format:
+title: Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1
+author: 
+  - Luis Francisco Gómez López
+institute: 
+  - FAEDIS
+date: last-modified
+format: 
   beamer:
     colortheme: dolphin
     fonttheme: structurebold
     theme: AnnArbor
     link-citations: true
-    linkcolor: blue
-    fig-align: center
+    colorlinks: true
+    toc: true
+    slide-level: 2
+    section-titles: false
+    keep-tex: true
     include-in-header:
-      - text: |
-          \usepackage{booktabs}
-          \usepackage{longtable}
-          \usepackage{array}
-          \usepackage{multirow}
-          \usepackage{wrapfig}
-          \usepackage{float}
-          \usepackage{colortbl}
-          \usepackage{pdflscape}
-          \usepackage{tabu}
-          \usepackage{threeparttable}
-          \usepackage{threeparttablex}
-          \usepackage[normalem]{ulem}
-          \usepackage{makecell}
-          \usepackage{xcolor}
-          \usepackage{fontawesome5}
+      file: 000_tex_files/preamble.tex
+header-includes: 
+-   \titlegraphic{\includegraphics[width=3cm]{000_logos/logo-blue-vertical}}
+fig-cap-location: bottom
+tbl-cap-location: top
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
 bibliography: conflict_neg.bib
 ---
 
-```{r libraries}
+```{r}
+#| label: libraries
+
 library(tidyverse)
 library(knitr)
 library(kableExtra)
 library(tidyquant)
 ```
 
-# Contents
-
-- Please Read Me
-- Purpose
-- Three Party Coalition Exercise Round 1
-- Overview of the integrative negotiation process
-- Factors that facilitate integrative negotiation
-- Acknowledgments
-- References
-
 # Please Read Me
 
-- Check the message __Welcome greeting__ published in the News Bulletin Board.
+##
 
-- Dear student please edit your profile uploading a photo where your face is clearly visible.
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
 
-- The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
 
-- This presentation is based on [@lewicki_essentials_2016, Chapter 3] and [@program_on_negotiation_three_2008]
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 3] and [@program_on_negotiation_three_2008]
 
 # Purpose
+
+##
 
 Understand the basic elements of an integrative negotiation situation, as well as the strategies and tactics that can be applied in this context.
 
 # Three Party Coalition Exercise Round 1
 
-- Why the Midterm Exams are simulations and in group?
+##
 
-    + The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people. 
-    
-    + It is not effective to learn individually and only theoretically. 
-    
-    + It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
-    
-- Before taking part, students should review the instructions of the Midterm Exam that can be checked at:
+-   Why the Midterm Exams are simulations and in group?
 
-    + Primer corte 30% > Learning Activities > Midterm Exam Three Party Coalition Exercise Round 1
-    
-# Three Party Coalition Exercise Round 1
-    
-- Also check out in the __Links of interest__ the videos[^1]
-    
-    + _Three-Party Coalition Exercise_ [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
-    
+    -   The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people.
+
+    -   It is not effective to learn individually and only theoretically.
+
+    -   It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
+
+-   Before taking part, students should review the instructions of the Midterm Exam that can be checked at:
+
+    -   Primer corte 30% \> Learning Activities \> Midterm Exam Three Party Coalition Exercise Round 1
+
+##
+
+-   Also check out in the **Links of interest** the videos[^1]
+
+    -   *Three-Party Coalition Exercise* [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
+
 [^1]: The videos are in english and are recordings of the Three-Party Coalition Exercise simulation
-    
-# Three Party Coalition Exercise Round 1
 
-- Before the Midterm Exam begins each student of the group, that has been formed, will be randomly assigned to one and only one role as a negotiator of an organization. If there is a group of 4 students, then a
-role will be played by 2 students. The respective roles are:
+##
 
-    + __Group A__
-    + __Group B__
-    + __Group C__
-    
-- The objective of the negotiation is to obtain the highest number of points and determine how they will be divided. This will be reflected in the grade obtained by each student.
+-   Before the Midterm Exam begins each student of the group, that has been formed, will be randomly assigned to one and only one role as a negotiator of an organization. If there is a group of 4 students, then a role will be played by 2 students. The respective roles are:
 
-# Three Party Coalition Exercise Round 1
+    -   **Group A**
+    -   **Group B**
+    -   **Group C**
 
-- If an agreement is not reached between the parties of the negotiation, each __Group__ obtains __0 points__ and the grade for each student will be __20__ out of 50:
+-   The objective of the negotiation is to obtain the highest number of points and determine how they will be divided. This will be reflected in the grade obtained by each student.
+
+##
+
+-   If an agreement is not reached between the parties of the negotiation, each **Group** obtains **0 points** and the grade for each student will be **20** out of 50:
 
 ```{r}
+#| label: tbl-no-agreement
+#| tbl-cap: Results in case of no agreement
 
 tibble(Group  = c("A", "B", "C"),
        Points = rep(x = 0, times = 3),
-       Grade  = rep(x = 20, times = 3)) %>% 
-  kable(format = "latex", booktabs = TRUE) %>% 
-  kable_styling(font_size = 9, latex_options = "striped") %>%
+       Grade  = rep(x = 20, times = 3)) |> 
+  kable(format = "latex", booktabs = TRUE) |> 
+  kable_styling(font_size = 9, latex_options = "striped") |>
   row_spec(row = 0, bold = TRUE)
 ```
 
+##
 
-# Three Party Coalition Exercise Round 1
+-   If an agreement is reached, it can be obtained between 2 or 3 **Groups**:
 
-- If an agreement is reached, it can be obtained between 2 or 3 __Groups__:
+    -   Possible agreements:
 
-    + Possible agreements:
+        -   **Case 1**: **A** and **B** decide to reach an agreement to work together, they obtain **118 points** and must decide how to distribute these points. However, **C** will be excluded.
 
-        + __Case 1__: __A__ and __B__ decide to reach an agreement to work together, they obtain __118 points__ and must decide how to distribute these points. However, __C__ will be excluded.
-        
-        + __Case 2__: __A__ and __C__ decide to reach an agreement to work together, they obtain __84 points__ and must decide how to distribute these points. However, __B__ will be excluded.
-        
-        + __Case 3__: __B__ and __C__ decide to reach an agreement to work together, they obtain __50 points__ and must decide how to distribute these points. However, __A__ will be excluded.
-        
-        + __Case 4__: __A__, __B__ and __C__ decide to reach an agreement to work together, they obtain __121 points__ and must decide how to distribute these points. Nobody is excluded.
-        
+        -   **Case 2**: **A** and **C** decide to reach an agreement to work together, they obtain **84 points** and must decide how to distribute these points. However, **B** will be excluded.
 
-# Three Party Coalition Exercise Round 1
+        -   **Case 3**: **B** and **C** decide to reach an agreement to work together, they obtain **50 points** and must decide how to distribute these points. However, **A** will be excluded.
 
-- Grades
+        -   **Case 4**: **A**, **B** and **C** decide to reach an agreement to work together, they obtain **121 points** and must decide how to distribute these points. Nobody is excluded.
 
-    + __Case 1__: __A__ and __B__ work together but __C__ is excluded.
-    
-        + __C__ obtains a grade of __35__ out of 50.
-        + The grade of __A__ and __B__ will depend on who gets the most of the __118 points__. The __Group__ that gets the most points will have a grade of __50__ out of __50__ and the other __Group__ gets a grade of __40__ out of __50__. If __A__ and __B__ divide the points equally, whoever gets the highest grade will be assigned randomly.
-        
-    + __Case 2__: __A__ and __C__ work together but __B__ is excluded.
-    
-        + __B__ obtains a grade of __35__ out of 50. 
-        + The grade of __A__ and __C__ will depend on who gets the most of the __84 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __A__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
-        
-# Three Party Coalition Exercise Round 1
+##
 
-- Grades
+-   Grades
 
-    + __Case 3__: __B__ and __C__ work together but __A__ is excluded.
-    
-        + __A__ obtains a grade of __35__ out of 50.
-        + The grade of __B__ and __C__ will depend on who gets the most of the __50 points__. The __Group__ that gets the most points will have a grade of __50__ out of 50 and the other __Group__ gets a grade of __40__ out of 50. If __B__ and __C__ divide the points equally, whoever gets the highest grade will be assigned randomly.
-        
-    + __Case 4__: __A__, __B__ and __C__ work together so nobody is excluded.
-    
-        + The __Group__ that obtains the highest amount of points will have a grade of __50__ out of 50, the __Group__ that obtains the second highest amount of points obtains a grade of __40__ out of 50 and the __Group__ that obtains the lowest amount of points obtains a grade of __35__ out of 50. In case of a tie between any of the __Groups__, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 __Groups__.
-        
-# Three Party Coalition Exercise Round 1
+    -   **Case 1**: **A** and **B** work together but **C** is excluded.
 
-- Before, during and after the Midterm Exam remember:
+        -   **C** obtains a grade of **35** out of 50.
+        -   The grade of **A** and **B** will depend on who gets the most of the **118 points**. The **Group** that gets the most points will have a grade of **50** out of **50** and the other **Group** gets a grade of **40** out of **50**. If **A** and **B** divide the points equally, whoever gets the highest grade will be assigned randomly.
 
-    + __Before__
+    -   **Case 2**: **A** and **C** work together but **B** is excluded.
 
-        + To form groups where this task is the responsibility of students and read the instructions.
-        
-    + __During__
-    
-        + You have to make 2 decisions: Who do you want to work with? How will the points be divided?
-        + Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
-        + If an agreement is reached and the same amount of points is obtained as another __Group__ then the highest grade will be assigned randomly within the __Groups__ that obtained the same amount of points.
-        + It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
-        
-# Three Party Coalition Exercise Round 1
+        -   **B** obtains a grade of **35** out of 50.
+        -   The grade of **A** and **C** will depend on who gets the most of the **84 points**. The **Group** that gets the most points will have a grade of **50** out of 50 and the other **Group** gets a grade of **40** out of 50. If **A** and **C** divide the points equally, whoever gets the highest grade will be assigned randomly.
 
-- Before, during and after the Midterm Exam remember:
+##
 
-    + __After__
-    
-        + Once the negotiation is over, which should last a maximum of 20 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
-        
-# Overview of the integrative negotiation process
+-   Grades
 
-- In an __integrative negotiation__ you have to manage the context and the process.
+    -   **Case 3**: **B** and **C** work together but **A** is excluded.
 
-    + For the generation of this context is necessary to [@lewicki_essentials_2016, p 61-63]:
+        -   **A** obtains a grade of **35** out of 50.
+        -   The grade of **B** and **C** will depend on who gets the most of the **50 points**. The **Group** that gets the most points will have a grade of **50** out of 50 and the other **Group** gets a grade of **40** out of 50. If **B** and **C** divide the points equally, whoever gets the highest grade will be assigned randomly.
 
-        + Create a free flow of information where this issue is a fundamental difference with the case of a __distributive negotiation__.
-        + Understand the needs and objectives of the other parties without forgetting the 2 dilemmas in the __mutual adjustment__ process.
-        + Highlight the affinities with the other parties and reduce differences as much as possible.
-        + If possible, seek solutions that simultaneously cover your own needs and of the other parties.
+    -   **Case 4**: **A**, **B** and **C** work together so nobody is excluded.
+
+        -   The **Group** that obtains the highest amount of points will have a grade of **50** out of 50, the **Group** that obtains the second highest amount of points obtains a grade of **40** out of 50 and the **Group** that obtains the lowest amount of points obtains a grade of **35** out of 50. In case of a tie between any of the **Groups**, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 **Groups**.
+
+##
+
+-   Before, during and after the Midterm Exam remember:
+
+    -   **Before**
+
+        -   To form groups where this task is the responsibility of students and read the instructions.
+
+    -   **During**
+
+        -   You have to make 2 decisions: Who do you want to work with? How will the points be divided?
+        -   Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
+        -   If an agreement is reached and the same amount of points is obtained as another **Group** then the highest grade will be assigned randomly within the **Groups** that obtained the same amount of points.
+        -   It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
+
+##
+
+-   Before, during and after the Midterm Exam remember:
+
+    -   **After**
+
+        -   Once the negotiation is over, which should last a maximum of 20 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
 
 # Overview of the integrative negotiation process
 
-- In an __integrative negotiation__ you have to manage the context and the process.
+##
 
-    + The key steps related to generate an integrative negotiation process are [@lewicki_essentials_2016, p 63-80]:
-    
-        + Identify and define the problem
-        + Understand the problem by identifying the interests and needs of the other parties[^2]
-        + Generate alternative solutions
-        + Evaluate and select alternatives
-        
-- In the first 3 steps value is created (__create value__) and in the last step value is declared (__claim value__). Regarding the last step, it is important to have skills related to a __distributive negotiation__ even if you participate in an __integrative negotiation__.
+-   In an **integrative negotiation** you have to manage the context and the process.
 
-[^2]: A good illustration of this aspect is the example of the library pointed out in [@lewicki_essentials_2016, p 67]
+    -   For the generation of this context is necessary to [@lewicki_negociacion_2024, p 72-73]:
 
-# Overview of the integrative negotiation process
+        -   Create a free flow of information where this issue is a fundamental difference with the case of a **distributive negotiation**.
+        -   Understand the needs and objectives of the other parties without forgetting the 2 dilemmas in the **mutual adjustment** process.
+        -   Highlight the affinities with the other parties and reduce differences as much as possible.
+        -   If possible, seek solutions that simultaneously cover your own needs and of the other parties.
 
-```{r }
-#| out-width: 80%
-#| fig-cap: Creating/Claiming Value and the Pareto Efficient Frontier [@lewicki_essentials_2016, p 64]
+##
+
+-   In an **integrative negotiation** you have to manage the context and the process.
+
+    -   The key steps related to generate an integrative negotiation process are [@lewicki_negociacion_2024, p 74-91]:
+
+        -   Identify and define the problem
+        -   Understand the problem by identifying the interests and needs of the other parties[^2]
+        -   Generate alternative solutions
+        -   Evaluate and select alternatives
+
+-   In the first 3 steps value is created (**create value**) and in the last step value is declared (**claim value**). Regarding the last step, it is important to have skills related to a **distributive negotiation** even if you participate in an **integrative negotiation**.
+
+[^2]: A good illustration of this aspect is the example of the library pointed out in [@lewicki_negociacion_2024, p 78]
+
+##
+
+```{r}
+#| label: fig-creating-claiming-value-pareto-efficient-frontier
+#| fig-cap: Creating/Claiming Value and the Pareto Efficient Frontier [@lewicki_negociacion_2024, p 74]
+
 ggplot(data = tibble(x = c( 1, -1, -1, 0, 0, 4, 2.4),
                      y = c(-1,  1, -1, 0, 4, 0, 2.4))) +
     geom_point(aes(x = x, y = y),
@@ -303,33 +302,67 @@ ggplot(data = tibble(x = c( 1, -1, -1, 0, 0, 4, 2.4),
     theme_void()
 ```
 
+# Assessing the quality of the agreement
+
+##
+
+-  Objective outcomes [@lewicki_negociacion_2024, p 91]
+
+    -  Both parties’ interests and needs were met?
+    -  Is the agreement comprehensive? 
+    -  It satisfy the interests of all parties? 
+    -  Is it fair?
+
+-  Subjective outcomes [@curhan_what_2006, p 501]
+
+    -  Feelings about:
+    
+        -  Outcome
+        -  Self
+        -  Process
+        -  Relationship
+
 # Factors that facilitate integrative negotiation
 
-- In [@lewicki_essentials_2016, p 80-86] 7 factors that generate a predisposition to consider an integrated negotiation with a higher probability of success are highlighted:
+##
 
-    + Existence of common, shared or joint goals between the parties to the negotiation.
-    + Negotiators’ own confidence that they can solve a problem through integrative negotiation.
-    + Existence of confidence in the validity of one’s own position but also in some degree on the perspective of the other parties.
-    
-# Factors that facilitate integrative negotiation
+-   In [@lewicki_negociacion_2024, p 92-97] 7 factors that generate a predisposition to consider an integrated negotiation with a higher probability of success are highlighted:
 
-- In [@lewicki_essentials_2016, p 80-86] 7 factors that generate a predisposition to consider an integrated negotiation with a higher probability of success are highlighted:
+    -   Existence of common, shared or joint goals between the parties to the negotiation.
+    -   Negotiators’ own confidence that they can solve a problem through integrative negotiation.
+    -   Existence of confidence in the validity of one’s own position but also in some degree on the perspective of the other parties.
 
-    + Existence of motivation and commitment to work as a team by the parties in the negotiation.
-    + Existence of mutual trust between the parties.
-    + Existence of clear and precise communication where there is a willingness to disclose information and understand what the counterparts seek to communicate.
-    + Understanding and knowledge by negotiators about the dynamics of an integrative negotiation.
-    
+##
+
+-   In [@lewicki_negociacion_2024, p 92-97] 7 factors that generate a predisposition to consider an integrated negotiation with a higher probability of success are highlighted:
+
+    -   Existence of motivation and commitment to work as a team by the parties in the negotiation.
+    -   Existence of mutual trust between the parties.
+    -   Existence of clear and precise communication where there is a willingness to disclose information and understand what the counterparts seek to communicate.
+    -   Understanding and knowledge by negotiators about the dynamics of an integrative negotiation.
+
+# Difficulties to achieve and integrative negotiation
+
+##
+
+-  Fail to perceive a situation as having integrative potential
+-  Past events leading to a relationship filled with competition and conflict
+-  Belief that an issue can only be resolved distributively
+-  Desire to satisfy one's own concerns without regard for the others concerns
+-  Insufficient time to process information, understand individual and collective needs and effectively transition from value creation to value claiming
+
 # Acknowledgments
 
-- To my family that supports me
+##
 
-- To the taxpayers of Colombia and the __[UMNG students](https://www.umng.edu.co/estudiante)__ who pay my salary
+-   To my family that supports me
 
-- To the __[Business Science](https://www.business-science.io/)__ and __[R4DS Online Learning](https://www.rfordatasci.com/)__ communities where I learn __[R](https://www.r-project.org/about.html)__ 
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
 
-- To the __[R Core Team](https://www.r-project.org/contributors.html)__, the creators of __[RStudio IDE](https://rstudio.com/products/rstudio/)__, __[Quarto](https://quarto.org/)__ and the authors and maintainers of the packages __[tidyverse](https://CRAN.R-project.org/package=tidyverse)__, __[tidyquant](https://CRAN.R-project.org/package=tidyquant)__, __[knitr](https://CRAN.R-project.org/package=knitr)__, __[kableExtra](https://CRAN.R-project.org/package=kableExtra)__ and __[tinytex](https://CRAN.R-project.org/package=tinytex)__ for allowing me to access these tools without paying for a license
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
 
-- To the __[Linux kernel community](https://www.kernel.org/category/about.html)__ for allowing me the possibility to use some __[Linux distributions](https://static.lwn.net/Distributions/)__ as my main __[OS](https://en.wikipedia.org/wiki/Operating_system)__ without paying for a license
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**tidyquant**](https://CRAN.R-project.org/package=tidyquant), [**knitr**](https://CRAN.R-project.org/package=knitr), [**kableExtra**](https://CRAN.R-project.org/package=kableExtra) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
 
-# References
+-   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
+
+# References {.allowframebreaks}
