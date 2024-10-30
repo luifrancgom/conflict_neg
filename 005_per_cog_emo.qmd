@@ -54,6 +54,8 @@ library(knitr)
 
 Understand how perceptions, knowledge and emotions affect a negotiation process.
 
+# Perception
+
 ##
 
 -   **Perception** is defined as the process by which individuals acquire information from their environment through the senses.
