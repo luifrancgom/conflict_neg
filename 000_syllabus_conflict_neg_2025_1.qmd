@@ -1,0 +1,385 @@
+---
+title: "Syllabus Electiva II: Negociación de Conflictos Module A AE"
+author:
+  - name: Luis Francisco Gómez López
+    email: luis.gomezl@unimilitar.edu.co
+    affiliations:
+      - name: Universidad Militar Nueva Granada
+date: 2025-02-13
+date-modified: last-modified
+format:
+  html: 
+    number-sections: true
+    toc: true
+    embed-resources: true
+execute: 
+  echo: false
+  warning: false
+  message: false
+params:
+  meeting_info:
+    value:
+      phone: +57 3124541536
+      days: [Monday, Wednesday, Friday]
+      start_hour: 14:00
+      end_hour: 15:00
+  block:
+    value:
+      start_date: 2025-03-24
+      end_date: 2025-05-31
+  schedule:
+    value:
+      meeting_dates: [2, 4]
+      dates_recess: null
+      start_presentation_hour: 20:00
+      end_presentation_hour: 20:45  
+      start_virtual_meeting_hour: 19:00
+      end_virtual_meeting_hour: 20:00
+      start_activity_hour: 00:00
+      end_activity_hour: 22:00
+      start_exam_hour: 15:30
+      end_exam_hour: 17:30
+bibliography: conflict_neg.bib
+editor: visual
+---
+
+```{r}
+#| label: libraries
+
+library(tidyverse)
+library(glue)
+library(knitr)
+```
+
+```{=html}
+<style>
+  p { 
+    text-align: justify;
+  }
+</style>
+```
+
+# Professor and meeting hours with students
+
+```{r}
+#| label: meeting-info
+
+# Days ----
+if(length(params$meeting_info$days) > 1) {
+  days_str <- glue_collapse(params$meeting_info$days, 
+                            sep = ", ", last = " or ") 
+} else {
+  days_str <- params$meeting_info$days[1]
+}
+```
+
+-   **Name**
+
+    -   `r rmarkdown::metadata$author[[1]]$name`
+
+-   **Communication through the virtual classroom**
+
+    -   For doubts and concerns of the topics of the course, please use the *Forum: Questions or concerns* that can be accessed at the top of the platform
+
+        -   In this way, doubts and concerns can be shared with all students and all course participants can contribute to the learning process
+
+    -   Complaints regarding grades, please send an email to [**`{r} rmarkdown::metadata$author[[1]]$email`**](mailto:%60r%20rmarkdown::metadata$author%5B%5B1%5D%5D$email%60)
+
+        -   Please wait for grades to be published on the News Bulletin Board before submitting any complaints. Complaints should be based on the feedback provided and must take into account the evaluation parameters.
+
+    -   For urgent issues, you can call me to `{r} params$meeting_info$phone` between `{r} params$meeting_info$start_hour` hours and `{r} params$meeting_info$end_hour` hours on `{r} days_str`. But, please do not send me whatsapp messages or call me on weekends.
+
+# Presentation and objectives of the subject
+
+## Description
+
+-   Credits: 4
+-   Type: Theoretical-Practice
+-   Area of Knowledge: Professional
+-   Semester: 8
+-   Block: 2 (September 23 - November 30, 2024)
+
+## Justification
+
+Conflicts are frequent situations in the management of organizations. Due to the above, business administrators require guidance to understand business relationships in order to persuade other parties under ethical standards through negotiation tactics that mitigate the negative effects of the conflict. To achieve this, it is necessary to develop in the future business administrator skills and abilities to lead groups and organizations using tools that allow him to communicate effectively and manage conflicts strategically between internal and external members of an organization.
+
+In that sense, it is sought that the future business administrator consolidate the necessary skills to be a better negotiator and reach beneficial agreements for the parties involved in negotiation and conflict situations.
+
+## General objective
+
+Develop in students, negotiation conflict skills in diverse scenarios through the review, analysis and application of negotiation methods and techniques.
+
+# Competencies
+
+-   Global competency:
+
+    -   Resolve conflict situations strategically and ethically in the organization and its environment to generate social and economic benefits.
+
+-   Specific competencies:
+
+    -   Lead human talent through the strategic resolution of conflicts to achieve the common goals of the organization.
+
+    -   Plan negotiation strategies based on information from the environment to obtain collective benefits.
+
+    -   Recognize the importance of ethics in conflict negotiation to generate long-term relationships with the organization's stakeholders.
+
+-   Competencies SABE curriculum
+
+    -   Skills in handling a second language
+    -   Ability to work in teams
+    -   Dialogic and deliberative capabilities
+    -   Use of argumentative thinking
+
+# Schedule and contents
+
+## Reading schedule
+
+```{r}
+
+lewicki <- rep("[@lewicki_negociacion_2024]", times = 3)
+
+tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
+       Material        = rep(c(lewicki, 
+                               "[@program_on_negotiation_three_2008]"), 
+                             times = 3),
+       `Chapter or Round` = c("1","2","3", "I", "4", "6", "7", "II", "8", "5", "20", "III"),
+       `Initial page`  = c("1", "31", "69", " ", "102", "175", "210", " ", "235", "133", "555", " "),
+       `Final page`    = c("30", "67", "100", " ", "131", "208", "234", " ", "261", "174", "564", " "),
+       `Number of pages` = c("30", "37", "32", " ", "30", "34", "25", " ", "27", "42", "10", " ")) |> 
+    kable()
+```
+
+## Detailed schedule of virtual meetings and activities
+
+### Primer corte 30%
+
+-   September 23
+
+    -   **Virtual meeting Presentation Syllabus**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Review the course program in advance, which can be downloaded by following the route **Primer corte 30% \> Support material - Primer corte 30% \> 000_syllabus_conflict_neg_2024_2**
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   September 24
+
+    -   **Virtual meeting The Nature of Negotiation**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 1]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   September 30
+
+    -   **Questionnaire 1 Opening**
+        -   **Opening time**: 00:00 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapters 1, 2]
+
+-   October 1
+
+    -   **Virtual meeting Strategy and Tactics of Distributive Bargaining**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 2]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   October 6
+
+    -   **Questionnaire 1 Closing**
+        -   **Closing time**: 22:00 hours
+        -   **Prerequisites**:
+            -   Have answered the Questionnaire 1 before 22:00 hours
+
+-   October 14
+
+    -   **Instructions Opening Midterm Exam Three Party Coalition Exercise Round 1**
+        -   **Opening time**: 00:00 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+
+-   October 15
+
+    -   **Virtual meeting Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 3]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   October 19
+
+    -   **Midterm Exam Three Party Coalition Exercise Round 1**
+        -   **Opening time**: 15:30 hours
+        -   **Closing time**: 17:30 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 3]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+### Segundo corte 30%
+
+-   October 21
+
+    -   **Questionnaire 2 Opening**
+        -   **Opening time**: 00:00 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapters 4, 6]
+
+-   October 22
+
+    -   **Virtual meeting Negotiation: Strategy and Planning**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 4]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   October 29
+
+    -   **Virtual meeting Perception, Cognition, and Emotion**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 6]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   November 3
+
+    -   **Questionnaire 2 Closing**
+        -   **Closing time**: 22:00 hours
+        -   **Prerequisites**:
+            -   Have answered the Questionnaire 2 before 22:00 hours
+
+-   November 4
+
+    -   **Instructions Opening Midterm Exam Three Party Coalition Exercise Round 2**
+        -   **Opening time**: 00:00 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+
+-   November 5
+
+    -   **Virtual meeting Communication and Three-Party Coalition Exercise Round 2**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 7]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   November 9
+
+    -   **Midterm Exam Three Party Coalition Exercise Round 2**
+        -   **Opening time**: 15:30 hours
+        -   **Closing time**: 17:30 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 7]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+### Tercer corte 40%
+
+-   November 11
+
+    -   **Questionnaire 3 Opening**
+        -   **Opening time**: 00:00 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapters 8, 5]
+
+-   November 12
+
+    -   **Virtual meeting Negotiation: Finding and Using Negotiation Power**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 8]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   November 19
+
+    -   **Virtual meeting Ethics in Negotiation**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 5]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   November 24
+
+    -   **Questionnaire 3 Closing**
+        -   **Closing time**: 22:00 hours
+        -   **Prerequisites**:
+            -   Have answered the Questionnaire 2 before 22:00 hours
+
+-   November 25
+
+    -   **Instructions Opening Final Exam Three Party Coalition Exercise Modified**
+        -   **Opening time**: 00:00 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+
+-   November 26
+
+    -   **Virtual meeting Best Practices in Negotiations and Three-Party Coalition Exercise Modified**
+        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 20]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   November 30
+
+    -   **Final Exam Three Party Coalition Exercise Modified**
+        -   **Opening time**: 15:30 hours
+        -   **Closing time**: 17:30 hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 20]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+# Qualifiable activities, weights and process in case of no presentation
+
+## Activities and weights
+
+-   **Primer corte**: 30%
+
+    -   **Questionnaire 1**: 15%
+    -   **Midterm Exam Three Party Coalition Exercise Round 1**: 15%
+
+-   **Segundo corte**: 30%
+
+    -   **Questionnaire 2**: 15%
+    -   **Midterm Exam Three Party Coalition Exercise Round 2**: 15%
+
+-   **Tercer corte**: 40%
+
+    -   **Questionnaire 3**: 15%
+    -   **Final Exam Three Party Coalition Exercise Modified**: 25%
+
+## Process in case of no presentation
+
+-   Students who do not present a **Questionnaire** due to force majeure or illness, must send the respective excuse scanned to [**luis.gomezl\@unimilitar.edu.co**](mailto:luis.gomezl@unimilitar.edu.co){.email}. If it is not sent, the note will be zero. Once the excuse has been satisfactorily received, the student should **not** present the activity and the corresponding grade will be equal to the immediately subsequent grade obtained in the **Midterm Exam 1** or **Midterm Exam 2** or **Final Exam** according to the case.
+
+-   Students who do not present a **Midterm Exam 1** or **Midterm Exam 2** or the **Final Exam**, must send and email to [**admon.distancia\@unimilitar.edu.co**](mailto:admon.distancia@unimilitar.edu.co){.email} two days before or two days after the closing date of these activities. However, this request can be made only once during the course. If it is not requested under these conditions, the grade will be zero.
+
+# Use of Chat GPT-3, Gemini 1.5 and its friends
+
+You can use any artificial intelligence tool and in particular any Large Language Model but please use them in a responsible way by taking into account its capabilities and limitations and always pointing out to the professor and your colleges that you have use them.
+
+# Study material
+
+-   [@lewicki_negociacion_2024, Chapters 1, 2, 3, 4, 6, 7, 8, 5, 20]
+
+    -   The book can be consulted through the virtual classroom
+
+-   [@program_on_negotiation_three_2008]
+
+    -   The document can be consulted through the virtual classroom
+
+# About plagiarism
+
+-   **Acuerdo 02 de 2015 (7 de Mayo): Artículo 68. Escala de Calificaciones Numeral f**
+
+*"La comprobación de todo fraude o intento de fraude en cualquier tipo de prueba, acarreará al estudiante y a su(s) colaborador(es), una calificación de CERO PUNTO CERO (0.0) en la prueba respectiva. Como quiera que el fraude o intento de cometerlo es una falta grave, el docente debe informar de este hecho al Director del programa respectivo, quien enviará el informe a la Decanatura de la Facultad, con el fin de iniciar los trámites correspondientes para aplicar la sanción disciplinaria prevista en éste reglamento."*
+
+-   **Acuerdo 05 de 2018 (6 de Junio): Artículo 20 que modifica el Artículo 107 Faltas Disciplinarias Numeral c. Número 6 del Acuerdo 02 de 2015 (7 de Mayo)**
+
+*"Hacer plagio en cualquier tipo de documento o desplegar alguna conducta dolosa que viole el régimen de propiedad intelectual de la Universidad."*
+
+# Study material references
