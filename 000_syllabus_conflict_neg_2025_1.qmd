@@ -30,7 +30,7 @@ params:
   schedule:
     value:
       meeting_dates: [2, 4]
-      dates_recess: null
+      dates_recess: [2024-04-14, 2024-04-20]
       start_presentation_hour: 20:00
       end_presentation_hour: 20:45  
       start_virtual_meeting_hour: 19:00
@@ -93,15 +93,34 @@ if(length(params$meeting_info$days) > 1) {
 
 ## Description
 
+```{r}
+#| label: block
+
+# Dates ----
+start_date <- ymd(params$block$start_date) 
+end_date   <- ymd(params$block$end_date)
+
+str_start_end_date <- paste(format(start_date, 
+                                   format = "%B %d"),
+                            " - ",
+                            format(end_date, 
+                                   format = "%B %d"), 
+                            sep = "",
+                            ", ",
+                            year(start_date))
+```
+
 -   Credits: 4
 -   Type: Theoretical-Practice
 -   Area of Knowledge: Professional
 -   Semester: 8
--   Block: 2 (September 23 - November 30, 2024)
+-   Block: 2 (`{r} str_start_end_date`)
 
 ## Justification
 
-Conflicts are frequent situations in the management of organizations. Due to the above, business administrators require guidance to understand business relationships in order to persuade other parties under ethical standards through negotiation tactics that mitigate the negative effects of the conflict. To achieve this, it is necessary to develop in the future business administrator skills and abilities to lead groups and organizations using tools that allow him to communicate effectively and manage conflicts strategically between internal and external members of an organization.
+Conflicts are frequent situations in the management of organizations. Due to the above, business administrators require guidance to understand business relationships in order to persuade other parties under ethical standards through negotiation tactics that mitigate the negative effects of the conflict. 
+
+To achieve this, it is necessary to develop in the future business administrator skills and abilities to lead groups and organizations using tools that allow him to communicate effectively and manage conflicts strategically between internal and external members of an organization.
 
 In that sense, it is sought that the future business administrator consolidate the necessary skills to be a better negotiator and reach beneficial agreements for the parties involved in negotiation and conflict situations.
 
@@ -109,13 +128,13 @@ In that sense, it is sought that the future business administrator consolidate t
 
 Develop in students, negotiation conflict skills in diverse scenarios through the review, analysis and application of negotiation methods and techniques.
 
-# Competencies
+## Learning outcomes
 
--   Global competency:
+-   Course learning outcome:
 
     -   Resolve conflict situations strategically and ethically in the organization and its environment to generate social and economic benefits.
 
--   Specific competencies:
+-   Course specific learning outcomes:
 
     -   Lead human talent through the strategic resolution of conflicts to achieve the common goals of the organization.
 
@@ -135,6 +154,8 @@ Develop in students, negotiation conflict skills in diverse scenarios through th
 ## Reading schedule
 
 ```{r}
+#| label: tbl-reading-schedule
+#| tbl-cap: Reading schedule
 
 lewicki <- rep("[@lewicki_negociacion_2024]", times = 3)
 
@@ -149,7 +170,32 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
     kable()
 ```
 
-## Detailed schedule of virtual meetings and activities
+## Detailed schedule
+
+```{r}
+#| label: detailed-schedule
+
+source(file = "000_scripts/000_tbl_schedule.R")
+
+tbl_schedule <- tbl_schedule(start_date   = params$block$start_date, 
+                             end_date     = params$block$end_date,
+                             dates_recess = params$schedule$dates_recess,
+                             meeting_days = params$schedule$meeting_dates)
+
+virtual_meeting <- tbl_schedule |> 
+  filter(virtual_meeting == 1) |> 
+  pull(index)
+
+activity <-  tbl_schedule |> 
+  filter(activity == 1) |> 
+  pull(index)
+
+exam <-  tbl_schedule |> 
+  filter(exam == 1) |> 
+  pull(index)
+
+tbl_schedule |> kable()
+```
 
 ### Primer corte 30%
 
@@ -158,7 +204,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
     -   **Virtual meeting Presentation Syllabus**
         -   **Meeting time**: 19:00 - 19:45 hours
         -   **Prerequisites**:
-            -   Review the course program in advance, which can be downloaded by following the route **Primer corte 30% \> Support material - Primer corte 30% \> 000_syllabus_conflict_neg_2024_2**
+            -   Review the course program in advance, which can be downloaded by following the route *Primer corte 30% \> Learning Resources \> Support material \> Presentations \> 000_syllabus_intro_econ\_...*
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
 -   September 24
@@ -358,9 +404,17 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
 -   Students who do not present a **Midterm Exam 1** or **Midterm Exam 2** or the **Final Exam**, must send and email to [**admon.distancia\@unimilitar.edu.co**](mailto:admon.distancia@unimilitar.edu.co){.email} two days before or two days after the closing date of these activities. However, this request can be made only once during the course. If it is not requested under these conditions, the grade will be zero.
 
-# Use of Chat GPT-3, Gemini 1.5 and its friends
+# Use of Chat GPT-4, Gemini 1.5, Copilot and its friends
 
-You can use any artificial intelligence tool and in particular any Large Language Model but please use them in a responsible way by taking into account its capabilities and limitations and always pointing out to the professor and your colleges that you have use them.
+In this course, the use of generative artificial intelligence tools is allowed as long as you follow the following good practices [@equipo_proyecto_ia-uniandes_lineamientos_2024, pp. 20-21]:
+
+-   **Informed use**: learn beforehand how the tool works, its limitations, and risks
+-   **Transparent use**: report which tool you used and how it was used it
+-   **Ethical use**: do not present material generated by the tool as your own and follow the corresponding citation rules (see [@mcadoo_how_2024]).
+-   **Critical evaluation**: always contrast and compare any response obtained through the tool with reliable or primary sources of information
+-   **Responsible use**: do not include personal or confidential information (own or others) when entering instructions (prompts)
+
+For more detailed guidance on good practices and recommended uses, check out [@equipo_proyecto_ia-uniandes_lineamientos_2024, Section 3.2]
 
 # Study material
 
