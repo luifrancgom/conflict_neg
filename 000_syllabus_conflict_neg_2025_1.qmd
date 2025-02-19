@@ -30,9 +30,9 @@ params:
   schedule:
     value:
       meeting_dates: [2, 4]
-      dates_recess: [2024-04-14, 2024-04-20]
-      start_presentation_hour: 20:00
-      end_presentation_hour: 20:45  
+      dates_recess: [2025-04-14, 2025-04-20]
+      start_presentation_hour: 19:00
+      end_presentation_hour: 19:45  
       start_virtual_meeting_hour: 19:00
       end_virtual_meeting_hour: 20:00
       start_activity_hour: 00:00
@@ -193,71 +193,94 @@ activity <-  tbl_schedule |>
 exam <-  tbl_schedule |> 
   filter(exam == 1) |> 
   pull(index)
-
-tbl_schedule |> kable()
 ```
 
 ### Primer corte 30%
 
--   September 23
+-   `r format(x = activity[[1]], format = "%B %e")`
+
+    -   **Questionnaire 1 Opening**
+        -   **Opening time**: `r paste(params$schedule$start_activity_hour)` hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapters 1-2]
+            
+-   `r format(x = ymd(params$block$start_date), format = "%B %e")`
 
     -   **Virtual meeting Presentation Syllabus**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
-            -   Review the course program in advance, which can be downloaded by following the route *Primer corte 30% \> Learning Resources \> Support material \> Presentations \> 000_syllabus_intro_econ\_...*
+            -   Review the course program in advance, which can be downloaded by following the route *Primer corte 30% \> Learning Resources \> Support material \> Presentations \> 000_syllabus_conflict_neg\_...*
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   September 24
+-   `r format(x = virtual_meeting[[1]], format = "%B %e")`
 
     -   **Virtual meeting The Nature of Negotiation**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 1]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   September 30
+-   `r format(x = virtual_meeting[[2]], format = "%B %e")`
 
-    -   **Questionnaire 1 Opening**
-        -   **Opening time**: 00:00 hours
+    -   **Virtual meeting Questions: The Nature of Negotiation**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
-            -   Read and review [@lewicki_negociacion_2024, Chapters 1, 2]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 1]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   October 1
+-   `r format(x = virtual_meeting[[3]], format = "%B %e")`
 
     -   **Virtual meeting Strategy and Tactics of Distributive Bargaining**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 2]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   October 6
+-   `r format(x = virtual_meeting[[4]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Strategy and Tactics of Distributive Bargaining**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 2]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   `r format(x = activity[[2]], format = "%B %e")`
 
     -   **Questionnaire 1 Closing**
-        -   **Closing time**: 22:00 hours
+        -   **Closing time**: `r paste(params$schedule$end_activity_hour)` hours
         -   **Prerequisites**:
-            -   Have answered the Questionnaire 1 before 22:00 hours
+            -   Have answered the Questionnaire 1 before `r paste(params$schedule$end_activity_hour)` hours
 
--   October 14
+-   `r format(x = activity[[2]] + 1, format = "%B %e")`
 
     -   **Instructions Opening Midterm Exam Three Party Coalition Exercise Round 1**
-        -   **Opening time**: 00:00 hours
+        -   **Opening time**: `r paste(params$schedule$start_activity_hour)` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
 
--   October 15
+-   `r format(x = virtual_meeting[[5]], format = "%B %e")`
 
     -   **Virtual meeting Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 3]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+            
+-   `r format(x = virtual_meeting[[6]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
             -   Read and review [@lewicki_negociacion_2024, Chapter 3]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   October 19
+-   `r format(x = exam[[1]], format = "%B %e")`
 
     -   **Midterm Exam Three Party Coalition Exercise Round 1**
-        -   **Opening time**: 15:30 hours
-        -   **Closing time**: 17:30 hours
+        -   **Opening time**: `r paste(params$schedule$start_exam_hour)` hours
+        -   **Closing time**: `r paste(params$schedule$end_exam_hour)` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
             -   Read and review [@lewicki_negociacion_2024, Chapter 3]
@@ -265,57 +288,90 @@ tbl_schedule |> kable()
 
 ### Segundo corte 30%
 
--   October 21
+-   `r format(x = ymd(params$schedule$dates_recess[[1]]), format = "%B %e")`
+
+    -   **Begin Holy Week**
+    
+-   `r format(x = ymd(params$schedule$dates_recess[[2]]), format = "%B %e")`
+
+    -   **End Holy Week**
+    
+-   `r format(x = activity[[3]], format = "%B %e")`
 
     -   **Questionnaire 2 Opening**
-        -   **Opening time**: 00:00 hours
+        -   **Opening time**: `r paste(params$schedule$start_activity_hour)` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapters 4, 6]
 
--   October 22
+-   `r format(x = virtual_meeting[[7]], format = "%B %e")`
 
-    -   **Virtual meeting Negotiation: Strategy and Planning**
-        -   **Meeting time**: 19:00 - 19:45 hours
+    -   **Virtual meeting Negotiation Strategy and Planning**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 4]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   October 29
+-   `r format(x = virtual_meeting[[8]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Negotiation Strategy and Planning**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 4]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   `r format(x = virtual_meeting[[9]], format = "%B %e")`
 
     -   **Virtual meeting Perception, Cognition, and Emotion**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 6]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+            
+-   `r format(x = virtual_meeting[[10]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Perception, Cognition, and Emotion**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 6]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   November 3
+-   `r format(x = activity[[4]], format = "%B %e")`
 
     -   **Questionnaire 2 Closing**
-        -   **Closing time**: 22:00 hours
+        -   **Closing time**: `r paste(params$schedule$end_activity_hour)` hours
         -   **Prerequisites**:
-            -   Have answered the Questionnaire 2 before 22:00 hours
+            -   Have answered the Questionnaire 2 before `r paste(params$schedule$end_activity_hour)` hours
 
--   November 4
+-   `r format(x = activity[[4]] + 1, format = "%B %e")`
 
     -   **Instructions Opening Midterm Exam Three Party Coalition Exercise Round 2**
-        -   **Opening time**: 00:00 hours
+        -   **Opening time**: `r paste(params$schedule$start_activity_hour)` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
 
--   November 5
+-   `r format(x = virtual_meeting[[11]], format = "%B %e")`
 
     -   **Virtual meeting Communication and Three-Party Coalition Exercise Round 2**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
             -   Read and review [@lewicki_negociacion_2024, Chapter 7]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   November 9
+-   `r format(x = virtual_meeting[[12]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Communication and Three-Party Coalition Exercise Round 2**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 7]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   `r format(x = exam[[2]], format = "%B %e")`
 
     -   **Midterm Exam Three Party Coalition Exercise Round 2**
-        -   **Opening time**: 15:30 hours
-        -   **Closing time**: 17:30 hours
+        -   **Opening time**: `r paste(params$schedule$start_exam_hour)` hours
+        -   **Closing time**: `r paste(params$schedule$end_exam_hour)` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
             -   Read and review [@lewicki_negociacion_2024, Chapter 7]
@@ -323,57 +379,82 @@ tbl_schedule |> kable()
 
 ### Tercer corte 40%
 
--   November 11
+-   `r format(x = activity[[5]], format = "%B %e")`
 
     -   **Questionnaire 3 Opening**
-        -   **Opening time**: 00:00 hours
+        -   **Opening time**: `r paste(params$schedule$start_activity_hour)` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapters 8, 5]
 
--   November 12
+-   `r format(x = virtual_meeting[[13]], format = "%B %e")`
 
-    -   **Virtual meeting Negotiation: Finding and Using Negotiation Power**
-        -   **Meeting time**: 19:00 - 19:45 hours
+    -   **Virtual meeting Negotiation Finding and Using Negotiation Power**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 8]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+            
+-   `r format(x = virtual_meeting[[14]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Negotiation Finding and Using Negotiation Power**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 8]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   November 19
+-   `r format(x = virtual_meeting[[15]], format = "%B %e")`
 
     -   **Virtual meeting Ethics in Negotiation**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 5]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   November 24
+-   `r format(x = virtual_meeting[[16]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Ethics in Negotiation**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review [@lewicki_negociacion_2024, Chapter 5]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   `r format(x = activity[[6]], format = "%B %e")`
 
     -   **Questionnaire 3 Closing**
-        -   **Closing time**: 22:00 hours
+        -   **Closing time**: `r paste(params$schedule$end_activity_hour)` hours
         -   **Prerequisites**:
-            -   Have answered the Questionnaire 2 before 22:00 hours
+            -   Have answered the Questionnaire 2 before `r paste(params$schedule$end_activity_hour)` hours
 
--   November 25
+-   `r format(x = activity[[6]] + 1, format = "%B %e")`
 
     -   **Instructions Opening Final Exam Three Party Coalition Exercise Modified**
-        -   **Opening time**: 00:00 hours
+        -   **Opening time**: `r paste(params$schedule$start_activity_hour)` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
 
--   November 26
+-   `r format(x = virtual_meeting[[17]], format = "%B %e")`
 
     -   **Virtual meeting Best Practices in Negotiations and Three-Party Coalition Exercise Modified**
-        -   **Meeting time**: 19:00 - 19:45 hours
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
             -   Read and review [@lewicki_negociacion_2024, Chapter 20]
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
--   November 30
+-   `r format(x = virtual_meeting[[18]], format = "%B %e")`
+
+    -   **Virtual meeting Questions: Best Practices in Negotiations and Three-Party Coalition Exercise Modified**
+        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Prerequisites**:
+            -   Read and review role play instructions [@program_on_negotiation_three_2008]
+            -   Read and review [@lewicki_negociacion_2024, Chapter 20]
+            -   Have a headset with a built-in microphone to isolate noise from the environment
+
+-   `r format(x = exam[[3]], format = "%B %e")`
 
     -   **Final Exam Three Party Coalition Exercise Modified**
-        -   **Opening time**: 15:30 hours
-        -   **Closing time**: 17:30 hours
+        -   **Opening time**: `r paste(params$schedule$start_exam_hour)` hours
+        -   **Closing time**: `r paste(params$schedule$end_exam_hour)` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
             -   Read and review [@lewicki_negociacion_2024, Chapter 20]

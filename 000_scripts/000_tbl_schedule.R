@@ -104,3 +104,8 @@ tbl_schedule <- function(start_date,
   return(block_dates)
   
 }
+
+
+tbl_schedule(start_date = "2025-03-24", 
+             end_date   = "2025-05-31", 
+             dates_recess = )
