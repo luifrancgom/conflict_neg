@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 Version: 1.0
-ProjectId: 22db8313-0bfb-4267-b8e3-3098f577ccd7
+ProjectId: 57f97cf4-d674-4c34-ae9e-68836d271590
 
 RestoreWorkspace: Default
 SaveWorkspace: Default
@@ -8,24 +7,8 @@ AlwaysSaveHistory: Default
 
 EnableCodeIndexing: Yes
 UseSpacesForTab: Yes
-NumSpacesForTab: 4
+NumSpacesForTab: 2
 Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
-=======
-Version: 1.0
-ProjectId: 2df317ae-edad-4a37-803c-a797c64a37bd
-
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
-
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 4
-Encoding: UTF-8
-
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
->>>>>>> 6e7529f957ac0ce8717252fbc6e9937e921153f7
