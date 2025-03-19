@@ -33,8 +33,8 @@ params:
       dates_recess: [2025-04-14, 2025-04-20]
       start_presentation_hour: 19:00
       end_presentation_hour: 19:45  
-      start_virtual_meeting_hour: 19:00
-      end_virtual_meeting_hour: 20:00
+      start_syllabus_hour: 19:00
+      end_syllabus_hour: 19:45
       start_activity_hour: 00:00
       end_activity_hour: 22:00
       start_exam_hour: 15:30
@@ -118,7 +118,7 @@ str_start_end_date <- paste(format(start_date,
 
 ## Justification
 
-Conflicts are frequent situations in the management of organizations. Due to the above, business administrators require guidance to understand business relationships in order to persuade other parties under ethical standards through negotiation tactics that mitigate the negative effects of the conflict. 
+Conflicts are frequent situations in the management of organizations. Due to the above, business administrators require guidance to understand business relationships in order to persuade other parties under ethical standards through negotiation tactics that mitigate the negative effects of the conflict.
 
 To achieve this, it is necessary to develop in the future business administrator skills and abilities to lead groups and organizations using tools that allow him to communicate effectively and manage conflicts strategically between internal and external members of an organization.
 
@@ -203,11 +203,11 @@ exam <-  tbl_schedule |>
         -   **Opening time**: `r paste(params$schedule$start_activity_hour)` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapters 1-2]
-            
+
 -   `r format(x = ymd(params$block$start_date), format = "%B %e")`
 
     -   **Virtual meeting Presentation Syllabus**
-        -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
+        -   **Meeting time**: `r paste(params$schedule$start_syllabus_hour, params$schedule$end_virtual_meeting_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Review the course program in advance, which can be downloaded by following the route *Primer corte 30% \> Learning Resources \> Support material \> Presentations \> 000_syllabus_conflict_neg\_...*
             -   Have a headset with a built-in microphone to isolate noise from the environment
@@ -238,7 +238,7 @@ exam <-  tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[4]], format = "%B %e")`
 
-    -   **Virtual meeting Questions: Strategy and Tactics of Distributive Bargaining**
+    -   **Virtual meeting Workshop: Líderes para el Trabajo en Equipo**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 2]
@@ -266,7 +266,7 @@ exam <-  tbl_schedule |>
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
             -   Read and review [@lewicki_negociacion_2024, Chapter 3]
             -   Have a headset with a built-in microphone to isolate noise from the environment
-            
+
 -   `r format(x = virtual_meeting[[6]], format = "%B %e")`
 
     -   **Virtual meeting Questions: Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1**
@@ -291,11 +291,11 @@ exam <-  tbl_schedule |>
 -   `r format(x = ymd(params$schedule$dates_recess[[1]]), format = "%B %e")`
 
     -   **Begin Holy Week**
-    
+
 -   `r format(x = ymd(params$schedule$dates_recess[[2]]), format = "%B %e")`
 
     -   **End Holy Week**
-    
+
 -   `r format(x = activity[[3]], format = "%B %e")`
 
     -   **Questionnaire 2 Opening**
@@ -326,10 +326,10 @@ exam <-  tbl_schedule |>
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 6]
             -   Have a headset with a built-in microphone to isolate noise from the environment
-            
+
 -   `r format(x = virtual_meeting[[10]], format = "%B %e")`
 
-    -   **Virtual meeting Questions: Perception, Cognition, and Emotion**
+    -   **Virtual meeting Workshop: Pienso, hablo y actuó - Pilares de la comunicación**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 6]
@@ -393,7 +393,7 @@ exam <-  tbl_schedule |>
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 8]
             -   Have a headset with a built-in microphone to isolate noise from the environment
-            
+
 -   `r format(x = virtual_meeting[[14]], format = "%B %e")`
 
     -   **Virtual meeting Questions: Negotiation Finding and Using Negotiation Power**
@@ -412,7 +412,7 @@ exam <-  tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[16]], format = "%B %e")`
 
-    -   **Virtual meeting Questions: Ethics in Negotiation**
+    -   **Virtual meeting Workshop: ¿Cómo ser un orador efectivo?**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 5]
