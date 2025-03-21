@@ -15,7 +15,6 @@ format:
     toc: true
     slide-level: 2
     section-titles: false
-    keep-tex: true
     include-in-header:
       file: 000_tex_files/preamble.tex
 fig-cap-location: bottom
@@ -60,7 +59,7 @@ Understand the definition of negotiation, the elements in general of this proces
 
 -   Definition of negotiation that is going to be adopted in the course:
 
-    -   " *a form of **decision making** in which two or more parties talk with one another in an effort to **resolve their opposing interests**.*" [@lewicki_negociacion_2024, Chapter 1, p. 3]
+    -   " *a form of **decision making** in which 2 or more parties talk with one another in an effort to **resolve their opposing interests**.*" [@lewicki_negociacion_2024, Chapter 1, p. 3]
 
     -   Also check out in the **Links of interest** the video
 
@@ -89,6 +88,14 @@ Understand the definition of negotiation, the elements in general of this proces
 [^2]: Dear student if you don’t need to jointly agree with other parties to achieve your goals please don’t negotiate with them. Use another form of **decision making process**
 
 # Interdependence
+
+##
+
+- By **interdependence** we refer to a situation in which *"the parties need each other in order to accomplish their objectives and hence have the potential to influence each other"* [@lewicki_negociacion_2024, p. 10]
+
+    - Interdependence does not mean that everyone wants or needs the same thing. [@lewicki_negociacion_2024, p. 11]
+    
+    - Interdependence implies that you need to work together to accomplish something. [@lewicki_negociacion_2024, p. 11] 
 
 ##
 
