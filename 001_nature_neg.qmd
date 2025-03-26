@@ -57,6 +57,8 @@ Understand the definition of negotiation, the elements in general of this proces
 
 # Definition of negotiation
 
+##
+
 -   Definition of negotiation that is going to be adopted in the course:
 
     -   " *a form of **decision making** in which 2 or more parties talk with one another in an effort to **resolve their opposing interests**.*" [@lewicki_negociacion_2024, Chapter 1, p. 3]
