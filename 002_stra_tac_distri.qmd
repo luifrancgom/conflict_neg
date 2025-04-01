@@ -15,7 +15,6 @@ format:
     toc: true
     slide-level: 2
     section-titles: false
-    keep-tex: true
     include-in-header:
       file: 000_tex_files/preamble.tex
 fig-cap-location: bottom
@@ -375,7 +374,7 @@ plot_dist_neg4
 ```{dot}
 //| label: fig-strategies-distributive-bargaining
 //| fig-cap: Strategies distributive bargaining [@lewicki_negociacion_2024, pp. 39-41]
-//| fig-width: 5.5
+//| fig-width: 4.5
 //| fig-height: 2.5
 
 digraph boxes_and_circles {
@@ -409,7 +408,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-tactics-distributive-bargaining-1
-//| fig-cap: Tactics distributive bargaining [@lewicki_negociacion_2024, pp. 42-48]
+//| fig-cap: Tactics distributive bargaining [@lewicki_negociacion_2024, pp. 42-48][^4]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
@@ -464,6 +463,8 @@ digraph boxes_and_circles {
   
 }
 ```
+
+[^4]: In negotiation contexts as it is pointed out in [@lewicki_negociacion_2024], **screening activities** are tactics used to avoid disclosing sensitive information.
 
 ##
 
@@ -523,7 +524,7 @@ digraph boxes_and_circles {
 
 ##
 
--   In [@lewicki_negociacion_2024, Chapter 2, p 48-55] the recommended positions to be taken with regard to the following elements are pointed out:
+-   In [@lewicki_negociacion_2024, Chapter 2, p. 48-55] the recommended positions to be taken with regard to the following elements are pointed out:
 
     -   **Opening offers**
 
@@ -554,10 +555,10 @@ digraph boxes_and_circles {
     
     -  A commitment aims to clarify the negotiator's planned actions and eliminate any uncertainty about their intentions.
     
-        -  However, they may also fix a negotiator to a particular position [@lewicki_negociacion_2024, Chapter 2, p 56]
+        -  However, they may also fix a negotiator to a particular position [@lewicki_negociacion_2024, Chapter 2, p. 56]
         -  That is why when making commitments, one should also make contingency plans for a graceful exit if needed
         
-        -  Also it is important to point out that good, sound and deliberate commitments take time to establish so it is important to don't commit prematurely [@lewicki_negociacion_2024, Chapter 2, p 56]
+        -  Also it is important to point out that good, sound and deliberate commitments take time to establish so it is important to don't commit prematurely [@lewicki_negociacion_2024, Chapter 2, p. 56]
         
 ##        
 
@@ -594,7 +595,7 @@ digraph boxes_and_circles {
 
 ##
 
--   The negotiations seek to reach an agreement if possible[^4]. In order to achieve that goal with a greater probability, the following practices are recommended based on what is pointed out in [@lewicki_negociacion_2024, Chapter 2, p 59-60]:
+-   The negotiations seek to reach an agreement if possible[^5]. In order to achieve that goal with a greater probability, the following practices are recommended based on what is pointed out in [@lewicki_negociacion_2024, Chapter 2, pp. 59-60]:
 
     -   Offer similar options to the other parties to make the negotiation more flexible.
 
@@ -606,7 +607,7 @@ digraph boxes_and_circles {
 
     -   Use **sweeteners** that refers to granting special concessions before closing.
 
-[^4]: Remember that negotiation as a form of decision making is not the only method that exists!
+[^5]: Remember that negotiation as a form of decision making is not the only method that exists!
 
 # How to face hardball tactics?
 
@@ -614,7 +615,7 @@ digraph boxes_and_circles {
 
 -   Sometimes in negotiations people use **hardball tactics**. In general in [@lewicki_negociacion_2024, Chapter 2, p 61] the authors recommend not to use them as they cause damage in the negotiation process. However, it is important to know them and know how to deal with them.
 
--   In [@lewicki_negociacion_2024, Chapter 2, pp 61-62] 4 possible strategies to face these tactics are pointed out:
+-   In [@lewicki_negociacion_2024, Chapter 2, pp. 61-62] 4 possible strategies to face these tactics are pointed out:
 
     -  Discuss them
     -  Ignore them
@@ -625,7 +626,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-hard-ball-tactics
-//| fig-cap: Typical hardball tactics [@lewicki_negociacion_2024, p 63]
+//| fig-cap: Typical hardball tactics [@lewicki_negociacion_2024, p. 63]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
