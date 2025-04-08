@@ -15,7 +15,6 @@ format:
     toc: true
     slide-level: 2
     section-titles: false
-    keep-tex: true
     include-in-header:
       file: 000_tex_files/preamble.tex
 fig-cap-location: bottom
@@ -99,9 +98,9 @@ Understand and explore the main elements of the negotiation strategy, the proces
 
 ```{dot}
 //| label: fig-relation-ship-key-steps-planning-process
-//| fig-cap: Relationship between key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p 105]
+//| fig-cap: Relationship between key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p. 105]
 //| fig-width: 4.5
-//| fig-height: 2.5
+//| fig-height: 2
 
 digraph boxes_and_circles {
 
@@ -168,8 +167,8 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-engagement-strategies
-//| fig-cap: Different engagement strategies in a negotiation context  [@lewicki_negociacion_2024, Chapter 4, p 110]
-//| fig-width: 5.5
+//| fig-cap: Different engagement strategies in a negotiation context  [@lewicki_negociacion_2024, Chapter 4, p. 110]
+//| fig-width: 4.5
 //| fig-height: 2.5
 
 digraph boxes_and_circles {
@@ -214,7 +213,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-key-steps-planning-process-1
-//| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p 114-128]
+//| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, pp. 114-128]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
@@ -229,7 +228,7 @@ digraph boxes_and_circles {
   node [shape = oval, color = "#E31A1C"]
 
   "Defining the\nnegotiating goal";
-  "List of major issues";
+  "List the major issues\nrelated to achieving the goal";
   "Organize Issues";
   "Defining the Interests";
   "Knowing Your BATNA"
@@ -248,7 +247,7 @@ digraph boxes_and_circles {
   "Defining the\nBargaining Mix";
   
   "Planning" -> "Defining the\nnegotiating goal";
-  "Planning" -> "List of major issues";
+  "Planning" -> "List the major issues\nrelated to achieving the goal";
   "Planning" -> "Organize Issues";
   "Planning" -> "Defining the Interests";
   "Planning" -> "Knowing Your BATNA"
@@ -268,8 +267,8 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-key-steps-planning-process-2
-//| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p 114-128]
-//| fig-width: 5.5
+//| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, pp. 114-128]
+//| fig-width: 4.5
 //| fig-height: 2.5
 
 digraph boxes_and_circles {
@@ -331,3 +330,7 @@ digraph boxes_and_circles {
 -   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
 
 # References {.allowframebreaks}
+
+<!-- Adjusting size so include all references in 1 slide -->
+
+\small
