@@ -15,7 +15,6 @@ format:
     toc: true
     slide-level: 2
     section-titles: false
-    keep-tex: true
     include-in-header:
       file: 000_tex_files/preamble.tex
 fig-cap-location: bottom
@@ -70,19 +69,19 @@ Understand how perceptions, knowledge and emotions affect a negotiation process.
 
 -   Example of a distortion in perception
 
-![Checker Shadow illusion [@adelson_checkershadow_1995]](005_checkershadow_double_full.jpg){#fig-checker-shadow-illusion fig-alt="Checker Shadow illusion" width="400px" height="400px"}
+![Checker Shadow illusion [@adelson_checkershadow_1995]](000_images/005_checkershadow_double_full.jpg){#fig-checker-shadow-illusion fig-alt="Checker Shadow illusion" width="350px" height="250px"}
 
 ##
 
 -   Example of a distortion in perception
 
-![Sander's parallelogram [@luckiesh_visual_2017]](005_sander_Illusion.png){#fig-sanders-parallelogram fig-alt="Sander's parallelogram" width="400px" height="400px"}
+![Sander's parallelogram [@luckiesh_visual_2017]](000_images/005_sander_Illusion.png){#fig-sanders-parallelogram fig-alt="Sander's parallelogram" width="350px" height="250px"}
 
 ##
 
 -   Example of a distortion in perception
 
-![Müller-Lyer Illusion [@zeman_muller-lyer_2013]](005_muller_lLyer_circle.png){#fig-muller-lyer-illusion fig-alt="Müller-Lyer Illusion" width="300px" height="300px"}
+![Müller-Lyer Illusion [@zeman_muller-lyer_2013]](000_images/005_muller_lLyer_circle.png){#fig-muller-lyer-illusion fig-alt="Müller-Lyer Illusion" width="350px" height="250px"}
 
 # Framing
 
