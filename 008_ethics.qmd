@@ -15,7 +15,6 @@ format:
     toc: true
     slide-level: 2
     section-titles: false
-    keep-tex: true
     include-in-header:
       file: 000_tex_files/preamble.tex
 fig-cap-location: bottom
@@ -58,7 +57,7 @@ Explore and understand the ethical standards commonly accepted in a negotiation 
 
 ##
 
--   Ethics is understand as the social standards that are apply to examine what is right or wrong in a specific situation or a process to establish such standards [@lewicki_negociacion_2024, Chapter 5, p 136].
+-   Ethics is understand as the social standards that are apply to examine what is right or wrong in a specific situation or a process to establish such standards [@lewicki_negociacion_2024, Chapter 5, p. 136].
 
 -   The ethical considerations in a negotiation are related to how the exchange of information occurs [@lewicki_ethical_1998].
 
@@ -66,13 +65,13 @@ Explore and understand the ethical standards commonly accepted in a negotiation 
 
 ##
 
--   To evaluate how ethical the strategies and tactics are in a negotiation, 4 standards can be used [@lewicki_negociacion_2024, Chapter 5, p 118]:
+-   To evaluate how ethical the strategies and tactics are in a negotiation, 4 standards can be used [@lewicki_negociacion_2024, Chapter 5, p. 118]:
 
 ```{dot}
 //| label: fig-approaches-to-ethical-reasoning
-//| fig-cap: Approaches to ethical reasoning to evaluate strategies and tactics in a negotiation [@lewicki_negociacion_2024, pp 140]
+//| fig-cap: Approaches to ethical reasoning to evaluate strategies and tactics in a negotiation [@lewicki_negociacion_2024, pp. 140]
 //| fig-width: 4.5
-//| fig-height: 2.5
+//| fig-height: 2
 
 digraph boxes_and_circles {
       
@@ -136,7 +135,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-types-ethically-ambiguous-tactics
-//| fig-cap: Types of ethically ambiguous tactics [@lewicki_negociacion_2024, p 148]
+//| fig-cap: Types of ethically ambiguous tactics [@lewicki_negociacion_2024, p. 148]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
@@ -198,8 +197,8 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-use-of-deceptive-tactics
-//| fig-cap: Use of deceptive tactics [@lewicki_negociacion_2024, p 151]
-//| fig-width: 4.5
+//| fig-cap: Use of deceptive tactics [@lewicki_negociacion_2024, p. 151]
+//| fig-width: 4
 //| fig-height: 2.5
 
 digraph boxes_and_circles {
@@ -248,7 +247,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-consequences-of-unethical-conduct
-//| fig-cap: Consequences of unethical conduct [@lewicki_negociacion_2024, pp 155-158]
+//| fig-cap: Consequences of unethical conduct [@lewicki_negociacion_2024, pp. 155-158]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
@@ -321,9 +320,9 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-dealing-with-deceptive-tactics
-//| fig-cap: Dealing with deceptive tactics by the counterpart [@lewicki_negociacion_2024, pp 172-174]
-//| fig-width: 4.5
-//| fig-height: 2.5
+//| fig-cap: Dealing with deceptive tactics by the counterpart [@lewicki_negociacion_2024, pp. 172-174]
+//| fig-width: 3.5
+//| fig-height: 3
 
 digraph boxes_and_circles {
       
