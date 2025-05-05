@@ -19,7 +19,7 @@ format:
       file: 000_tex_files/preamble.tex
     classoption: ['notheorems']
 header-includes: 
--   \titlegraphic{\includegraphics[width=3cm]{000_logos/logo-blue-vertical}}
+  - \titlegraphic{\includegraphics[width=3cm]{000_logos/logo-blue-vertical}}
 fig-cap-location: bottom
 tbl-cap-location: top
 knitr: 
