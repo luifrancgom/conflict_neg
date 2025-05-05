@@ -15,7 +15,6 @@ format:
     toc: true
     slide-level: 2
     section-titles: false
-    keep-tex: true
     include-in-header:
       file: 000_tex_files/preamble.tex
 fig-cap-location: bottom
@@ -105,7 +104,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-sources-of-power-1
-//| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp 242-260]
+//| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp. 242-260]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
@@ -162,7 +161,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-sources-of-power-2
-//| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp 242-260]
+//| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp. 242-260]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
@@ -205,7 +204,7 @@ digraph boxes_and_circles {
 
 ```{dot}
 //| label: fig-consequences-of-unequal-power
-//| fig-cap: Consequences of unequal power in a negotiation [@lewicki_negociacion_2024, pp 260-261]
+//| fig-cap: Consequences of unequal power in a negotiation [@lewicki_negociacion_2024, pp. 260-261]
 //| fig-width: 4.5
 //| fig-height: 2.5
 
@@ -258,7 +257,7 @@ digraph boxes_and_circles {
 
 ##
 
--   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp 261-262]:
+-   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp. 261-262]:
 
     -   Diversify risk by entering into deals with several other partners.
     -   Deal with a variety of different individuals and departments in the high-power party (Divide and Conquer).
@@ -267,7 +266,7 @@ digraph boxes_and_circles {
 
 ##
 
--   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp 261-262]:
+-   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp. 261-262]:
 
     -   If you have something to offer, make sure you offer it to more than one high-power party to generate competition between them.
     -   Gather and leverage relevant information to strengthen your negotiation position and achieve better outcomes through persuasive communication.
@@ -283,7 +282,7 @@ digraph boxes_and_circles {
 
 -   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
 
--   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**DiagrammeR**](https://CRAN.R-project.org/package=DiagrammeR), [**knitr**](https://CRAN.R-project.org/package=knitr), [**kableExtra**](https://CRAN.R-project.org/package=kableExtra) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
 
 -   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
 
