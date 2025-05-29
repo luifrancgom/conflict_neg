@@ -1,0 +1,174 @@
+---
+title: Debriefing
+author: 
+  - Luis Francisco Gómez López
+institute: 
+  - FAEDIS
+date: last-modified
+format: 
+  beamer:
+    colortheme: dolphin
+    fonttheme: structurebold
+    theme: AnnArbor
+    link-citations: true
+    colorlinks: true
+    toc: true
+    slide-level: 2
+    section-titles: false
+    include-in-header:
+      file: 000_tex_files/preamble.tex
+fig-cap-location: bottom
+tbl-cap-location: top
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
+bibliography: conflict_neg.bib
+---
+
+```{r}
+#| label: libraries
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+# Please Read Me
+
+## 
+
+-   This presentation is based on [@program_on_negotiation_three_2008]
+
+# Purpose
+
+##
+
+Discuss negotiation performance, share feedback, and identify key learning points during the debrief
+
+# Resource imbalances and the relationship among the parties
+
+##
+
+- There is a disparity between the resources controlled by each role
+
+    - A control more resources than B
+    - B control more resources than C
+    
+    $$A > B > C$$
+
+- For this reason, roles must be randomly assigned to ensure fairness
+
+# Types of agreements
+
+##
+
+```{r}
+#| label: tbl-excluding-c
+#| tbl-cap: Agreements excluding C
+
+excluding_c <- tibble(A = c(59, 60, 60, 59),
+                      B = c(59, 58, 60, 59),
+                      C = c(0 ,  0,  1,  3))
+
+excluding_c |>
+  kable(format = "latex", booktabs = TRUE) |>  
+  kable_styling(font_size = 15, latex_options = "striped") |> 
+  row_spec(row = 0, bold = TRUE)
+```
+
+##
+
+```{r}
+#| label: tbl-equally-distribution
+#| tbl-cap: Agreements which tend to have an equally distribution of points
+
+equally_distribution <- tibble(A = c("121/3", 41, 43),
+                               B = c("121/3", 40, 40),
+                               C = c("121/3", 40, 38))
+
+equally_distribution |>
+  kable(format = "latex", booktabs = TRUE) |>  
+  kable_styling(font_size = 15, latex_options = "striped") |> 
+  row_spec(row = 0, bold = TRUE)
+```
+
+##
+
+```{r}
+#| label: tbl-power-distribution
+#| tbl-cap: Agreements according to the control of resources
+
+power_distribution <- tibble(A = c(60, 50),
+                             B = c(40, 40),
+                             C = c(21, 31))
+
+power_distribution |>
+  kable(format = "latex", booktabs = TRUE) |>  
+  kable_styling(font_size = 15, latex_options = "striped") |> 
+  row_spec(row = 0, bold = TRUE)
+```
+
+##
+
+- Other agreements
+
+    - A became so greedy so B and C exclude A
+    - C blocks the coalition between A and B and chooses to work with A[^1]
+    
+[^1]: Less common agreement
+
+# Stability of coalitions
+
+## 
+
+# Fairness criteria
+
+##
+
+- Possible states
+
+![Scenarios in the game](000_images/009_possible_states.png){#fig-possible-states width="400px" height="150px"}
+
+##
+
+![Jeremy Bentham](000_images/009_jeremy_bentham_by_henry_william_pickersgill_detail.jpg){#fig-jeremy-bentham-by-henry-william-pickersgill-detail width="200px" height="250px"}
+
+##
+
+- Benthamite social welfare function
+
+    - $G_i$: grade of student $i$
+    
+$$\max \frac{1}{n}G_1 + \cdots \frac{1}{n}G_n = \max \sum_{i = 1}^n \frac{1}{n}G_i$$
+
+##
+
+![John Rawls](000_images/009_john_rawls_1971_photo_portrait.jpg){#fig-john-rawls-1971-photo-portrait width="200px" height="250px"}
+
+##
+
+- Rawlsian social welfare function 
+
+    - $G_i$: grade of student $i$
+    
+$$\max \min \{ G_1, \ldots, G_m \}$$
+
+# Acknowledgments
+
+##
+
+-   To my family that supports me
+
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
+
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html)
+
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**knitr**](https://CRAN.R-project.org/package=knitr), [**kableExtra**](https://CRAN.R-project.org/package=kableExtra), [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+-   To the [**Linux kernel community**](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [**Linux distributions**](https://static.lwn.net/Distributions/) as my main [**OS**](https://en.wikipedia.org/wiki/Operating_system) without paying for a license
+
+# References {.allowframebreaks}
