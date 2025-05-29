@@ -100,9 +100,9 @@ Explore best practices in negotiation and conflict management to achieve success
 
 tibble(Group  = c("A", "B", "C"),
        Points = rep(x = 0, times = 3),
-       Grade  = rep(x = 20, times = 3)) %>% 
-  kable(format = "latex", booktabs = TRUE) %>% 
-  kable_styling(font_size = 9, latex_options = "striped") %>%
+       Grade  = rep(x = 20, times = 3)) |> 
+  kable(format = "latex", booktabs = TRUE) |> 
+  kable_styling(font_size = 9, latex_options = "striped") |>
   row_spec(row = 0, bold = TRUE)
 ```
 
