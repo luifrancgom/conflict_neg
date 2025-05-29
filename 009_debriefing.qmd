@@ -147,9 +147,9 @@ power_distribution |>
 
 ##
 
-- Possible states
+- Possible states in case of agreement
 
-![Scenarios in the game](000_images/009_possible_states.png){#fig-possible-states width="400px" height="150px"}
+![Scenarios in the game if an agreement is reached](000_images/009_possible_states_in_case_of_agreement.png){#fig-possible-states-in-case-of-agreement width="400px" height="150px"}
 
 ##
 
