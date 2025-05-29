@@ -123,7 +123,25 @@ power_distribution |>
 
 # Stability of coalitions
 
-## 
+##
+
+- A: 59, B: 59
+
+    - C is excluded
+
+- Counter offer by C: A: 60, C: 24
+
+    - B is excluded
+    
+- Counter offer by B: A: 61, B: 57 
+
+    - C is excluded
+
+- Counter offer by C: A: 62, A: 22 
+
+    - B is excluded
+
+**It is possible to prove that in this game any coalition can be brake**
 
 # Fairness criteria
 
