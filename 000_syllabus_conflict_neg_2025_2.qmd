@@ -5,7 +5,7 @@ author:
     email: luis.gomezl@unimilitar.edu.co
     affiliations:
       - name: Universidad Militar Nueva Granada
-date: 2025-02-13
+date: 2025-06-24
 date-modified: last-modified
 format:
   html: 
@@ -25,12 +25,12 @@ params:
       end_hour: 15:00
   block:
     value:
-      start_date: 2025-03-24
-      end_date: 2025-05-31
+      start_date: 2025-09-22
+      end_date: 2025-11-29
   schedule:
     value:
       meeting_dates: [2, 4]
-      dates_recess: [2025-04-14, 2025-04-20]
+      dates_recess: [2025-10-06, 2025-10-12]
       start_presentation_hour: 19:00
       end_presentation_hour: 19:45  
       start_syllabus_hour: 19:00
@@ -158,17 +158,17 @@ Develop in students, negotiation conflict skills in diverse scenarios through th
 #| label: tbl-reading-schedule
 #| tbl-cap: Reading schedule
 
-lewicki <- rep("[@lewicki_negociacion_2024]", times = 3)
+lewicki <- rep("@lewicki_negociacion_2024", times = 3)
 
 tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
        Material        = rep(c(lewicki, 
-                               "[@program_on_negotiation_three_2008]"), 
+                               "@program_on_negotiation_three_2008"), 
                              times = 3),
        `Chapter or Round` = c("1","2","3", "I", "4", "6", "7", "II", "8", "5", "20", "III"),
        `Initial page`  = c("1", "31", "69", " ", "102", "175", "210", " ", "235", "133", "555", " "),
        `Final page`    = c("30", "67", "100", " ", "131", "208", "234", " ", "261", "174", "564", " "),
        `Number of pages` = c("30", "37", "32", " ", "30", "34", "25", " ", "27", "42", "10", " ")) |> 
-    gt() |> 
+  gt() |> 
   fmt_markdown() |> 
   tab_style(
     style = cell_text(weight = "bold"), 
@@ -273,6 +273,14 @@ exam <-  tbl_schedule |>
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
 
+-   `r format(x = ymd(params$schedule$dates_recess[[1]]), format = "%B %e")`
+
+    -   **Begin Mid-semester break**
+
+-   `r format(x = ymd(params$schedule$dates_recess[[2]]), format = "%B %e")`
+
+    -   **End Mid-semester break**
+
 -   `r format(x = virtual_meeting[[5]], format = "%B %e")`
 
     -   **Virtual meeting Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1**
@@ -302,14 +310,6 @@ exam <-  tbl_schedule |>
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
 ### Segundo corte 30%
-
--   `r format(x = ymd(params$schedule$dates_recess[[1]]), format = "%B %e")`
-
-    -   **Begin Holy Week**
-
--   `r format(x = ymd(params$schedule$dates_recess[[2]]), format = "%B %e")`
-
-    -   **End Holy Week**
 
 -   `r format(x = activity[[3]], format = "%B %e")`
 
