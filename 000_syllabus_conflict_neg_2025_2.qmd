@@ -86,7 +86,7 @@ if(length(params$meeting_info$days) > 1) {
 
     -   Complaints regarding grades, please send an email to [**`{r} rmarkdown::metadata$author[[1]]$email`**](mailto:%60r%20rmarkdown::metadata$author%5B%5B1%5D%5D$email%60)
 
-        -   Please wait for grades to be published on the News Bulletin Board before submitting any complaints. Complaints should be based on the feedback provided and must take into account the evaluation parameters.
+        -   Please wait for grades to be published on the  Announcements forum before submitting any complaints. Complaints should be based on the feedback provided and must take into account the evaluation parameters.
 
     -   For urgent issues, you can call me to `{r} params$meeting_info$phone` between `{r} params$meeting_info$start_hour` hours and `{r} params$meeting_info$end_hour` hours on `{r} days_str`. But, please do not send me whatsapp messages or call me on weekends.
 
@@ -237,7 +237,7 @@ exam <-  tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[2]], format = "%B %e")`
 
-    -   **Virtual meeting Questions: The Nature of Negotiation**
+    -   **Virtual meeting Workshop: Resolución de conflictos**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 1]
@@ -253,7 +253,7 @@ exam <-  tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[4]], format = "%B %e")`
 
-    -   **Virtual meeting Workshop: Líderes para el Trabajo en Equipo**
+    -   **Virtual meeting Questions: Strategy and Tactics of Distributive Bargaining**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 2]
@@ -292,7 +292,7 @@ exam <-  tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[6]], format = "%B %e")`
 
-    -   **Virtual meeting Questions: Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1**
+    -   **Virtual meeting Workshop: Líderes para el Trabajo en Equipo**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
@@ -375,7 +375,7 @@ exam <-  tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[12]], format = "%B %e")`
 
-    -   **Virtual meeting Questions: Communication and Three-Party Coalition Exercise Round 2**
+    -   **Virtual meeting Workshop: El poder de resolver - conquista los conflictos con inteligencia emocional**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review role play instructions [@program_on_negotiation_three_2008]
