@@ -39,6 +39,26 @@ library(tidyverse)
 library(ggnewscale)
 ```
 
+```{r}
+#| label: palette
+
+umng_palette <- c(
+  "#043074",
+  "#fdc600",
+  "#0d5e30",
+  "#ee2a24",
+  "#fc6700",
+  "#00b3f0",
+  "#6e3c1a",
+  "#f8941c",
+  "#8e44ad",
+  "#2c3e50",
+  "#16a085",
+  "#c0392b",
+  "#e91e63"
+)
+```
+
 # Please Read Me
 
 ##
@@ -223,19 +243,6 @@ flowchart TB
 ```{r}
 #| label: fig-conflict-diagnostic-model
 #| fig-cap: Conflict diagnostic model [@lewicki_negociacion_2024, p. 23] and [@greenhalgh_smr_1986, p. 47]
-
-umng_palette <- c("#043074",
-                  "#fdc600",
-                  "#0d5e30",
-                  "#ee2a24",
-                  "#fc6700",
-                  "#00b3f0",
-                  "#6e3c1a",
-                  "#f8941c",
-                  "#8e44ad",
-                  "#2c3e50",
-                  "#16a085",
-                  "#c0392b")
 
 conflic_diag <- tibble(Dimension   = rep(
   c("Simmetry of conflict",
