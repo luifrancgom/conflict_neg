@@ -1,0 +1,577 @@
+---
+title: Strategy and Tactics of Distributive Bargaining
+subtitle: Session 1
+author:
+  - name: 
+      given: Luis F.
+      family: Gómez L.
+    orcid: 0000-0002-2877-9015
+    email: luis.gomezl@unimilitar.edu.co
+    affiliations:
+      - name: Distance Learning Faculty
+toc: true
+toc-depth: 1
+slide-level: 2
+format:
+  presentation-umng-revealjs:
+    logo-vertical-strip: 000_logos/logo-white-vertical.png 
+    embed-resources: true
+    mermaid-format: png
+    reference-location: document
+    css: 000_css/styles.css
+date: last-modified
+date-format: "D MMMM, YYYY"
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
+bibliography: conflict_neg.bib
+csl: apa-7.csl
+editor: source
+---
+
+```{r}
+#| label: libraries
+
+library(tidyverse)
+library(ggrepel)
+library(latex2exp)
+library(scales)
+```
+
+```{r}
+#| label: palette
+
+umng_palette <- c(
+  "#043074",
+  "#fdc600",
+  "#0d5e30",
+  "#ee2a24",
+  "#fc6700",
+  "#00b3f0",
+  "#6e3c1a",
+  "#f8941c",
+  "#8e44ad",
+  "#2c3e50",
+  "#16a085",
+  "#c0392b",
+  "#e91e63"
+)
+```
+
+```{r}
+#| label: seed
+
+seed <- set.seed(seed = 1234)
+```
+
+# Please Read Me
+
+##
+
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
+
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 2]
+
+## 
+
+- **Purpose**
+
+    - Understand the basic elements of a distributive negotiation situation, as well as the strategies and tactics that can be applied in this context.
+    
+# Elements of a distributive negotiation situation
+
+## {.smaller}
+
+-   Buyer: Jackson (<span class="blue">$J$</span>) and Seller: Sofia (<span class="red">$S$</span>)[^1]
+
+    -   Resistance point <span class="blue">$J$</span>, <span class="blue">$Rp_J$</span>: 150K USD
+    -   Resistance point <span class="red">$S$</span>, <span class="red">$Rp_S$</span>: 130K USD
+
+[^1]: Both <span class="blue">$J$</span> and <span class="red">$S$</span> have a common interest in cooperating but conflicting interests on how exactly to cooperate. For that reason a negotiation situation arises [@muthoo_bargaining_1999]
+
+```{r}
+#| label: fig-resistance-point
+#| fig-cap: Resistance points
+#| fig-height: 2.5
+
+# Data
+dist_neg1 <- tibble(x            = c(130, 150),
+                    y            = rep(x = 0, times = 2),
+                    negotiator   = c("Sofia", "Jackson"),
+                    label_text   = c(TeX(r"($Rp_S$)"), TeX(r"($Rp_J$)")))
+
+# Plot
+dist_neg1 |> 
+  ggplot() + 
+  geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+  geom_vline(aes(xintercept = x), 
+             linetype = "dashed") +
+  geom_point(aes(x = x, y = y, fill = negotiator),
+             shape       = 21,
+             size        = 5,
+             color       = "black", 
+             show.legend = FALSE) +
+  geom_label_repel(aes(x = x, y = y, 
+                       label = label_text, 
+                       fill = negotiator),
+                   color       = "white",
+                   alpha       = 0.9, 
+                   parse       = TRUE,
+                   show.legend = FALSE,
+                   size = 7, 
+                   seed = seed) +
+  scale_x_continuous(breaks = dist_neg1$x, 
+                     labels = label_number(prefix = "$", 
+                                           suffix = "K",
+                                           accuracy = 1)) +
+  scale_fill_manual(values = umng_palette[c(1,4)]) +
+  theme(panel.border      = element_rect(fill = NA, 
+                                         color = "black"),
+        plot.background   = element_blank(),
+        panel.background  = element_blank(), 
+        panel.grid.major  = element_blank(),
+        panel.grid.minor  = element_blank(),
+        axis.title        = element_blank(),
+        axis.text.x       = element_text(face = "bold", 
+                                         angle = 90, 
+                                         vjust = 0.5, 
+                                         size = 14),
+        axis.text.y       = element_blank(), 
+        axis.ticks.y      = element_blank())
+```
+
+## {.smaller}
+
+-   Buyer: Jackson (<span class="blue">$J$</span>) and Seller: Sofia (<span class="red">$S$</span>)
+
+    -   Initial offer <span class="blue">$J$</span>, <span class="blue">$Io_J$</span>: 133K USD
+    -   Initial offer <span class="red">$S$</span>, <span class="red">$Io_S$</span>: 145K USD
+
+```{r}
+#| label: fig-initial-offer
+#| fig-cap: Initial offers
+#| fig-height: 2.5
+
+# Data
+dist_neg2 <- tibble(x            = c(130, 133, 145, 150),
+                    y            = rep(x = 0, times = 4),
+                    negotiator   = c("Sofia", "Jackson", "Sofia", "Jackson"),
+                    label_text   = c(TeX(r"($Rp_S$)"),TeX(r"($Io_J$)"), 
+                                     TeX(r"($Io_S$)"), TeX(r"($Rp_J$)")))
+
+# Plot
+dist_neg2 |> 
+  ggplot() + 
+  geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+  geom_vline(aes(xintercept = x), 
+             linetype = "dashed") +
+  geom_point(aes(x = x, y = y, fill = negotiator),
+             shape       = 21,
+             size        = 5,
+             color       = "black", 
+             show.legend = FALSE) +
+  geom_label_repel(aes(x = x, y = y, 
+                       label = label_text, 
+                       fill = negotiator),
+                   color       = "white",
+                   alpha       = 0.9,
+                   parse       = TRUE,
+                   show.legend = FALSE,
+                   size = 7, 
+                   seed = seed) +
+  scale_x_continuous(breaks = dist_neg2$x, 
+                     labels = label_number(prefix = "$", 
+                                           suffix = "K", 
+                                           accuracy = 1)) +
+  scale_fill_manual(values = umng_palette[c(1,4)]) +
+  theme(panel.border      = element_rect(fill = NA, 
+                                         color = "black"),
+        plot.background   = element_rect(fill = "white"),
+        panel.background  = element_rect(fill = "white"), 
+        panel.grid.major  = element_blank(),
+        panel.grid.minor  = element_blank(),
+        axis.title        = element_blank(),
+        axis.text.x       = element_text(face = "bold", 
+                                         angle = 90, 
+                                         vjust = 0.5, 
+                                         size = 14),
+        axis.text.y       = element_blank(), 
+        axis.ticks.y      = element_blank())
+```
+
+## {.smaller}
+
+-   Buyer: Jackson (<span class="blue">$J$</span>) and Seller: Sofia (<span class="red">$S$</span>)
+
+    -   Target point <span class="blue">$J$</span>, <span class="blue">$Tp_J$</span>: 135K USD
+    -   Target point <span class="red">$S$</span>, <span class="red">$Tp_S$</span>: 140K USD
+
+```{r}
+#| label: fig-target-point
+#| fig-cap: Target points
+#| fig-height: 2.5
+
+# Data
+dist_neg3 <- tibble(x            = c(130, 133, 135, 140, 145, 150),
+                    y            = rep(x = 0, times = 6),
+                    negotiator   = c("Sofia", "Jackson", "Jackson", "Sofia", "Sofia", "Jackson"),
+                    label_text   = c(TeX(r"($Rp_S$)"),TeX(r"($Io_J$)"),
+                                     TeX(r"($Tp_J$)"), 
+                                     TeX(r"($Tp_S$)"),TeX(r"($Io_S$)"), 
+                                     TeX(r"($Rp_J$)")))
+
+# Plot
+dist_neg3 |> 
+  ggplot() + 
+  geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+  geom_vline(aes(xintercept = x), 
+             linetype = "dashed") +
+  geom_point(aes(x = x, y = y, fill = negotiator),
+             shape       = 21,
+             size        = 5,
+             color       = "black", 
+             show.legend = FALSE) +
+  geom_label_repel(aes(x = x, y = y, 
+                       label = label_text, 
+                       fill = negotiator),
+                   color       = "white",
+                   alpha       = 0.9,
+                   parse       = TRUE,
+                   show.legend = FALSE,
+                   size = 7, 
+                   seed = seed) +
+  scale_x_continuous(breaks = dist_neg3$x, 
+                     labels = label_number(prefix = "$", 
+                                           suffix = "K", 
+                                           accuracy = 1)) +
+  scale_fill_manual(values = umng_palette[c(1,4)]) +
+  theme(panel.border      = element_rect(fill = NA, 
+                                         color = "black"),
+        plot.background   = element_rect(fill = "white"),
+        panel.background  = element_rect(fill = "white"), 
+        panel.grid.major  = element_blank(),
+        panel.grid.minor  = element_blank(),
+        axis.title        = element_blank(),
+        axis.text.x       = element_text(face = "bold", 
+                                         angle = 90, 
+                                         vjust = 0.5, 
+                                         size = 14),
+        axis.text.y       = element_blank(), 
+        axis.ticks.y      = element_blank())
+```
+
+## {.smaller}
+
+-   Buyer: Jackson (<span class="blue">$J$</span>) and Seller: Sofia (<span class="red">$S$</span>)
+
+    -   BATNA <span class="blue">$J$</span>, <span class="blue">$BATNA_J$</span>: 142K USD
+    -   BATNA <span class="red">$S$</span>, <span class="red">$BATNA_S$</span>: 134K USD
+
+```{r}
+#| label: fig-batna
+#| fig-cap: Best alternatives to a negotiated agreement
+#| fig-height: 2.5
+
+# Data
+dist_neg4 <- tibble(x            = c(130, 133, 134, 135, 140, 142, 145, 150),
+                    y            = rep(x = 0, times = 8),
+                    negotiator   = c("Sofia", "Jackson", "Sofia", "Jackson", "Sofia", "Jackson", "Sofia", "Jackson"),
+                    label_text   = c(TeX(r"($Rp_S$)"),TeX(r"($Io_J$)"),
+                                     TeX(r"($BATNA_S$)"), TeX(r"($Tp_J$)"), 
+                                     TeX(r"($Tp_S$)"), TeX(r"($BATNA_J$)"),
+                                     TeX(r"($Io_S$)"), 
+                                     TeX(r"($Rp_J$)")))
+
+# Plot
+plot_dist_neg4 <- dist_neg4 |> 
+  ggplot() + 
+  geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
+  geom_vline(aes(xintercept = x), 
+             linetype = "dashed") +
+  geom_point(aes(x = x, y = y, fill = negotiator),
+             shape       = 21,
+             size        = 5,
+             color       = "black", 
+             show.legend = FALSE) +
+  geom_label_repel(aes(x = x, y = y, 
+                       label = label_text, 
+                       fill = negotiator),
+                   color       = "white",
+                   alpha       = 0.9,
+                   parse       = TRUE,
+                   show.legend = FALSE,
+                   size = 7, 
+                   seed = seed) +
+  scale_x_continuous(breaks = dist_neg4$x, 
+                     labels = label_number(prefix = "$", 
+                                           suffix = "K", 
+                                           accuracy = 1)) +
+  scale_fill_manual(values = umng_palette[c(1,4)]) +
+  theme(panel.border      = element_rect(fill = NA, 
+                                         color = "black"),
+        plot.background   = element_rect(fill = "white"),
+        panel.background  = element_rect(fill = "white"), 
+        panel.grid.major  = element_blank(),
+        panel.grid.minor  = element_blank(),
+        axis.title        = element_blank(),
+        axis.text.x       = element_text(face = "bold", 
+                                         angle = 90, 
+                                         vjust = 0.5, 
+                                         size = 14),
+        axis.text.y       = element_blank(), 
+        axis.ticks.y      = element_blank())
+
+plot_dist_neg4
+```
+
+## {.smaller}
+
+-   Buyer: Jackson (<span class="blue">$J$</span>) and Seller: Sofia (<span class="red">$S$</span>)
+
+    -   Bargaining range[^2]: $[\text{\$130K},\text{\$150K}]$
+
+        -   Is the result of $[\text{\$130K}, \infty) \cap [0, \text{\$150K}]$
+        -   If the bargaining range is $\neq \emptyset$, $Rp_S \leq BATNA_J$ and $BATNA_S \leq Rp_J$ then an aggrement between <span class="blue">$J$</span> and <span class="red">$S$</span> is possible
+
+[^2]: Also known as settlement range or zone of potential agreement
+
+```{r}
+#| label: fig-bargaining-range
+#| fig-cap: Bargaining range 
+#| fig-height: 2.5
+
+plot_dist_neg4
+```
+
+##
+
+-   Buyer: Jackson (<span class="blue">$J$</span>) and Seller: Sofia (<span class="red">$S$</span>)
+
+    -   In this example the settlement point $\in [Tp_J, Tp_S] = [\text{\$135K}, \text{\$140K}]$
+
+```{r}
+#| label: fig-settlement-point
+#| fig-cap: Possible values for a settlement point
+#| fig-height: 2.5
+
+plot_dist_neg4
+```
+
+## {.smaller}
+
+-   In the case of a distributive negotiation, it is most likely that the settlement point does not correspond to the target points of the participants in the negotiation.
+
+-   In the example of <span class="blue">$J$</span> and <span class="red">$S$</span> it was implicitly assumed that the negotiation element was the price. This element is known as a **bargaining mix**[^3] where it does not necessarily have to be a single element.
+
+    -   For example <span class="blue">$J$</span> and <span class="red">$S$</span> also can include in the bargaining mix the final date of the sale, whether or not renovations are included or if other items such as furniture and household appliances are added.
+
+[^3]: It is define as the set of issues that will be negotiated
+
+# Strategies and tactics
+
+## {.center}
+
+```{mermaid}
+%%| label: fig-strategies-distributive-bargaining
+%%| fig-cap: Strategies distributive bargaining [@lewicki_negociacion_2024, pp. 39-41]
+
+flowchart LR
+    A("Strategies") --> A1("Discover or estimate the resistance point")
+    A --> A2("Influence the resistance point of the counterpart")
+    A2 --> A21("4 major propositions")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A21 UmngNode;
+```
+
+##
+
+```{mermaid}
+%%| label: fig-tactics-distributive-bargaining-1
+%%| fig-cap: Tactics distributive bargaining [@lewicki_negociacion_2024, pp. 42-48][^4]
+
+flowchart LR
+    A("Tactics") --> A1("Assess the other party's")
+    A --> A2("Manage the other party's impressions")
+    
+    A1 --> A11("Indirect assessment")
+    A1 --> A12("Direct assessment")
+    A2 --> A21("Screening activities")
+    A2 --> A22("Direct action to alter impressions")
+    
+    A11 --> A111("Target points")
+    A11 --> A112("Resistance points")
+    A11 --> A113("Costs of ending the negotiation")
+    A12 --> A111("Target points")
+    A12 --> A112("Resistance points")
+    A12 --> A113("Costs of ending the negotiation")
+    A21 --> A111("Target points")
+    A21 --> A112("Resistance points")
+    A21 --> A113("Costs of ending the negotiation") 
+    A22 --> A111("Target points")
+    A22 --> A112("Resistance points")
+    A22 --> A113("Costs of ending the negotiation") 
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A12,A111,A112,A113,A2,A21,A22 UmngNode;
+```
+
+[^4]: In negotiation contexts as it is pointed out in [@lewicki_negociacion_2024], **screening activities** are tactics used to avoid disclosing sensitive information.
+
+##
+
+```{mermaid}
+%%| label: fig-tactics-distributive-bargaining-2
+%%| fig-cap: Tactics distributive bargaining [@lewicki_negociacion_2024, pp. 42-48]
+
+flowchart LR
+    A("Tactics") --> A1("Modify the perception")
+    A --> A2("Increase the costs of delaying negotiations")
+    
+    A1 --> A11("Alter the impressions of the counterpart")
+    A1 --> A12("Make demands and positions appear more or less unattractive")
+    A2 --> A21("Disruptive action")
+    A2 --> A22("Alliance with outsiders")
+    A2 --> A23("Schedule manipulation")
+    
+    A11 --> A111("Target points")
+    A11 --> A112("Resistance points")
+    A11 --> A113("Costs of ending the negotiation")
+    A12 --> A111
+    A12 --> A112
+    A12 --> A113
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A12,A111,A112,A113,A2,A21,A22,A23 UmngNode;
+```
+
+# Aspects about taking positions during a negotiation
+
+## {.smaller}
+
+-   In [@lewicki_negociacion_2024, Chapter 2, p. 48-55] the recommended positions to be taken with regard to the following elements are pointed out:
+
+    -   **Opening offers**
+
+        -   Who should make the first offer?
+        -   What should be the initial offer?
+        -   Should the offer be perceived as low, moderate or high by the other party?
+        -   Should the initial offer be near or far from our own resistance point?
+
+    -   **Opening stance**
+
+        -   Should a moderate or aggressive stance be taken?
+
+    -   **Initial concessions**
+
+        -   How wide should the initial concession be?
+
+    -   **Final offer**
+
+        -   How to communicate that a particular offer is a final offer?
+
+# Commitments
+
+## {.smaller}
+
+-  **Commitment** means taking a stance in a negotiation and making a explicit or implicit promise about future actions.
+
+    -  A commitment is a way to create a bargaining position by specifying a future action if a position is not reached.
+    
+    -  A commitment aims to clarify the negotiator's planned actions and eliminate any uncertainty about their intentions.
+    
+        -  However, they may also fix a negotiator to a particular position [@lewicki_negociacion_2024, Chapter 2, p. 56]
+        -  That is why when making commitments, one should also make contingency plans for a graceful exit if needed
+        
+        -  Also it is important to point out that good, sound and deliberate commitments take time to establish so it is important to don't commit prematurely [@lewicki_negociacion_2024, Chapter 2, p. 56]
+
+##
+
+```{mermaid}
+%%| label: fig-ways-to-abandon-committed-position
+%%| fig-cap: Ways to abandon a committed position [@lewicki_negociacion_2024, pp. 58-59]
+
+flowchart LR
+    A("Ways to Abandon a committed position") --> A1("Plan a way out")
+    A --> A2("Let it die silently")
+    A --> A3("Restate the commitment")
+    A --> A4("Minimize the Damage")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A3,A4 UmngNode;
+```
+
+# Closing a deal
+
+## {.smaller}
+
+-   The negotiations seek to reach an agreement if possible[^5]. In order to achieve that goal with a greater probability, the following practices are recommended based on what is pointed out in [@lewicki_negociacion_2024, Chapter 2, pp. 59-60]:
+
+    -   Offer similar options to the other parties to make the negotiation more flexible.
+
+    -   Assume a closing technique or stance.
+
+    -   Split the difference when a **mutual adjustment** process has been carried out.
+
+    -   Use **exploding offers** that refers to setting a deadline where a specific proposal is in force for a limited time.
+
+    -   Use **sweeteners** that refers to granting special concessions before closing.
+
+[^5]: Remember that negotiation as a form of decision making is not the only method that exists!
+
+# How to face hardball tactics?
+
+## {.smaller}
+
+-   Sometimes in negotiations people use **hardball tactics**. In general in [@lewicki_negociacion_2024, Chapter 2, p 61] the authors recommend not to use them as they cause damage in the negotiation process. However, it is important to know them and know how to deal with them.
+
+-   In [@lewicki_negociacion_2024, Chapter 2, pp. 61-62] 4 possible strategies to face these tactics are pointed out:
+
+    -  Discuss them
+    -  Ignore them
+    -  Respond in kind
+    -  Co-opt the other party
+    
+## {.center}
+
+```{mermaid}
+%%| label: fig-hard-ball-tactics
+%%| fig-cap: Typical hardball tactics [@lewicki_negociacion_2024, p. 63]
+
+flowchart TB
+    A("Hardball tactics") --> A1("Good cop/bad cop")
+    A --> A2("Lowball/highball")
+    A --> A3("Bogey")
+    A --> A4("Chicken")
+    A --> A5("Intimidation")
+    A --> A6("`Aggressive
+    behavior`")
+    A --> A7("Snow job")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A3,A4,A5,A6,A7 UmngNode;
+```
+
+# Acknowledgments
+
+##
+
+-   To my family that supports me
+
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
+
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
+
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://posit.co/download/rstudio-desktop/), [**Positron**](https://positron.posit.co/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**ggrepel**](https://CRAN.R-project.org/package=ggrepel),
+[**latex2exp**](https://CRAN.R-project.org/package=latex2exp),
+[**scales**](https://CRAN.R-project.org/package=scales) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+# References {.allowframebreaks}
