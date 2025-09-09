@@ -1,0 +1,452 @@
+---
+title: Strategy and Tactics of Integrative Negotiation and Three-Party Coalition Exercise Round 1
+subtitle: Session 1
+author:
+  - name: 
+      given: Luis F.
+      family: Gómez L.
+    orcid: 0000-0002-2877-9015
+    email: luis.gomezl@unimilitar.edu.co
+    affiliations:
+      - name: Distance Learning Faculty
+toc: true
+toc-depth: 1
+slide-level: 2
+format:
+  presentation-umng-revealjs:
+    logo-vertical-strip: 000_logos/logo-white-vertical.png 
+    embed-resources: true
+    mermaid-format: png
+    reference-location: document
+date: last-modified
+date-format: "D MMMM, YYYY"
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
+bibliography: conflict_neg.bib
+csl: apa-7.csl
+editor: source
+---
+
+```{r}
+#| label: libraries
+
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+#| label: palette
+
+umng_palette <- c(
+  "#043074",
+  "#fdc600",
+  "#0d5e30",
+  "#ee2a24",
+  "#fc6700",
+  "#00b3f0",
+  "#6e3c1a",
+  "#f8941c",
+  "#8e44ad",
+  "#2c3e50",
+  "#16a085",
+  "#c0392b",
+  "#e91e63"
+)
+```
+
+# Please Read Me
+
+##
+
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
+
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 3]
+
+##
+
+- **Purpose**
+
+    - Understand the basic elements of an integrative negotiation situation, as well as the strategies and tactics that can be applied in this context.
+    
+# Three Party Coalition Exercise Round 1
+
+## {.smaller}
+
+-   Why the Midterm Exams are simulations and in group?
+
+    -   The negotiation of conflicts is generated between individuals or groups and one way of learning is precisely by negotiating with other people.
+
+    -   It is not effective to learn individually and only theoretically.
+
+    -   It is as if a person learned theoretically to play football and without ever playing in a team. Most likely, that person will not perform well in a real match.
+
+-   Before taking part, students should review the instructions of the Midterm Exam that can be checked at:
+
+    -   Primer corte 30% \> Learning Activities \> Midterm Exam Three Party Coalition Exercise Round 1
+
+##
+
+-   Also check out in the **Links of interest** the videos[^1]
+
+    -   *Three-Party Coalition Exercise* [@program_on_negotiation_negotiation_2014] and [@program_on_negotiation_negotiation_2014-1]
+
+[^1]: The videos are in english and are recordings of the Three-Party Coalition Exercise simulation
+
+## {.smaller}
+
+-   Before the Midterm Exam begins each student of the group, that has been formed, will be randomly assigned to one and only one role as a negotiator of an organization. If there is a group of 4 students, then a role will be played by 2 students. The respective roles are:
+
+    -   **Group A**
+    -   **Group B**
+    -   **Group C**
+
+-   The objective of the negotiation is to obtain the highest number of points and determine how they will be divided. This will be reflected in the grade obtained by each student.
+
+##
+
+-   If an agreement is not reached between the parties of the negotiation, each **Group** obtains **0 points** and the grade for each student will be **20** out of 50:
+
+```{r}
+#| label: tbl-no-agreement
+#| tbl-cap: Results in case of no agreement
+
+tibble(Group  = c("A", "B", "C"),
+       Points = rep(x = 0, times = 3),
+       Grade  = rep(x = 20, times = 3)) |> 
+  gt() |>
+  tab_options(
+    row.striping.include_table_body = TRUE,
+    table.border.top.width = px(3),
+    table.border.top.color = "black",
+    column_labels.border.bottom.width = px(2),
+    column_labels.border.bottom.color = "black",
+    table.border.bottom.width = px(3),
+    table.border.bottom.color = "black",
+    table.font.size = px(36)
+  )
+```
+
+## {.smaller}
+
+-   If an agreement is reached, it can be obtained between 2 or 3 **Groups**:
+
+    -   Possible agreements:
+
+        -   **Case 1**: **A** and **B** decide to reach an agreement to work together, they obtain **118 points** and must decide how to distribute these points. However, **C** will be excluded.
+
+        -   **Case 2**: **A** and **C** decide to reach an agreement to work together, they obtain **84 points** and must decide how to distribute these points. However, **B** will be excluded.
+
+        -   **Case 3**: **B** and **C** decide to reach an agreement to work together, they obtain **50 points** and must decide how to distribute these points. However, **A** will be excluded.
+
+        -   **Case 4**: **A**, **B** and **C** decide to reach an agreement to work together, they obtain **121 points** and must decide how to distribute these points. Nobody is excluded.
+
+## {.smaller}
+
+```{r}
+#| include: false
+
+low_score <- 37
+medium_score <- 42
+high_score <- 50
+```
+
+-   Grades
+
+    -   **Case 1**: **A** and **B** work together but **C** is excluded.
+
+        -   **C** obtains a grade of **`{r} low_score `** out of 50.
+        -   The grade of **A** and **B** will depend on who gets the most of the **118 points**. The **Group** that gets the most points will have a grade of **`{r} high_score `** out of **50** and the other **Group** gets a grade of **`{r} medium_score `** out of **50**. If **A** and **B** divide the points equally, whoever gets the highest grade will be assigned randomly.
+
+    -   **Case 2**: **A** and **C** work together but **B** is excluded.
+
+        -   **B** obtains a grade of **`{r} low_score `** out of 50.
+        -   The grade of **A** and **C** will depend on who gets the most of the **84 points**. The **Group** that gets the most points will have a grade of **`{r} high_score `** out of 50 and the other **Group** gets a grade of **`{r} medium_score `** out of 50. If **A** and **C** divide the points equally, whoever gets the highest grade will be assigned randomly.
+
+## {.smaller}
+
+-   Grades
+
+    -   **Case 3**: **B** and **C** work together but **A** is excluded.
+
+        -   **A** obtains a grade of **`{r} low_score `** out of 50.
+        -   The grade of **B** and **C** will depend on who gets the most of the **50 points**. The **Group** that gets the most points will have a grade of **`{r} high_score `** out of 50 and the other **Group** gets a grade of **`{r} medium_score `** out of 50. If **B** and **C** divide the points equally, whoever gets the highest grade will be assigned randomly.
+
+    -   **Case 4**: **A**, **B** and **C** work together so nobody is excluded.
+
+        -   The **Group** that obtains the highest amount of points will have a grade of **`{r} high_score `** out of 50, the **Group** that obtains the second highest amount of points obtains a grade of **`{r} medium_score `** out of 50 and the **Group** that obtains the lowest amount of points obtains a grade of **`{r} low_score `** out of 50. In case of a tie between any of the **Groups**, the one who obtains the highest grade, the second highest grade or the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 **Groups**.
+
+## {.smaller}
+
+-   Before, during and after the Midterm Exam remember:
+
+    -   **Before**
+
+        -   To form groups where this task is the responsibility of students and read the instructions.
+
+    -   **During**
+
+        -   You have to make 2 decisions: Who do you want to work with? How will the points be divided?
+        -   Your grade depends on the amount of points you obtain and no extra points will be assigned for helping or harming the parties involved in the negotiation.
+        -   If an agreement is reached and the same amount of points is obtained as another **Group** then the highest grade will be assigned randomly within the **Groups** that obtained the same amount of points.
+        -   It is okay to discuss but you must respect the parameters indicated in the last paragraph of the specific instructions.
+
+##
+
+-   Before, during and after the Midterm Exam remember:
+
+    -   **After**
+
+        -   Once the negotiation is over, which should last a maximum of 20 minutes, inform the professor of the final result: Was an agreement reached? What was the agreement?
+
+##
+
+- How the grades where chosen?
+
+::: {#def-fair-game}
+
+## Fair game
+
+A game that has an expected value of zero is called a **fair game**. [@inigo_college_203, sec. 3.4.2]
+
+:::
+
+##
+
+For example an **american roulette wheel** with double zero is not a fair game.
+
+![American roulette](000_images/003_roulette.jpg){.nostretch #fig-american-roulette width=50% fig-align="center"}
+
+In an american roulette with this characteristics we have the numbers from $0$ to $36$ plus $00$.
+
+## {.smaller}
+
+- Assume the american roulette is balanced, where all 38 outcomes are equally likely, and suppose you bet on a single number. 
+
+    - Also note that in casinos, if the number you bet on is hit, the winner must be paid $35$ times their bet.
+    
+- Suppose you bet $1000$ on a number. In that case, the expected value is:
+
+$$(1000 * 35) * (1 / 38) + (-1000) * (37 / 38) \approx -52.63$$
+Where:
+
+- $(1000 * 35) * (1 / 38)$ is the expected value of the winnings.
+- Otherwise, you must transfer $1000$ to the casino (hence the negative value), with a probability of occurrence of $37/38$
+
+In this sense, in the long run, your net gain is negative on average, approximately $-52.63$. So this is not a fair game.
+
+## 
+
+::: {#def-fair-game-umng}
+
+## Fair game in the sense of this class 
+
+A game that has an expected value of 43 is called a **fair game** in this class. This value corresponds to the minimum score necessary to obtain **Matrícula de Honor** according to [@umng_reglamento_2021-1, art. 95]
+
+:::
+
+I assume that each student is equally capable to obtain a score of $37$, $42$ or $50$ and that you can reach an agreement.
+
+Then the conditional expected value assuming that you can reach an agreement is:
+
+$$37 * (1 / 3) + 42 * (1 / 3) + 50 * (1 / 3) = 43$$
+
+# Overview of the integrative negotiation process
+
+## {.smaller}
+
+-   In an **integrative negotiation** you have to manage the context and the process.
+
+    -   For the generation of this context is necessary to [@lewicki_negociacion_2024, p. 72-73]:
+
+        -   Create a free flow of information where this issue is a fundamental difference with the case of a **distributive negotiation**.
+        -   Understand the needs and objectives of the other parties without forgetting the 2 dilemmas in the **mutual adjustment** process.
+        -   Highlight the affinities with the other parties and reduce differences as much as possible.
+        -   If possible, seek solutions that simultaneously cover your own needs and of the other parties.
+
+## {.smaller}
+
+-   In an **integrative negotiation** you have to manage the context and the process.
+
+    -   The key steps related to generate an integrative negotiation process are [@lewicki_negociacion_2024, p. 74-91]:
+
+        -   Identify and define the problem
+        -   Understand the problem by identifying the interests and needs of the other parties[^2]
+        -   Generate alternative solutions
+        -   Evaluate and select alternatives
+
+-   In the first 3 steps value is created (**create value**) and in the last step value is declared (**claim value**). Regarding the last step, it is important to have skills related to a **distributive negotiation** even if you participate in an **integrative negotiation**.
+
+[^2]: A good illustration of this aspect is the example of the library pointed out in [@lewicki_negociacion_2024, p. 78]
+
+##
+
+```{r}
+#| label: fig-creating-claiming-value-pareto-efficient-frontier
+#| fig-cap: Creating/Claiming Value and the Pareto Efficient Frontier [@lewicki_negociacion_2024, p 74]
+
+ggplot(data = tibble(x = c( 1, -1, -1, 0, 0, 4, 2.4),
+                     y = c(-1,  1, -1, 0, 4, 0, 2.4))) +
+  geom_point(aes(x = x, y = y),
+             fill  = umng_palette[2],
+             color = "black", 
+             shape = 21,
+             size  = 3) +
+  # red curve
+  geom_curve(aes(x = 0, y = 4, 
+                 xend = 4, yend = 0),
+             color = umng_palette[4],
+             curvature = -0.2) +
+  # x-axis
+  geom_segment(aes(x = 0, y = -2, 
+                   xend = 0, yend = 4.5), 
+               arrow = arrow(type = "closed")) +
+  # y-axis
+  geom_segment(aes(x = -2, y = 0, 
+                   xend = 4.5, yend = 0),
+               arrow = arrow(type = "closed")) +
+  # green-arrow
+  geom_segment(aes(x = 0, y = 0, 
+                   xend = 2.3, yend = 2.3),
+               arrow = arrow(type = "closed"),
+               color = umng_palette[3]) +
+  # red-curve annotation
+  annotate(geom = 'label', 
+           x = 4.20, y = 1.5,
+           label = str_glue("The red line is
+                              know as the Pareto
+                              Efficient Frontier
+                              where it is not
+                              possible to Create Value"),
+           color = "white",
+           fill  = umng_palette[12]) +
+  # anotation x-axis  
+  annotate(geom = 'text', 
+           x = 4.25, y = 0.4, 
+           label = str_glue("Increasing value
+                              to participant 1")) +
+  # anotation y-axis  
+  annotate(geom = 'text', 
+           x = 0.5, y = 4.25, 
+           label = str_glue("Increasing value
+                              to participant 2")) +
+  # green-arrow annotation
+  annotate(geom = 'label', 
+           x = 1, y = 2.5, 
+           label = str_glue("Creating Value:
+                              Getting away from
+                              the resistance points
+                              by generating profits
+                              for all the participants"),
+           color = "white",
+           fill  = umng_palette[11]) +
+  # target point brown-annotation
+  annotate(geom = 'label', 
+           x = 3, y = 3, 
+           label = str_glue("Claiming Value:
+                              Get as close as
+                              possible to the
+                              target point"),
+           color = "white",
+           fill  = umng_palette[5]) +
+  # resistance point annotation
+  annotate(geom = 'label', 
+           x = -0.4, y = 0.3, 
+           label = str_glue("Resistance
+                              point"),
+           color = "white",
+           fill  = umng_palette[1]) +
+  # no negotiation zone annotation 1
+  annotate(geom = 'label', 
+           x = -0.5, y = -1, 
+           label = str_glue("No negotation
+                              is possible"),
+           color = "white",
+           fill  = umng_palette[1]) +
+  # no negotiation zone annotation 2
+  annotate(geom = 'label', 
+           x = -0.5, y = 1, 
+           label = str_glue("No negotation
+                              is possible"),
+           color = "white",
+           fill  = umng_palette[1]) +
+  # no negotiation zone annotation 3
+  annotate(geom = 'label',
+           x = 0.5, y = -1,
+           label = str_glue("No negotation
+                              is possible"),
+           color = "white",
+           fill  = umng_palette[1]) +
+  theme_void()
+```
+
+# Assessing the quality of the agreement
+
+## {.smaller}
+
+-  Objective outcomes [@lewicki_negociacion_2024, p. 91]
+
+    -  Both parties’ interests and needs were met?
+    -  Is the agreement comprehensive? 
+    -  It satisfy the interests of all parties? 
+    -  Is it fair?
+
+-  Subjective outcomes [@curhan_what_2006, p. 501]
+
+    -  Feelings about:
+    
+        -  Outcome
+        -  Self
+        -  Process
+        -  Relationship
+
+# Factors that facilitate integrative negotiation
+
+##
+
+-   In [@lewicki_negociacion_2024, p. 92-97] 7 factors that generate a predisposition to consider an integrated negotiation with a higher probability of success are highlighted:
+
+    -   Existence of common, shared or joint goals between the parties to the negotiation.
+    -   Negotiators’ own confidence that they can solve a problem through integrative negotiation.
+    -   Existence of confidence in the validity of one’s own position but also in some degree on the perspective of the other parties.
+    
+## {.smaller}
+
+-   In [@lewicki_negociacion_2024, p. 92-97] 7 factors that generate a predisposition to consider an integrated negotiation with a higher probability of success are highlighted:
+
+    -   Existence of motivation and commitment to work as a team by the parties in the negotiation.
+    -   Existence of mutual trust between the parties.
+    -   Existence of clear and precise communication where there is a willingness to disclose information and understand what the counterparts seek to communicate.
+    -   Understanding and knowledge by negotiators about the dynamics of an integrative negotiation.
+
+# Difficulties to achieve and integrative negotiation
+
+##
+
+-  Fail to perceive a situation as having integrative potential
+-  Past events leading to a relationship filled with competition and conflict
+-  Belief that an issue can only be resolved distributively
+-  Desire to satisfy one's own concerns without regard for the others concerns
+-  Insufficient time to process information, understand individual and collective needs and effectively transition from value creation to value claiming
+
+# Acknowledgments
+
+##
+
+-   To my family that supports me
+
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
+
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
+
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://posit.co/download/rstudio-desktop/), [**Positron**](https://positron.posit.co/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**gt**](https://CRAN.R-project.org/package=gt) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+# References {.allowframebreaks}

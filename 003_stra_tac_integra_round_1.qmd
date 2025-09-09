@@ -197,7 +197,7 @@ A game that has an expected value of zero is called a **fair game**. [@inigo_col
 
 For example an **american roulette wheel** with double zero is not a fair game.
 
-![American roulette](000_images/003_roulette.jpg){#fig-american-roulette width="150px" height="150px"}
+![American roulette](000_images/003_roulette.jpg){.nostretch #fig-american-roulette width=50% fig-align="center"}
 
 In an american roulette with this characteristics we have the numbers from $0$ to $36$ plus $00$.
 
