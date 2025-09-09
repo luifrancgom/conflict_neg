@@ -1,0 +1,20 @@
+---
+format: 
+  html:
+    embed-resources: true
+---
+
+- **Primer corte: 30%**
+
+    - Questionnaire 1: 15%
+    - Midterm Exam Three Party Coalition Exercise Round 1: 15%
+
+- **Segundo corte: 30%**
+        
+    - Questionnaire 2: 15%
+    - Midterm Exam Three Party Coalition Exercise Round 2: 15%
+
+- **Tercer corte: 40%**
+    
+    - Questionnaire 3: 15%
+    - Final Exam Three Party Coalition Exercise Modified: 25%
