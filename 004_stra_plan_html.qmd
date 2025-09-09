@@ -1,0 +1,267 @@
+---
+title: "Negotiation: Strategy and Planning"
+subtitle: Session 1
+author:
+  - name: 
+      given: Luis F.
+      family: Gómez L.
+    orcid: 0000-0002-2877-9015
+    email: luis.gomezl@unimilitar.edu.co
+    affiliations:
+      - name: Distance Learning Faculty
+toc: true
+toc-depth: 1
+slide-level: 2
+format:
+  presentation-umng-revealjs:
+    logo-vertical-strip: 000_logos/logo-white-vertical.png 
+    embed-resources: true
+    mermaid-format: png
+    reference-location: document
+date: last-modified
+date-format: "D MMMM, YYYY"
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
+bibliography: conflict_neg.bib
+csl: apa-7.csl
+editor: source
+---
+
+```{r}
+#| label: libraries
+
+library(tufte)
+```
+
+```{r}
+#| label: palette
+
+umng_palette <- c(
+  "#043074",
+  "#fdc600",
+  "#0d5e30",
+  "#ee2a24",
+  "#fc6700",
+  "#00b3f0",
+  "#6e3c1a",
+  "#f8941c",
+  "#8e44ad",
+  "#2c3e50",
+  "#16a085",
+  "#c0392b",
+  "#e91e63"
+)
+```
+
+# Please Read Me
+
+##
+
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
+
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 4]
+
+##
+
+- **Purpose**
+
+    - Understand and explore the main elements of the negotiation strategy, the process to select a strategy as well as the way in which most negotiations evolve to effectively plan a negotiation.
+
+# The importance of planning in negotiations
+
+## {.smaller}
+
+-   Some quotes about planning:
+
+> "Everyone has a plan until they get punched in the mouth"
+
+> `r quote_footer("--- Mike Tyson")`
+
+> "No battle plan ever survives contact with the enemy"
+
+> `r quote_footer("--- Helmuth von Moltke the Elder")`
+
+-   Therefore, there is no need to plan?
+
+    -   Absolutely not, but if your plan is not flexible you will get punched in the mouth and no part of your plan will survive when you negotiate with the counterpart.
+
+    -   Also don"t expect everything will work millimetrically according to the plan because the counterpart might also have a plan and they will react strategically to your plan.
+    
+## {.smaller}
+
+-   Without planning results occur more by chance than by negotiator effort
+
+    -   Behaviour of Successful Negotiators: Find some successful negotiators and watch them during actual negotiations to find how they do it.
+
+        -   [@rackham_effective_1978]: planning is the foundation for any successful negotiation
+        -   [@rackham_effective_1978-1]: exploration of options, common ground, long-term implications, setting limits[^1] and use an issue planning method over sequence planning[^2]
+
+-   Also check out in the **Links of interest** the video: How to negotiate properly? [@magic_markers_como_2018]
+
+[^1]: Plan in terms of a range and not around a fixed point
+
+[^2]: Issues are independent and not linked by a sequence
+
+# Key steps in the planning process
+
+## {.center}
+
+```{mermaid}
+%%| label: fig-relation-ship-key-steps-planning-process
+%%| fig-cap: Relationship between key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, p. 105]
+%%| fig-height: 2
+
+flowchart LR
+    A("Goals") --> A1("Strategy")
+    A1 --> A11("Planning")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11 UmngNode;
+```
+
+# Goals
+
+## {.smaller}
+
+-   The first step to execute a negotiation strategy is to determine one’s goals.
+
+    -   **Substantive**: goals about tangible factors (price, terms of a contract, product specifications)
+    -   **Intangible**: goals about intangible factors (personal values and emotions of the parties such as defeating the other party or reaching a conciliation at any cost)
+    -   **Procedural**: goals about how the negotiation process occurs (define plans or just have a voice during the negotiation)
+
+-   The negotiator must identify what kind of goals to pursue[^3]. What definitely cannot be ignored is the substantive goals given that it refers to the tangible aspects.
+
+[^3]: Identifying goals in practical terms simply means making a list to prioritize them
+
+## {.smaller}
+
+-   When defining goals take into account these 4 aspects [@lewicki_negociacion_2024, Chapter 4, p 105-106]:
+
+    -   Goals are specific objectives that are sought realistically.
+
+    -   Own goals can potentially be linked to the goals of the other parties.[^4]
+
+    -   If in identifying the goals these are not attainable then:
+
+        -   Modify them so that they are attainable
+        -   Discard the negotiation as an option to reach an agreement[^5]
+
+    -   The goals that are identified must be concrete, specific and measurable so that it is easier to:
+
+        -   Communicate to the other party what you want to achieve
+        -   Understand what the other parties want
+        -   Determine if the proposed proposals satisfy what you want to achieve
+
+[^4]: It is easier to reach an agreement if you have common goals
+
+[^5]: Remember that negotiation as a form of **decision making** is not the only method that exists!
+
+# Strategies
+
+##
+
+```{mermaid}
+%%| label: fig-engagement-strategies
+%%| fig-cap: Different engagement strategies in a negotiation context  [@lewicki_negociacion_2024, Chapter 4, p. 110]
+%%| fig-height: 4
+
+flowchart TB
+    A("Strategy") --> A1("`Competitive
+    **(Distributive context)**`")
+    A --> A2("`Collaborative
+    **(Integrative context)**`")
+    A --> A3("Accomodative")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A3 UmngNode;
+```
+
+# Phases of negotiation
+
+##
+
+-  Before exploring the specific planning processes for negotiation, it is important to understand the typical phases in a negotiation
+
+    -  7 key steps to an ideal negotiation process [@greenhalgh_managing_2001, p. 164]:
+
+        -  Preparation
+        -  Relationship building
+        -  Information gathering
+        -  Information using
+        -  Bidding
+        -  Closing the deal
+        -  Implementing the agreement
+
+# Planning process
+
+##
+
+```{mermaid}
+%%| label: fig-key-steps-planning-process-1
+%%| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, pp. 114-128]
+%%| fig-height: 5
+
+flowchart TB
+    A("Planning") --> A1("Defining the negotiating goal")
+    A --> A2("List the major issues related to achieving the goal")
+    A --> A3("Organize Issues")
+    A --> A4("Defining the Interests")
+    A --> A5("Knowing Your BATNA")
+    A3 --> A31("Assembling")
+    A3 --> A32("Prioritization")
+    A4 --> A41("Substantive")
+    A4 --> A42("Process-based")
+    A4 --> A43("Relationship-based")
+    A32 --> A321("Ranking")
+    A32 --> A322("Defining the Bargaining Mix")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A3,A31,A32,A321,A322,A4,A41,A42,A43,A5 UmngNode;
+```
+
+##
+
+```{mermaid}
+%%| label: fig-key-steps-planning-process-2
+%%| fig-cap: Key steps in the planning process [@lewicki_negociacion_2024, Chapter 4, pp. 114-128]
+%%| fig-height: 5
+
+flowchart TB
+    A("Planning") --> A1("Knowing your resistance point")
+    A --> A2("Gathering information about the other party")
+    A --> A3("Setting one’s own targets and opening bids")
+    A --> A4("Assessing the social context of negotiation")
+    A --> A5("Presenting the issues to the other Party")
+    A4 --> A41("Direct actors")
+    A4 --> A42("Opposition actors")
+    A4 --> A43("Indirect actors")
+    A4 --> A44("Interested observers")
+    A4 --> A45("Environmental factors")
+    A44 --> A441("Constituents")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A3,A4,A41,A42,A43,A44,A441,A45,A5 UmngNode;
+```
+
+# Acknowledgments
+
+##
+
+-   To my family that supports me
+
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
+
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
+
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tufte**](https://CRAN.R-project.org/package=tufte) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+# References {.allowframebreaks}
