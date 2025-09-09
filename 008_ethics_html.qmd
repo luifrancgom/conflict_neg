@@ -1,0 +1,299 @@
+---
+title: Ethics in Negotiation
+subtitle: Session 1
+author:
+  - name: 
+      given: Luis F.
+      family: Gómez L.
+    orcid: 0000-0002-2877-9015
+    email: luis.gomezl@unimilitar.edu.co
+    affiliations:
+      - name: Distance Learning Faculty
+toc: true
+toc-depth: 1
+slide-level: 2
+format:
+  presentation-umng-revealjs:
+    logo-vertical-strip: 000_logos/logo-white-vertical.png 
+    embed-resources: true
+    mermaid-format: png
+    reference-location: document
+date: last-modified
+date-format: "D MMMM, YYYY"
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
+bibliography: conflict_neg.bib
+csl: apa-7.csl
+editor: source
+---
+
+```{r}
+#| label: libraries
+
+
+```
+
+```{r}
+#| label: palette
+
+umng_palette <- c(
+  "#043074",
+  "#fdc600",
+  "#0d5e30",
+  "#ee2a24",
+  "#fc6700",
+  "#00b3f0",
+  "#6e3c1a",
+  "#f8941c",
+  "#8e44ad",
+  "#2c3e50",
+  "#16a085",
+  "#c0392b",
+  "#e91e63"
+)
+```
+
+# Please Read Me
+
+##
+
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
+
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 5]
+
+##
+
+- **Purpose**
+
+    - Explore and understand the ethical standards commonly accepted in a negotiation process in order to detect and deal with deceptive tactics.
+
+# Ethics and its relationship with negotiation
+
+##
+
+-   Ethics is understand as the social standards that are apply to examine what is right or wrong in a specific situation or a process to establish such standards [@lewicki_negociacion_2024, Chapter 5, p. 136].
+
+-   The ethical considerations in a negotiation are related to how the exchange of information occurs [@lewicki_ethical_1998].
+
+    -   Because the exchange of information in the negotiation process is vital, the analysis of ethics is associated with examining whether or not there is a dishonest communication.
+
+##
+
+-   To evaluate how ethical the strategies and tactics are in a negotiation, 4 standards can be used [@lewicki_negociacion_2024, Chapter 5, p. 118]:
+
+```{mermaid}
+%%| label: fig-approaches-to-ethical-reasoning
+%%| fig-cap: Approaches to ethical reasoning to evaluate strategies and tactics in a negotiation [@lewicki_negociacion_2024, pp. 140]
+
+flowchart TB
+    A("Ethical standards") --> A1("End-result ethics")
+    A1 --> A11("`Jeremy Bentham 
+    John Stuart Mill`")
+    A --> A2("Duty ethics")
+    A2 --> A21("Immanuel Kant")
+    A --> A3("Social contract ethics")
+    A3 --> A31("Jean-Jacques Rousseau")
+    A --> A4("Personalistic ethics")
+    A4 --> A41("Martin Buber")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A2,A21,A3,A31,A4,A41 UmngNode;
+```
+
+# Ethically ambiguous tactics
+
+##
+
+-   There are tactics that are not ethical and that can be quickly identified, such as stealing confidential data from the counterpart.
+
+    -   These types of tactics must be removed from the negotiator's toolbox.
+
+-   However, in the context of negotiation there are gray areas. These gray areas are known as ethically ambiguous tactics within the theory of negotiation.
+
+    -   These tactics are related to what the negotiators say or what they claim they will do concerning what they really do.
+    
+##
+
+-   Gray areas within a negotiating context regarding ethically ambiguous tactics are presented due to the 2 dilemmas a negotiator faces:
+
+    -   Dilemma of honesty
+
+        -   How much truth should be revealed to the counterpart?
+
+    -   Dilemma of trust
+
+        -   How much should a negotiator believe what the counterpart says?
+
+##
+
+```{mermaid}
+%%| label: fig-types-ethically-ambiguous-tactics
+%%| fig-cap: Types of ethically ambiguous tactics [@lewicki_negociacion_2024, p. 148]
+%%| fig-height: 5.5
+
+flowchart TB
+    A("Dimensions used in the assessment of ethically ambiguous tactics") --> A1("Appropriateness")
+    A1 --> A11("Types")
+    A11 --> A111("Traditional competitive bargaining")
+    A111 --> A1111("Perceived as appropriate and likely to be used")
+    A11 --> A112("Emotional manipulation")
+    A112 --> A1111
+    A11 --> A113("Misrepresentation")
+    A11 --> A114("Misrepresentation to opponent’s networks")
+    A11 --> A115("Inappropriate information gathering")
+    A11 --> A116("Bluffing")
+    A --> A2("Likelihood of using it")
+    A2 --> A11
+    A --> A3("Perceived efficacy of using it")
+    A3 --> A11
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A111,A1111,A112,A113,A114,A115,A116,A2,A3 UmngNode;
+```
+
+# Motives and consequences of using deceptive tactics
+
+##
+
+```{mermaid}
+%%| label: fig-use-of-deceptive-tactics
+%%| fig-cap: Use of deceptive tactics [@lewicki_negociacion_2024, p. 151]
+
+flowchart TB
+    A("Deceptive tactics") --> A1("Types")
+    A1 --> A11("Active")
+    A11 --> A111("Misrepresent lying openly")
+    A1 --> A12("Pasive")
+    A12 --> A121("Misrepresent by omission not revealing information that benefits the counterpart")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A111,A12,A121 UmngNode;
+```
+
+##
+
+-   Why do negotiators use deceptive tactics in the context of a negotiation?
+
+    -   Need to acquire greater power through the manipulation of information to get closer to the target point
+
+    -   Use of a more competitive negotiation style[^1]
+
+[^1]: This aspect generates a greater probability of using this type of tactics
+
+##
+
+```{mermaid}
+%%| label: fig-consequences-of-unethical-conduct
+%%| fig-cap: Consequences of unethical conduct [@lewicki_negociacion_2024, pp. 155-158]
+
+flowchart TB
+    A("Consequences of Unethical Conduct") --> A1("Types")
+    A1 --> A11("Positive or Negative")
+    A11 --> A111("Aspects")
+    A111 --> A1111("Effectiveness")
+    A111 --> A1112("Reactions of Others")
+    A111 --> A1113("Reactions of Self")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A111,A1111,A1112,A1113 UmngNode;
+```
+
+##
+
+-   **Effectiveness**
+
+    -   Deceptive tactics generate **positive consequences** when the outcome of the negotiation improves compared to whether a negotiator had acted ethically and if the conduct is not punished where the consequences materialize in the short run.
+
+    -   Deceptive tactics generate **negative consequences** because the reputation of the negotiator is damaged where the consequences materialize in the future.
+
+##
+
+-   **Reactions of Others**
+
+    -   Deceptive tactics generate **positive consequences** only if constituents, indirect actors or interest observers considered appropriate to use this type of tactics[^2].
+
+    -   Deceptive tactics generate **negative consequences** because retaliations occur directly from the counterpart and possibly from the constituents, indirect actors or interest observers if they consider that the tactic used is inappropriate[^3].
+
+[^2]: This is my own personal opinion and it is not mentioned in [@lewicki_negociacion_2024, Chapter 5]
+
+[^3]: As a personal opinion in the case of the indirect actors or interest observers the retaliation is materialize through a social sanction.
+
+##
+
+-   **Reactions of Self**
+
+    -   Deceptive tactics generate **positive consequences** only if the negotiator does not suffer from guilt, remorse or discomfort.
+
+    -   Deceptive tactics generate **negative consequences** when the negotiator suffers from guilt, remorse or discomfort for having used these tactics[^4]
+
+[^4]: This issue directly affects the negotiation since the negotiator is willing to make greater concessions to the counterpart to compensate for using deceptive tactics.
+
+# Dealing with the use of deceptive tactics by the counterpart
+
+## {.center}
+
+```{mermaid}
+%%| label: fig-dealing-with-deceptive-tactics-1
+%%| fig-cap: Dealing with deceptive tactics by the counterpart [@lewicki_negociacion_2024, pp. 172-174]
+
+flowchart TB
+    A("Options") --> A1("Ask Probing Questions")
+    A --> A2("Phrase Questions in Different Ways")
+    A --> A3("Force the Other Party to Lie or Back Off")
+    A --> A4("Test the Other Party")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A3,A4 UmngNode;
+```
+
+## {.center}
+
+```{mermaid}
+%%| label: fig-dealing-with-deceptive-tactics-2
+%%| fig-cap: Dealing with deceptive tactics by the counterpart [@lewicki_negociacion_2024, pp. 172-174]
+
+flowchart TB
+    A("Options") --> A1("“Call” the Tactic")
+    A --> A2("Ignore the Tactic")
+    A --> A3("Discuss What You See and Offer to Help the Other Party Shift to More Honest Behaviors")
+    A --> A4("Respond in Kind")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A3,A4 UmngNode;
+```
+
+##
+
+-   **My personal opinion**:
+
+    -   Read the article [@adler_negotiating_2007]:
+
+        -   Before the Bargaining Begins
+
+        -   During the Bargaining Process
+
+    -   I think the best approach is to follow the recommendations in the section **Before the Bargaining Begins** because they are carried out during the planning stage of a negotiation where there is more time and information that can be collected in order to respond adequately to deceptive tactics.
+
+# Acknowledgments
+
+##
+
+-   To my family that supports me
+
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
+
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
+
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages
+[**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+# References {.allowframebreaks}
