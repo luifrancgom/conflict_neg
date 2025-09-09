@@ -1,0 +1,209 @@
+---
+title: Finding and Using Negotiation Power
+subtitle: Session 1
+author:
+  - name: 
+      given: Luis F.
+      family: Gómez L.
+    orcid: 0000-0002-2877-9015
+    email: luis.gomezl@unimilitar.edu.co
+    affiliations:
+      - name: Distance Learning Faculty
+toc: true
+toc-depth: 1
+slide-level: 2
+format:
+  presentation-umng-revealjs:
+    logo-vertical-strip: 000_logos/logo-white-vertical.png 
+    embed-resources: true
+    mermaid-format: png
+    reference-location: document
+date: last-modified
+date-format: "D MMMM, YYYY"
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
+bibliography: conflict_neg.bib
+csl: apa-7.csl
+editor: source
+---
+
+```{r}
+#| label: libraries
+
+
+```
+
+```{r}
+#| label: palette
+
+umng_palette <- c(
+  "#043074",
+  "#fdc600",
+  "#0d5e30",
+  "#ee2a24",
+  "#fc6700",
+  "#00b3f0",
+  "#6e3c1a",
+  "#f8941c",
+  "#8e44ad",
+  "#2c3e50",
+  "#16a085",
+  "#c0392b",
+  "#e91e63"
+)
+```
+
+# Please Read Me
+
+##
+
+-   Check the message **Welcome greeting** published in the News Bulletin Board.
+
+-   Dear student please edit your profile uploading a photo where your face is clearly visible.
+
+-   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
+
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 7]
+
+##
+
+- **Purpose**
+
+    - Understand the role of power and the different sources from which this element arises in a negotiation.
+
+# Power in the context of a negotiation
+
+##
+
+-   Power in the context of a negotiation refers to the ability of a negotiator to gain an advantage or increase the likelihood of approaching its target point.
+
+-   Power is important in a negotiation because it generates advantages and allows reaching a settlement point close to the target point.
+
+##
+
+```{mermaid}
+%%| label: fig-perspectives-about-power
+%%| fig-cap: Perspectives about power[^1]
+%%| fig-height: 4
+
+flowchart LR
+    A("2 perspectives") --> A1("Power over")
+    A --> A2("Power with")
+    A1 --> A11("Power is fundamentally dominating and coercive in nature")
+    A2 --> A21("Power holder jointly develops and shares power with the other")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A2,A21 UmngNode;
+```
+
+[^1]: Check out [@coleman_power_2014] if you want a general perspective about power and its relation with conflict
+
+# Sources of power in a negotiation
+
+## 
+
+```{mermaid}
+%%| label: fig-sources-of-power-1
+%%| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp. 242-260]
+%%| fig-height: 4
+
+flowchart TB
+    A("Sources") --> A1("Informational")
+    A --> A2("Based on Personality and Individual Differences")
+    A2 --> A21("Cognitive Orientation")
+    A2 --> A22("Motivational Orientation")
+    A2 --> A23("Dispositions and Related Skills")
+    A2 --> A24("Moral Orientation toward Power")
+    A2 --> A25("Moods")
+    A --> A3("Structural Power")
+    A3 --> A31("Hierarchy")
+    A31 --> A311("Legitimate power")
+    A31 --> A312("Resource Power")
+    A3 --> A32("Location in a Network")
+    A32 --> A321("Field: Social network analysis")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A2,A21,A22,A23,A24,A25,A3,A31,A311,A312,A32,A321 UmngNode;
+```
+
+## {.center}
+
+```{mermaid}
+%%| label: fig-sources-of-power-2
+%%| fig-cap: Sources of power in a negotiation [@lewicki_negociacion_2024, pp. 242-260]
+
+flowchart TB
+    A("Sources") --> A1("Based on Relationships")
+    A1 --> A11("Goal Interdependence")
+    A1 --> A12("Referent Power")
+    A --> A2("Contextual")
+    A2 --> A21("BATNAs")
+    A2 --> A22("Culture")
+    A2 --> A23("Agents, Constituencies and External Audiences")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A12,A2,A21,A22,A23 UmngNode;
+```
+
+# The Consequences of Unequal Power
+
+##
+
+```{mermaid}
+%%| label: fig-consequences-of-unequal-power
+%%| fig-cap: Consequences of unequal power in a negotiation [@lewicki_negociacion_2024, pp. 260-261]
+
+flowchart TB
+    A("Unequal power") --> A1("Consequences")
+    A1 --> A11("Lead to significantly different conflict orientations and behaviors")
+    A11 --> A111("Avoid making things worse")
+    A11 --> A112("Exit the relationship")
+    A11 --> A113("Hinder the other's actions")
+    A1 --> A12("More likely to behave contentiously")
+    A12 --> A121("Threats")
+    A12 --> A122("Punishments")
+    A12 --> A123("Exploitative behavior")
+    A1 --> A13("The more powerful party has the capacity to determine the negotiation outcome")
+
+    classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
+    class A,A1,A11,A111,A112,A113,A12,A121,A122,A123,A13 UmngNode;    
+```
+
+# Dealing with negotatiors how have more power
+
+## {.smaller}
+
+-   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp. 261-262]:
+
+    -   Diversify risk by entering into deals with several other partners.
+    -   Deal with a variety of different individuals and departments in the high-power party (Divide and Conquer).
+    -   Build coalitions with other low-power players to increase collective bargaining power.
+    -   Enter in early deals with high-power parties and maximize the visibility of those deals to other parties.
+
+## {.smaller}
+
+-   Advice to negotiators who are in low-power positions based on [@lewicki_negociacion_2024, pp. 261-262]:
+
+    -   If you have something to offer, make sure you offer it to more than one high-power party to generate competition between them.
+    -   Gather and leverage relevant information to strengthen your negotiation position and achieve better outcomes through persuasive communication.
+    -   Do what you can to manage the process (for example the agenda or location) to guide the negotiation towards a more favorable outcome.
+
+# Acknowledgments
+
+##
+
+-   To my family that supports me
+
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
+
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
+
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://rstudio.com/products/rstudio/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages
+[**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+# References {.allowframebreaks}
