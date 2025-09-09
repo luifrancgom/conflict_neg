@@ -1,0 +1,237 @@
+---
+title: Debriefing
+subtitle: Session 1
+author:
+  - name: 
+      given: Luis F.
+      family: Gómez L.
+    orcid: 0000-0002-2877-9015
+    email: luis.gomezl@unimilitar.edu.co
+    affiliations:
+      - name: Distance Learning Faculty
+toc: true
+toc-depth: 1
+slide-level: 2
+format:
+  presentation-umng-revealjs:
+    logo-vertical-strip: 000_logos/logo-white-vertical.png 
+    embed-resources: true
+    mermaid-format: png
+    reference-location: document
+date: last-modified
+date-format: "D MMMM, YYYY"
+knitr: 
+  opts_chunk: 
+    echo: false
+    warning: false
+    fig-align: center
+    out-width: 85%
+lang: en
+bibliography: conflict_neg.bib
+csl: apa-7.csl
+editor: source
+---
+
+```{r}
+#| label: libraries
+
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+#| label: palette
+
+umng_palette <- c(
+  "#043074",
+  "#fdc600",
+  "#0d5e30",
+  "#ee2a24",
+  "#fc6700",
+  "#00b3f0",
+  "#6e3c1a",
+  "#f8941c",
+  "#8e44ad",
+  "#2c3e50",
+  "#16a085",
+  "#c0392b",
+  "#e91e63"
+)
+```
+
+# Please Read Me
+
+##
+
+-   This presentation is based on [@program_on_negotiation_three_2008]
+
+##
+
+- **Purpose**
+
+    - Discuss negotiation performance, share feedback, and identify key learning points during the debrief
+
+# Resource imbalances and the relationship among the parties
+
+##
+
+- There is a disparity between the resources controlled by each role
+
+    - A control more resources than B
+    - B control more resources than C
+    
+    $$A > B > C$$
+
+- For this reason, roles must be randomly assigned to ensure fairness
+
+# Types of agreements
+
+##
+
+```{r}
+#| label: tbl-excluding-c
+#| tbl-cap: Agreements excluding C
+
+excluding_c <- tibble(A = c(59, 60, 60, 59),
+                      B = c(59, 58, 60, 59),
+                      C = c(0 ,  0,  1,  3))
+
+excluding_c |> 
+  gt() |> 
+  tab_options(
+    row.striping.include_table_body = TRUE,
+    table.border.top.width = px(3),
+    table.border.top.color = "black",
+    column_labels.border.bottom.width = px(2),
+    column_labels.border.bottom.color = "black",
+    table.border.bottom.width = px(3),
+    table.border.bottom.color = "black",
+    table.font.size = px(36)
+  )
+```
+
+##
+
+```{r}
+#| label: tbl-equally-distribution
+#| tbl-cap: Agreements which tend to have an equally distribution of points
+
+equally_distribution <- tibble(A = c("121/3", 41, 43),
+                               B = c("121/3", 40, 40),
+                               C = c("121/3", 40, 38))
+
+equally_distribution |> 
+  gt() |> 
+  tab_options(
+    row.striping.include_table_body = TRUE,
+    table.border.top.width = px(3),
+    table.border.top.color = "black",
+    column_labels.border.bottom.width = px(2),
+    column_labels.border.bottom.color = "black",
+    table.border.bottom.width = px(3),
+    table.border.bottom.color = "black",
+    table.font.size = px(36)
+  )
+```
+
+##
+
+```{r}
+#| label: tbl-power-distribution
+#| tbl-cap: Agreements according to the control of resources
+
+power_distribution <- tibble(A = c(60, 50),
+                             B = c(40, 40),
+                             C = c(21, 31))
+
+power_distribution |> 
+  gt() |> 
+  tab_options(
+    row.striping.include_table_body = TRUE,
+    table.border.top.width = px(3),
+    table.border.top.color = "black",
+    column_labels.border.bottom.width = px(2),
+    column_labels.border.bottom.color = "black",
+    table.border.bottom.width = px(3),
+    table.border.bottom.color = "black",
+    table.font.size = px(36)
+  )
+  
+```
+
+##
+
+- Other agreements
+
+    - A became so greedy so B and C exclude A
+    - C blocks the coalition between A and B and chooses to work with A[^1]
+    
+[^1]: Less common agreement
+
+# Stability of coalitions
+
+## {.smaller}
+
+- A: 59, B: 59
+
+    - C is excluded
+
+- Counter offer by C: A: 60, C: 24
+
+    - B is excluded
+    
+- Counter offer by B: A: 61, B: 57 
+
+    - C is excluded
+
+- Counter offer by C: A: 62, A: 22 
+
+    - B is excluded
+
+**It is possible to prove that in this game any coalition can be brake**
+
+# Fairness criteria
+
+##
+
+- Possible states in case of agreement
+
+![Scenarios in the game if an agreement is reached](000_images/009_possible_states_in_case_of_agreement.png){.nostretch #fig-possible-states-in-case-of-agreement width=100% fig-align="center"}
+
+##
+
+![Jeremy Bentham](000_images/009_jeremy_bentham_by_henry_william_pickersgill_detail.jpg){.nostretch #fig-jeremy-bentham-by-henry-william-pickersgill-detail width=35% fig-align="center"}
+
+##
+
+- Benthamite social welfare function
+
+    - $G_i$: grade of student $i$
+    
+$$\max \frac{1}{n}G_1 + \cdots \frac{1}{n}G_n = \max \sum_{i = 1}^n \frac{1}{n}G_i$$
+
+##
+
+![John Rawls](000_images/009_john_rawls_1971_photo_portrait.jpg){.nostretch #fig-john-rawls-1971-photo-portrait width=35% fig-align="center"}
+
+##
+
+- Rawlsian social welfare function 
+
+    - $G_i$: grade of student $i$
+    
+$$\max \min \{ G_1, \ldots, G_m \}$$
+
+# Acknowledgments
+
+##
+
+-   To my family that supports me
+
+-   To the taxpayers of Colombia and the [**UMNG students**](https://www.umng.edu.co/estudiante) who pay my salary
+
+-   To the [**Business Science**](https://www.business-science.io/) and [**R4DS Online Learning**](https://www.rfordatasci.com/) communities where I learn [**R**](https://www.r-project.org/about.html) and [**$\pi$-thon**](https://www.python.org/about/)
+
+-   To the [**R Core Team**](https://www.r-project.org/contributors.html), the creators of [**RStudio IDE**](https://posit.co/download/rstudio-desktop/), [**Positron**](https://positron.posit.co/), [**Quarto**](https://quarto.org/) and the authors and maintainers of the packages [**tidyverse**](https://CRAN.R-project.org/package=tidyverse), [**gt**](https://CRAN.R-project.org/package=gt) and [**tinytex**](https://CRAN.R-project.org/package=tinytex) for allowing me to access these tools without paying for a license
+
+# References {.allowframebreaks}
