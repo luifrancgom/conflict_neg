@@ -187,7 +187,7 @@ flowchart TB
 
 # Phases of negotiation
 
-##
+## {.smaller}
 
 -  Before exploring the specific planning processes for negotiation, it is important to understand the typical phases in a negotiation
 
