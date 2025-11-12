@@ -68,7 +68,7 @@ umng_palette <- c(
 
 -   The purpose of the virtual meetings is to answer questions and not to make a summary of the study material.
 
--   This presentation is based on [@lewicki_negociacion_2024, Chapter 7]
+-   This presentation is based on [@lewicki_negociacion_2024, Chapter 8]
 
 ##
 

@@ -116,7 +116,7 @@ umng_palette <- c(
 
 -   In general terms, this means that individuals have built mental filters throughout their lives that allow them to understand the world. In turn, these mental filters influence the decisions they make.
 
-##
+## {.smaller}
 
 -   Example of how **framing** can change decisions depending on how information is presented [@tversky_framing_1981, p 453]:
 
