@@ -75,7 +75,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Explore and understand the ethical standards commonly accepted in a negotiation process in order to detect and deal with deceptive tactics.
+    - Explore best practices in negotiation and conflict management to achieve successful negotiation.
 
 # Final Exam Three Party Coalition Exercise Modified
 
@@ -119,9 +119,11 @@ umng_palette <- c(
 #| label: tbl-no-agreement
 #| tbl-cap: Results in case of no agreement
 
-tibble(Group  = c("A", "B", "C"),
-       Points = rep(x = 0, times = 3),
-       Grade  = rep(x = 20, times = 3)) |> 
+tibble(
+  Group = c("A", "B", "C"),
+  Points = rep(x = 0, times = 3),
+  Grade = rep(x = 20, times = 3)
+) |>
   gt() |>
   tab_options(
     row.striping.include_table_body = TRUE,
@@ -306,10 +308,11 @@ flowchart TB
     A4 --> A41("Establish clear principles")
     A4 --> A42("Use external benchmarks")
     A4 --> A43("Use external benchmarks")
-    A --> A5("Reach consensus about standards of fairness")
+    A4 --> A44("Reach consensus about standards of fairness")
+    A --> A5("Learn from your experience")
 
     classDef UmngNode fill:#fdc600,stroke:#043074,stroke-width:2px;
-    class A,A1,A2,A21,A22,A23,A3,A4,A41,A42,A43,A5 UmngNode;
+    class A,A1,A2,A21,A22,A23,A3,A4,A41,A42,A43,A44,A5 UmngNode;
 ```
 
 # What next?
