@@ -5,7 +5,7 @@ author:
     email: luis.gomezl@unimilitar.edu.co
     affiliations:
       - name: Universidad Militar Nueva Granada
-date: 2025-02-13
+date: 2025-01-20
 date-modified: last-modified
 format:
   html: 
@@ -25,12 +25,12 @@ params:
       end_hour: 15:00
   block:
     value:
-      start_date: 2025-03-24
-      end_date: 2025-05-31
+      start_date: 2026-04-06
+      end_date: 2026-06-07
   schedule:
     value:
-      meeting_dates: [2, 4]
-      dates_recess: [2025-04-14, 2025-04-20]
+      meeting_dates: [3, 5]
+      dates_recess: [2026-03-30, 2026-04-04]
       start_presentation_hour: 19:00
       end_presentation_hour: 19:45  
       start_syllabus_hour: 19:00
@@ -66,9 +66,8 @@ library(gt)
 #| label: meeting-info
 
 # Days ----
-if(length(params$meeting_info$days) > 1) {
-  days_str <- glue_collapse(params$meeting_info$days, 
-                            sep = ", ", last = " or ") 
+if (length(params$meeting_info$days) > 1) {
+  days_str <- glue_collapse(params$meeting_info$days, sep = ", ", last = " or ")
 } else {
   days_str <- params$meeting_info$days[1]
 }
@@ -98,17 +97,17 @@ if(length(params$meeting_info$days) > 1) {
 #| label: block
 
 # Dates ----
-start_date <- ymd(params$block$start_date) 
-end_date   <- ymd(params$block$end_date)
+start_date <- ymd(params$block$start_date)
+end_date <- ymd(params$block$end_date)
 
-str_start_end_date <- paste(format(start_date, 
-                                   format = "%B %d"),
-                            " - ",
-                            format(end_date, 
-                                   format = "%B %d"), 
-                            sep = "",
-                            ", ",
-                            year(start_date))
+str_start_end_date <- paste(
+  format(start_date, format = "%B %d"),
+  " - ",
+  format(end_date, format = "%B %d"),
+  sep = "",
+  ", ",
+  year(start_date)
+)
 ```
 
 -   Credits: 4
@@ -160,20 +159,72 @@ Develop in students, negotiation conflict skills in diverse scenarios through th
 
 lewicki <- rep("[@lewicki_negociacion_2024]", times = 3)
 
-tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
-       Material        = rep(c(lewicki, 
-                               "[@program_on_negotiation_three_2008]"), 
-                             times = 3),
-       `Chapter or Round` = c("1","2","3", "I", "4", "6", "7", "II", "8", "5", "20", "III"),
-       `Initial page`  = c("1", "31", "69", " ", "102", "175", "210", " ", "235", "133", "555", " "),
-       `Final page`    = c("30", "67", "100", " ", "131", "208", "234", " ", "261", "174", "564", " "),
-       `Number of pages` = c("30", "37", "32", " ", "30", "34", "25", " ", "27", "42", "10", " ")) |> 
-    gt() |> 
-  fmt_markdown() |> 
+tibble(
+  Week = c("1", "2", "3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
+  Material = rep(c(lewicki, "[@program_on_negotiation_three_2008]"), times = 3),
+  `Chapter or Round` = c(
+    "1",
+    "2",
+    "3",
+    "I",
+    "4",
+    "6",
+    "7",
+    "II",
+    "8",
+    "5",
+    "20",
+    "III"
+  ),
+  `Initial page` = c(
+    "1",
+    "31",
+    "69",
+    " ",
+    "102",
+    "175",
+    "210",
+    " ",
+    "235",
+    "133",
+    "555",
+    " "
+  ),
+  `Final page` = c(
+    "30",
+    "67",
+    "100",
+    " ",
+    "131",
+    "208",
+    "234",
+    " ",
+    "261",
+    "174",
+    "564",
+    " "
+  ),
+  `Number of pages` = c(
+    "30",
+    "37",
+    "32",
+    " ",
+    "30",
+    "34",
+    "25",
+    " ",
+    "27",
+    "42",
+    "10",
+    " "
+  )
+) |>
+  gt() |>
+  fmt_markdown() |>
   tab_style(
-    style = cell_text(weight = "bold"), 
-    locations = cells_column_labels() 
-      ) |> 
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels()
+  ) |>
   tab_options(
     row.striping.include_table_body = TRUE,
     table.border.top.width = px(3),
@@ -182,7 +233,7 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
     column_labels.border.bottom.color = "black",
     table.border.bottom.width = px(3),
     table.border.bottom.color = "black"
-    )
+  )
 ```
 
 ## Detailed schedule
@@ -192,21 +243,23 @@ tibble(Week = c("1","2","3", "3", "4", "5", "6", "6", "7", "8", "9", "9"),
 
 source(file = "000_scripts/000_tbl_schedule.R")
 
-tbl_schedule <- tbl_schedule(start_date   = params$block$start_date, 
-                             end_date     = params$block$end_date,
-                             dates_recess = params$schedule$dates_recess,
-                             meeting_days = params$schedule$meeting_dates)
+tbl_schedule <- tbl_schedule(
+  start_date = params$block$start_date,
+  end_date = params$block$end_date,
+  dates_recess = params$schedule$dates_recess,
+  meeting_days = params$schedule$meeting_dates
+)
 
-virtual_meeting <- tbl_schedule |> 
-  filter(virtual_meeting == 1) |> 
+virtual_meeting <- tbl_schedule |>
+  filter(virtual_meeting == 1) |>
   pull(index)
 
-activity <-  tbl_schedule |> 
-  filter(activity == 1) |> 
+activity <- tbl_schedule |>
+  filter(activity == 1) |>
   pull(index)
 
-exam <-  tbl_schedule |> 
-  filter(exam == 1) |> 
+exam <- tbl_schedule |>
+  filter(exam == 1) |>
   pull(index)
 ```
 
@@ -303,13 +356,13 @@ exam <-  tbl_schedule |>
 
 ### Segundo corte 30%
 
--   `r format(x = ymd(params$schedule$dates_recess[[1]]), format = "%B %e")`
+<!-- -   `r format(x = ymd(params$schedule$dates_recess[[1]]), format = "%B %e")`
 
     -   **Begin Holy Week**
 
 -   `r format(x = ymd(params$schedule$dates_recess[[2]]), format = "%B %e")`
 
-    -   **End Holy Week**
+    -   **End Holy Week** -->
 
 -   `r format(x = activity[[3]], format = "%B %e")`
 
