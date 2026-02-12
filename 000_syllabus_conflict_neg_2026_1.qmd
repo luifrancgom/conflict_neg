@@ -306,7 +306,7 @@ exam <- tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[4]], format = "%B %e")`
 
-    -   **Virtual meeting Workshop: Líderes para el Trabajo en Equipo**
+    -   **Virtual meeting Workshop: Resolviendo conflictos**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 2]
@@ -397,7 +397,7 @@ exam <- tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[10]], format = "%B %e")`
 
-    -   **Virtual meeting Workshop: Pienso, hablo y actuó - Pilares de la comunicación**
+    -   **Virtual meeting Workshop: Gestión de Emociones Inicial**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 6]
@@ -480,7 +480,7 @@ exam <- tbl_schedule |>
 
 -   `r format(x = virtual_meeting[[16]], format = "%B %e")`
 
-    -   **Virtual meeting Workshop: ¿Cómo ser un orador efectivo?**
+    -   **Virtual meeting Workshop: Habla y Escucha: Comunicación Asertiva**
         -   **Meeting time**: `r paste(params$schedule$start_presentation_hour, params$schedule$end_presentation_hour, sep = " - ")` hours
         -   **Prerequisites**:
             -   Read and review [@lewicki_negociacion_2024, Chapter 5]
