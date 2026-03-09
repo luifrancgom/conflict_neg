@@ -119,10 +119,16 @@ umng_palette <- c(
 #| label: tbl-no-agreement
 #| tbl-cap: Results in case of no agreement
 
-tibble(Group  = c("A", "B", "C"),
-       Points = rep(x = 0, times = 3),
-       Grade  = rep(x = 20, times = 3)) |> 
+tibble(
+  Group = c("A", "B", "C"),
+  Points = rep(x = 0, times = 3),
+  Grade = rep(x = 20, times = 3)
+) |>
   gt() |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels()
+  ) |>
   tab_options(
     row.striping.include_table_body = TRUE,
     table.border.top.width = px(3),
@@ -293,98 +299,150 @@ $$37 * (1 / 3) + 42 * (1 / 3) + 50 * (1 / 3) = 43$$
 #| label: fig-creating-claiming-value-pareto-efficient-frontier
 #| fig-cap: Creating/Claiming Value and the Pareto Efficient Frontier [@lewicki_negociacion_2024, p 74]
 
-ggplot(data = tibble(x = c( 1, -1, -1, 0, 0, 4, 2.4),
-                     y = c(-1,  1, -1, 0, 4, 0, 2.4))) +
-  geom_point(aes(x = x, y = y),
-             fill  = umng_palette[2],
-             color = "black", 
-             shape = 21,
-             size  = 3) +
+ggplot(
+  data = tibble(x = c(1, -1, -1, 0, 0, 4, 2.4), y = c(-1, 1, -1, 0, 4, 0, 2.4))
+) +
+  geom_point(
+    aes(x = x, y = y),
+    fill = umng_palette[2],
+    color = "black",
+    shape = 21,
+    size = 3
+  ) +
   # red curve
-  geom_curve(aes(x = 0, y = 4, 
-                 xend = 4, yend = 0),
-             color = umng_palette[4],
-             curvature = -0.2) +
+  geom_curve(
+    aes(x = 0, y = 4, xend = 4, yend = 0),
+    color = umng_palette[4],
+    curvature = -0.2
+  ) +
   # x-axis
-  geom_segment(aes(x = 0, y = -2, 
-                   xend = 0, yend = 4.5), 
-               arrow = arrow(type = "closed")) +
+  geom_segment(
+    aes(x = 0, y = -2, xend = 0, yend = 4.5),
+    arrow = arrow(type = "closed")
+  ) +
   # y-axis
-  geom_segment(aes(x = -2, y = 0, 
-                   xend = 4.5, yend = 0),
-               arrow = arrow(type = "closed")) +
+  geom_segment(
+    aes(x = -2, y = 0, xend = 4.5, yend = 0),
+    arrow = arrow(type = "closed")
+  ) +
   # green-arrow
-  geom_segment(aes(x = 0, y = 0, 
-                   xend = 2.3, yend = 2.3),
-               arrow = arrow(type = "closed"),
-               color = umng_palette[3]) +
+  geom_segment(
+    aes(x = 0, y = 0, xend = 2.3, yend = 2.3),
+    arrow = arrow(type = "closed"),
+    color = umng_palette[3]
+  ) +
   # red-curve annotation
-  annotate(geom = 'label', 
-           x = 4.20, y = 1.5,
-           label = str_glue("The red line is
+  annotate(
+    geom = 'label',
+    x = 4.20,
+    y = 1.5,
+    label = str_glue(
+      "The red line is
                               know as the Pareto
                               Efficient Frontier
                               where it is not
-                              possible to Create Value"),
-           color = "white",
-           fill  = umng_palette[12]) +
-  # anotation x-axis  
-  annotate(geom = 'text', 
-           x = 4.25, y = 0.4, 
-           label = str_glue("Increasing value
-                              to participant 1")) +
-  # anotation y-axis  
-  annotate(geom = 'text', 
-           x = 0.5, y = 4.25, 
-           label = str_glue("Increasing value
-                              to participant 2")) +
+                              possible to Create Value"
+    ),
+    color = "white",
+    fill = umng_palette[12]
+  ) +
+  # anotation x-axis
+  annotate(
+    geom = 'text',
+    x = 4.25,
+    y = 0.4,
+    label = str_glue(
+      "Increasing value
+                              to participant 1"
+    )
+  ) +
+  # anotation y-axis
+  annotate(
+    geom = 'text',
+    x = 0.5,
+    y = 4.25,
+    label = str_glue(
+      "Increasing value
+                              to participant 2"
+    )
+  ) +
   # green-arrow annotation
-  annotate(geom = 'label', 
-           x = 1, y = 2.5, 
-           label = str_glue("Creating Value:
+  annotate(
+    geom = 'label',
+    x = 1,
+    y = 2.5,
+    label = str_glue(
+      "Creating Value:
                               Getting away from
                               the resistance points
                               by generating profits
-                              for all the participants"),
-           color = "white",
-           fill  = umng_palette[11]) +
+                              for all the participants"
+    ),
+    color = "white",
+    fill = umng_palette[11]
+  ) +
   # target point brown-annotation
-  annotate(geom = 'label', 
-           x = 3, y = 3, 
-           label = str_glue("Claiming Value:
+  annotate(
+    geom = 'label',
+    x = 3,
+    y = 3,
+    label = str_glue(
+      "Claiming Value:
                               Get as close as
                               possible to the
-                              target point"),
-           color = "white",
-           fill  = umng_palette[5]) +
+                              target point"
+    ),
+    color = "white",
+    fill = umng_palette[5]
+  ) +
   # resistance point annotation
-  annotate(geom = 'label', 
-           x = -0.4, y = 0.3, 
-           label = str_glue("Resistance
-                              point"),
-           color = "white",
-           fill  = umng_palette[1]) +
+  annotate(
+    geom = 'label',
+    x = -0.4,
+    y = 0.3,
+    label = str_glue(
+      "Resistance
+                              point"
+    ),
+    color = "white",
+    fill = umng_palette[1]
+  ) +
   # no negotiation zone annotation 1
-  annotate(geom = 'label', 
-           x = -0.5, y = -1, 
-           label = str_glue("No negotation
-                              is possible"),
-           color = "white",
-           fill  = umng_palette[1]) +
+  annotate(
+    geom = 'label',
+    x = -0.5,
+    y = -1,
+    label = str_glue(
+      "No negotation
+                              is possible"
+    ),
+    color = "white",
+    fill = umng_palette[1]
+  ) +
   # no negotiation zone annotation 2
-  annotate(geom = 'label', 
-           x = -0.5, y = 1, 
-           label = str_glue("No negotation
-                              is possible"),
-           color = "white",
-           fill  = umng_palette[1]) +
+  annotate(
+    geom = 'label',
+    x = -0.5,
+    y = 1,
+    label = str_glue(
+      "No negotation
+                              is possible"
+    ),
+    color = "white",
+    fill = umng_palette[1]
+  ) +
   # no negotiation zone annotation 3
-  annotate(geom = 'label',
-           x = 0.5, y = -1,
-           label = str_glue("No negotation
-                              is possible"),
-           color = "white",
-           fill  = umng_palette[1]) +
+  annotate(
+    geom = 'label',
+    x = 0.5,
+    y = -1,
+    label = str_glue(
+      "No negotation
+                              is possible"
+    ),
+    color = "white",
+    fill = umng_palette[1]
+  ) +
   theme_void()
 ```
 
