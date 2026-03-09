@@ -182,17 +182,17 @@ flowchart LR
     S1 --> S2
     S2 --> S3
 
-    classDef Individual fill:#fdc600,stroke:#333,stroke-width:1px;
-    classDef Group fill:#00b3f0,stroke:#333,stroke-width:1px;
-    classDef Organizational fill:#16a085,stroke:#333,stroke-width:1px;
+    classDef Individual fill:#fdc600,stroke:#043074,stroke-width:1px;
+    classDef Group fill:#00b3f0,stroke:#043074,stroke-width:1px;
+    classDef Organizational fill:#16a085,stroke:#043074,stroke-width:1px;
 
     class A1,B1,C1 Individual;
     class A2,B2,C2 Group;
     class A3,B3,C3 Organizational;
     
-    style S1 fill:none,stroke:#333,stroke-width:2px
-    style S2 fill:none,stroke:#333,stroke-width:2px
-    style S3 fill:none,stroke:#333,stroke-width:2px
+    style S1 fill:none,stroke:#043074,stroke-width:2px
+    style S2 fill:none,stroke:#043074,stroke-width:2px
+    style S3 fill:none,stroke:#043074,stroke-width:2px
 ```
 
 # Elements of negotiation
