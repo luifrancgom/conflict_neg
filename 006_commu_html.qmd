@@ -119,10 +119,16 @@ umng_palette <- c(
 #| label: tbl-no-agreement
 #| tbl-cap: Results in case of no agreement
 
-tibble(Group  = c("A", "B", "C"),
-       Points = rep(x = 0, times = 3),
-       Grade  = rep(x = 20, times = 3)) |> 
+tibble(
+  Group = c("A", "B", "C"),
+  Points = rep(x = 0, times = 3),
+  Grade = rep(x = 20, times = 3)
+) |>
   gt() |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels()
+  ) |>
   tab_options(
     row.striping.include_table_body = TRUE,
     table.border.top.width = px(3),
