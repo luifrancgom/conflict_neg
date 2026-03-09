@@ -103,49 +103,55 @@ seed <- set.seed(seed = 1234)
 #| fig-height: 2.5
 
 # Data
-dist_neg1 <- tibble(x            = c(130, 150),
-                    y            = rep(x = 0, times = 2),
-                    negotiator   = c("Sofia", "Jackson"),
-                    label_text   = c(TeX(r"($Rp_S$)"), TeX(r"($Rp_J$)")))
+dist_neg1 <- tibble(
+  x = c(130, 150),
+  y = rep(x = 0, times = 2),
+  negotiator = c("Sofia", "Jackson"),
+  label_text = c(TeX(r"($Rp_S$)"), TeX(r"($Rp_J$)"))
+)
 
 # Plot
-dist_neg1 |> 
-  ggplot() + 
+dist_neg1 |>
+  ggplot() +
   geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
-  geom_vline(aes(xintercept = x), 
-             linetype = "dashed") +
-  geom_point(aes(x = x, y = y, fill = negotiator),
-             shape       = 21,
-             size        = 5,
-             color       = "black", 
-             show.legend = FALSE) +
-  geom_label_repel(aes(x = x, y = y, 
-                       label = label_text, 
-                       fill = negotiator),
-                   color       = "white",
-                   alpha       = 0.9, 
-                   parse       = TRUE,
-                   show.legend = FALSE,
-                   size = 7, 
-                   seed = seed) +
-  scale_x_continuous(breaks = dist_neg1$x, 
-                     labels = label_number(prefix = "$", 
-                                           suffix = "K",
-                                           accuracy = 1)) +
-  scale_fill_manual(values = umng_palette[c(1,4)]) +
-  theme(panel.border      = element_rect(fill = NA, 
-                                         color = "black"),
-        plot.background   = element_blank(),
-        panel.background  = element_blank(), 
-        panel.grid.major  = element_blank(),
-        panel.grid.minor  = element_blank(),
-        axis.title        = element_blank(),
-        axis.text.x       = element_text(face = "bold", 
-                                         angle = 90, 
-                                         vjust = 0.5, 
-                                         size = 14),
-        axis.text.y       = element_blank(), 
-        axis.ticks.y      = element_blank())
+  geom_vline(aes(xintercept = x), linetype = "dashed") +
+  geom_point(
+    aes(x = x, y = y, fill = negotiator),
+    shape = 21,
+    size = 5,
+    color = "black",
+    show.legend = FALSE
+  ) +
+  geom_label_repel(
+    aes(x = x, y = y, label = label_text, fill = negotiator),
+    color = "white",
+    alpha = 0.9,
+    parse = TRUE,
+    show.legend = FALSE,
+    size = 7,
+    seed = seed
+  ) +
+  scale_x_continuous(
+    breaks = dist_neg1$x,
+    labels = label_number(prefix = "$", suffix = "K", accuracy = 1)
+  ) +
+  scale_fill_manual(values = umng_palette[c(1, 4)]) +
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    plot.background = element_blank(),
+    panel.background = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_blank(),
+    axis.text.x = element_text(
+      face = "bold",
+      angle = 90,
+      vjust = 0.5,
+      size = 14
+    ),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  )
 ```
 
 ## {.smaller}
@@ -161,50 +167,60 @@ dist_neg1 |>
 #| fig-height: 2.5
 
 # Data
-dist_neg2 <- tibble(x            = c(130, 133, 145, 150),
-                    y            = rep(x = 0, times = 4),
-                    negotiator   = c("Sofia", "Jackson", "Sofia", "Jackson"),
-                    label_text   = c(TeX(r"($Rp_S$)"),TeX(r"($Io_J$)"), 
-                                     TeX(r"($Io_S$)"), TeX(r"($Rp_J$)")))
+dist_neg2 <- tibble(
+  x = c(130, 133, 145, 150),
+  y = rep(x = 0, times = 4),
+  negotiator = c("Sofia", "Jackson", "Sofia", "Jackson"),
+  label_text = c(
+    TeX(r"($Rp_S$)"),
+    TeX(r"($Io_J$)"),
+    TeX(r"($Io_S$)"),
+    TeX(r"($Rp_J$)")
+  )
+)
 
 # Plot
-dist_neg2 |> 
-  ggplot() + 
+dist_neg2 |>
+  ggplot() +
   geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
-  geom_vline(aes(xintercept = x), 
-             linetype = "dashed") +
-  geom_point(aes(x = x, y = y, fill = negotiator),
-             shape       = 21,
-             size        = 5,
-             color       = "black", 
-             show.legend = FALSE) +
-  geom_label_repel(aes(x = x, y = y, 
-                       label = label_text, 
-                       fill = negotiator),
-                   color       = "white",
-                   alpha       = 0.9,
-                   parse       = TRUE,
-                   show.legend = FALSE,
-                   size = 7, 
-                   seed = seed) +
-  scale_x_continuous(breaks = dist_neg2$x, 
-                     labels = label_number(prefix = "$", 
-                                           suffix = "K", 
-                                           accuracy = 1)) +
-  scale_fill_manual(values = umng_palette[c(1,4)]) +
-  theme(panel.border      = element_rect(fill = NA, 
-                                         color = "black"),
-        plot.background   = element_rect(fill = "white"),
-        panel.background  = element_rect(fill = "white"), 
-        panel.grid.major  = element_blank(),
-        panel.grid.minor  = element_blank(),
-        axis.title        = element_blank(),
-        axis.text.x       = element_text(face = "bold", 
-                                         angle = 90, 
-                                         vjust = 0.5, 
-                                         size = 14),
-        axis.text.y       = element_blank(), 
-        axis.ticks.y      = element_blank())
+  geom_vline(aes(xintercept = x), linetype = "dashed") +
+  geom_point(
+    aes(x = x, y = y, fill = negotiator),
+    shape = 21,
+    size = 5,
+    color = "black",
+    show.legend = FALSE
+  ) +
+  geom_label_repel(
+    aes(x = x, y = y, label = label_text, fill = negotiator),
+    color = "white",
+    alpha = 0.9,
+    parse = TRUE,
+    show.legend = FALSE,
+    size = 7,
+    seed = seed
+  ) +
+  scale_x_continuous(
+    breaks = dist_neg2$x,
+    labels = label_number(prefix = "$", suffix = "K", accuracy = 1)
+  ) +
+  scale_fill_manual(values = umng_palette[c(1, 4)]) +
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_blank(),
+    axis.text.x = element_text(
+      face = "bold",
+      angle = 90,
+      vjust = 0.5,
+      size = 14
+    ),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  )
 ```
 
 ## {.smaller}
@@ -220,52 +236,62 @@ dist_neg2 |>
 #| fig-height: 2.5
 
 # Data
-dist_neg3 <- tibble(x            = c(130, 133, 135, 140, 145, 150),
-                    y            = rep(x = 0, times = 6),
-                    negotiator   = c("Sofia", "Jackson", "Jackson", "Sofia", "Sofia", "Jackson"),
-                    label_text   = c(TeX(r"($Rp_S$)"),TeX(r"($Io_J$)"),
-                                     TeX(r"($Tp_J$)"), 
-                                     TeX(r"($Tp_S$)"),TeX(r"($Io_S$)"), 
-                                     TeX(r"($Rp_J$)")))
+dist_neg3 <- tibble(
+  x = c(130, 133, 135, 140, 145, 150),
+  y = rep(x = 0, times = 6),
+  negotiator = c("Sofia", "Jackson", "Jackson", "Sofia", "Sofia", "Jackson"),
+  label_text = c(
+    TeX(r"($Rp_S$)"),
+    TeX(r"($Io_J$)"),
+    TeX(r"($Tp_J$)"),
+    TeX(r"($Tp_S$)"),
+    TeX(r"($Io_S$)"),
+    TeX(r"($Rp_J$)")
+  )
+)
 
 # Plot
-dist_neg3 |> 
-  ggplot() + 
+dist_neg3 |>
+  ggplot() +
   geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
-  geom_vline(aes(xintercept = x), 
-             linetype = "dashed") +
-  geom_point(aes(x = x, y = y, fill = negotiator),
-             shape       = 21,
-             size        = 5,
-             color       = "black", 
-             show.legend = FALSE) +
-  geom_label_repel(aes(x = x, y = y, 
-                       label = label_text, 
-                       fill = negotiator),
-                   color       = "white",
-                   alpha       = 0.9,
-                   parse       = TRUE,
-                   show.legend = FALSE,
-                   size = 7, 
-                   seed = seed) +
-  scale_x_continuous(breaks = dist_neg3$x, 
-                     labels = label_number(prefix = "$", 
-                                           suffix = "K", 
-                                           accuracy = 1)) +
-  scale_fill_manual(values = umng_palette[c(1,4)]) +
-  theme(panel.border      = element_rect(fill = NA, 
-                                         color = "black"),
-        plot.background   = element_rect(fill = "white"),
-        panel.background  = element_rect(fill = "white"), 
-        panel.grid.major  = element_blank(),
-        panel.grid.minor  = element_blank(),
-        axis.title        = element_blank(),
-        axis.text.x       = element_text(face = "bold", 
-                                         angle = 90, 
-                                         vjust = 0.5, 
-                                         size = 14),
-        axis.text.y       = element_blank(), 
-        axis.ticks.y      = element_blank())
+  geom_vline(aes(xintercept = x), linetype = "dashed") +
+  geom_point(
+    aes(x = x, y = y, fill = negotiator),
+    shape = 21,
+    size = 5,
+    color = "black",
+    show.legend = FALSE
+  ) +
+  geom_label_repel(
+    aes(x = x, y = y, label = label_text, fill = negotiator),
+    color = "white",
+    alpha = 0.9,
+    parse = TRUE,
+    show.legend = FALSE,
+    size = 7,
+    seed = seed
+  ) +
+  scale_x_continuous(
+    breaks = dist_neg3$x,
+    labels = label_number(prefix = "$", suffix = "K", accuracy = 1)
+  ) +
+  scale_fill_manual(values = umng_palette[c(1, 4)]) +
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_blank(),
+    axis.text.x = element_text(
+      face = "bold",
+      angle = 90,
+      vjust = 0.5,
+      size = 14
+    ),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  )
 ```
 
 ## {.smaller}
@@ -281,53 +307,73 @@ dist_neg3 |>
 #| fig-height: 2.5
 
 # Data
-dist_neg4 <- tibble(x            = c(130, 133, 134, 135, 140, 142, 145, 150),
-                    y            = rep(x = 0, times = 8),
-                    negotiator   = c("Sofia", "Jackson", "Sofia", "Jackson", "Sofia", "Jackson", "Sofia", "Jackson"),
-                    label_text   = c(TeX(r"($Rp_S$)"),TeX(r"($Io_J$)"),
-                                     TeX(r"($BATNA_S$)"), TeX(r"($Tp_J$)"), 
-                                     TeX(r"($Tp_S$)"), TeX(r"($BATNA_J$)"),
-                                     TeX(r"($Io_S$)"), 
-                                     TeX(r"($Rp_J$)")))
+dist_neg4 <- tibble(
+  x = c(130, 133, 134, 135, 140, 142, 145, 150),
+  y = rep(x = 0, times = 8),
+  negotiator = c(
+    "Sofia",
+    "Jackson",
+    "Sofia",
+    "Jackson",
+    "Sofia",
+    "Jackson",
+    "Sofia",
+    "Jackson"
+  ),
+  label_text = c(
+    TeX(r"($Rp_S$)"),
+    TeX(r"($Io_J$)"),
+    TeX(r"($BATNA_S$)"),
+    TeX(r"($Tp_J$)"),
+    TeX(r"($Tp_S$)"),
+    TeX(r"($BATNA_J$)"),
+    TeX(r"($Io_S$)"),
+    TeX(r"($Rp_J$)")
+  )
+)
 
 # Plot
-plot_dist_neg4 <- dist_neg4 |> 
-  ggplot() + 
+plot_dist_neg4 <- dist_neg4 |>
+  ggplot() +
   geom_segment(aes(x = 130, xend = 150, y = 0, yend = 0)) +
-  geom_vline(aes(xintercept = x), 
-             linetype = "dashed") +
-  geom_point(aes(x = x, y = y, fill = negotiator),
-             shape       = 21,
-             size        = 5,
-             color       = "black", 
-             show.legend = FALSE) +
-  geom_label_repel(aes(x = x, y = y, 
-                       label = label_text, 
-                       fill = negotiator),
-                   color       = "white",
-                   alpha       = 0.9,
-                   parse       = TRUE,
-                   show.legend = FALSE,
-                   size = 7, 
-                   seed = seed) +
-  scale_x_continuous(breaks = dist_neg4$x, 
-                     labels = label_number(prefix = "$", 
-                                           suffix = "K", 
-                                           accuracy = 1)) +
-  scale_fill_manual(values = umng_palette[c(1,4)]) +
-  theme(panel.border      = element_rect(fill = NA, 
-                                         color = "black"),
-        plot.background   = element_rect(fill = "white"),
-        panel.background  = element_rect(fill = "white"), 
-        panel.grid.major  = element_blank(),
-        panel.grid.minor  = element_blank(),
-        axis.title        = element_blank(),
-        axis.text.x       = element_text(face = "bold", 
-                                         angle = 90, 
-                                         vjust = 0.5, 
-                                         size = 14),
-        axis.text.y       = element_blank(), 
-        axis.ticks.y      = element_blank())
+  geom_vline(aes(xintercept = x), linetype = "dashed") +
+  geom_point(
+    aes(x = x, y = y, fill = negotiator),
+    shape = 21,
+    size = 5,
+    color = "black",
+    show.legend = FALSE
+  ) +
+  geom_label_repel(
+    aes(x = x, y = y, label = label_text, fill = negotiator),
+    color = "white",
+    alpha = 0.9,
+    parse = TRUE,
+    show.legend = FALSE,
+    size = 7,
+    seed = seed
+  ) +
+  scale_x_continuous(
+    breaks = dist_neg4$x,
+    labels = label_number(prefix = "$", suffix = "K", accuracy = 1)
+  ) +
+  scale_fill_manual(values = umng_palette[c(1, 4)]) +
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_blank(),
+    axis.text.x = element_text(
+      face = "bold",
+      angle = 90,
+      vjust = 0.5,
+      size = 14
+    ),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  )
 
 plot_dist_neg4
 ```
@@ -345,7 +391,7 @@ plot_dist_neg4
 
 ```{r}
 #| label: fig-bargaining-range
-#| fig-cap: Bargaining range 
+#| fig-cap: Bargaining range
 #| fig-height: 2.5
 
 plot_dist_neg4
