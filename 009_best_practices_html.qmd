@@ -125,6 +125,10 @@ tibble(
   Grade = rep(x = 20, times = 3)
 ) |>
   gt() |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels()
+  ) |>
   tab_options(
     row.striping.include_table_body = TRUE,
     table.border.top.width = px(3),
