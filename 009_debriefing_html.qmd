@@ -34,7 +34,7 @@ editor: source
 
 ```{r}
 #| label: libraries
-
+#|
 library(tidyverse)
 library(gt)
 ```
@@ -92,12 +92,18 @@ umng_palette <- c(
 #| label: tbl-excluding-c
 #| tbl-cap: Agreements excluding C
 
-excluding_c <- tibble(A = c(59, 60, 60, 59),
-                      B = c(59, 58, 60, 59),
-                      C = c(0 ,  0,  1,  3))
+excluding_c <- tibble(
+  A = c(59, 60, 60, 59),
+  B = c(59, 58, 60, 59),
+  C = c(0, 0, 1, 3)
+)
 
-excluding_c |> 
-  gt() |> 
+excluding_c |>
+  gt() |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels()
+  ) |>
   tab_options(
     row.striping.include_table_body = TRUE,
     table.border.top.width = px(3),
@@ -116,12 +122,18 @@ excluding_c |>
 #| label: tbl-equally-distribution
 #| tbl-cap: Agreements which tend to have an equally distribution of points
 
-equally_distribution <- tibble(A = c("121/3", 41, 43),
-                               B = c("121/3", 40, 40),
-                               C = c("121/3", 40, 38))
+equally_distribution <- tibble(
+  A = c("121/3", 41, 43),
+  B = c("121/3", 40, 40),
+  C = c("121/3", 40, 38)
+)
 
-equally_distribution |> 
-  gt() |> 
+equally_distribution |>
+  gt() |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels()
+  ) |>
   tab_options(
     row.striping.include_table_body = TRUE,
     table.border.top.width = px(3),
@@ -140,12 +152,14 @@ equally_distribution |>
 #| label: tbl-power-distribution
 #| tbl-cap: Agreements according to the control of resources
 
-power_distribution <- tibble(A = c(60, 50),
-                             B = c(40, 40),
-                             C = c(21, 31))
+power_distribution <- tibble(A = c(60, 50), B = c(40, 40), C = c(21, 31))
 
-power_distribution |> 
-  gt() |> 
+power_distribution |>
+  gt() |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels()
+  ) |>
   tab_options(
     row.striping.include_table_body = TRUE,
     table.border.top.width = px(3),
@@ -156,7 +170,7 @@ power_distribution |>
     table.border.bottom.color = "black",
     table.font.size = px(36)
   )
-  
+
 ```
 
 ##
