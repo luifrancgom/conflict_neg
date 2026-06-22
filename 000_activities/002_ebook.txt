@@ -1,0 +1,67 @@
+<h4>Purposes</h4>
+
+<ol>
+    <li>
+        <strong>Negotiation - Strategy and Planning:</strong> Understand and explore the
+        main elements of the negotiation strategy, the process to select a strategy as well
+        as the way in which most negotiations evolve to effectively plan a negotiation.
+    </li>
+    <li>
+        <strong>Perception, Cognition, and Emotion:</strong> Understand how perceptions,
+        knowledge and emotions affect a negotiation process.
+    </li>
+    <li>
+        <strong>Communication:</strong> Explore the tools and practices to improve
+        communication processes in a negotiation.
+    </li>
+</ol>
+
+<h4>Resources</h4>
+
+<p>
+    The course will use for this part, as the main study material, the e-book:
+</p>
+<p>
+    <i>
+        Lewicki, Roy J., Bruce Barry, and David M. Saunders. 2024. Negociación. 9th ed. McGraw-Hill Education
+    </i>
+</p>
+<p>
+    You can find the book in the following link: <a href="https://www-ebooks7-24-com.ezproxy.umng.edu.co/?il=40562" target="_blank">https://www-ebooks7-24-com.ezproxy.umng.edu.co/?il=40562</a>
+</p>
+
+<h4>Methodological Process</h4>
+
+<ol>
+    <li>Read and review Chapters 4, 6 and 7.</li>
+    <li>
+        Make a conceptual map where the elements mentioned in Chapters 4, 6 and 7
+        are ordered in a logical manner so that they can be used as an input in the
+        activity "Questionnaire 2" and "Midterm Exam Three Party Coalition Exercise Round 2".
+    </li>
+</ol>
+<p>
+    The realization of the conceptual map is not a qualifiable activity to be
+    delivered, but a tool that can be used to understand the topics discussed in
+    these parts of the e-book.
+</p>
+
+<h4>Additional Resources</h4>
+
+<ol>
+    <li>
+        Bubbl.us: Online tool for the creation of conceptual maps or mental schemes.
+        It does not require any previous installation because it is a Web 2.0 tool.
+        <ul>
+            <li>
+                Where can I find it?: <a href="https://bubbl.us/">https://bubbl.us/</a>
+            </li>
+            <li>
+                Tutorial bubbl.us:
+                <div style="text-align: center; max-width: 80ch; margin: 0 auto;">
+                    <a href="https://youtu.be/5TGO_LDiab8">https://youtu.be/5TGO_LDiab8</a>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ol>

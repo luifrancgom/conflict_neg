@@ -1,0 +1,40 @@
+<p>
+    <strong>Prerequisites:</strong> Read and review (Lewicki, Barry, and Saunders 2024, Chapters 8 &amp; 5)
+</p>
+
+<h4>Structure and Format</h4>
+
+<ol>
+    <li>
+        The questionnaire consists of 6 questions and must be presented
+        individually. Therefore, if it is answered in group, the grade will be zero
+        (0).
+    </li>
+    <li>
+        All 6 questions that are part of the questionnaire are of multiple choice
+        with a unique correct answer and are presented in english.
+    </li>
+    <li>
+        Each question has the same weight in the total score and will be scored on a
+        scale of 50 points. In other words, each question has a maximum possible
+        score of 8.33 points.
+    </li>
+</ol>
+
+<h4>Available time</h4>
+
+<ol>
+    <li>
+        One (1) hour available to answer. Also, thirty (30) additional minutes are
+        included in case there is a technical problem. In that sense in total, one
+        and a half (1.5) hours are available.
+    </li>
+</ol>
+
+<h4>Attemps allowed</h4>
+
+<ol>
+    <li>
+        One and only one
+    </li>
+</ol>

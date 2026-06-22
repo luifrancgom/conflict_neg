@@ -1,0 +1,67 @@
+<h4>Purposes</h4>
+
+<ol>
+    <li>
+        <strong>Finding and Using Negotiation Power:</strong> Understand the role of power
+        and the different sources from which this element arises in a negotiation.
+    </li>
+    <li>
+        <strong>Ethics in Negotiation:</strong> Explore and understand the ethical standards
+        commonly accepted in a negotiation process in order to detect and deal with deceptive
+        tactics.
+    </li>
+    <li>
+        <strong>Best Practices in Negotiations:</strong> Explore best practices in negotiation
+        and conflict management to achieve successful negotiation.
+    </li>
+</ol>
+
+<h4>Resources</h4>
+
+<p>
+    The course will use for this part, as the main study material, the e-book:
+</p>
+<p>
+    <i>
+        Lewicki, Roy J., Bruce Barry, and David M. Saunders. 2024. Negociación. 9th ed. McGraw-Hill Education
+    </i>
+</p>
+<p>
+    You can find the book in the following link: <a href="https://www-ebooks7-24-com.ezproxy.umng.edu.co/?il=40562" target="_blank">https://www-ebooks7-24-com.ezproxy.umng.edu.co/?il=40562</a>
+</p>
+
+<h4>Methodological Process</h4>
+
+<ol>
+    <li>Read and review Chapters 8, 5 and 20.</li>
+    <li>
+        Make a conceptual map where the elements mentioned in Chapters 8, 5 and 20
+        are ordered in a logical manner so that they can be used as an input in the
+        activity "Questionnaire 3" and "Final Exam Three Party Coalition Exercise Modified".
+    </li>
+</ol>
+<p>
+    The realization of the conceptual map is not a qualifiable activity to be
+    delivered, but a tool that can be used to understand the topics discussed in
+    these parts of the e-book.
+</p>
+
+<h4>Additional Resources</h4>
+
+<ol>
+    <li>
+        Bubbl.us: Online tool for the creation of conceptual maps or mental schemes.
+        It does not require any previous installation because it is a Web 2.0 tool.
+        <ul>
+            <li>
+                Where can I find it?: <a href="https://bubbl.us/">https://bubbl.us/</a>
+            </li>
+            <li>
+                Tutorial bubbl.us:
+                <div style="text-align: center; max-width: 80ch; margin: 0 auto;">
+                    <a href="https://youtu.be/5TGO_LDiab8">https://youtu.be/5TGO_LDiab8</a>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ol>

@@ -1,0 +1,101 @@
+<h4 style="text-align: center;">Instruccions</h4>
+
+<p><strong>Route to present:</strong>&nbsp;Generalidades &gt; Sesiones Virtuales: ...</p>
+
+<p><strong>Prerequisites:</strong></p>
+<ol>
+    <li>
+        Read and review role play instructions (Program of Negotiation 2008)
+    </li>
+    <li>
+        Read and review (Lewicki, Barry, and Saunders 2024, Chapter 3)
+    </li>
+    <li>
+        Have a headset with a built-in microphone to isolate noise from the environment
+    </li>
+</ol>
+
+<h4 style="text-align: center;">Specific instruccions</h4>
+<ol>
+    <li>
+        You are required to form a group consisting of exactly 3 members.
+    </li>
+
+    <li>
+        Given that there are <strong>28</strong>&nbsp;participants enrolled in the course, all groups must consist of <strong>3</strong> members except <strong>1</strong>&nbsp;groups that will consist of <strong>4</strong> members.
+    </li>
+
+    <li>
+        As a student, you are responsible for forming a group. To facilitate this, you are encouraged to share your contact
+        information in the Forum: Questions or Concerns. Once your group is formed, please post the names of its members in
+        that forum. The instructor will then randomly assign specific roles to each member for the simulation.
+    </li>
+
+    <li>
+        The <strong>9</strong>&nbsp;groups must post their information to present the midterm.
+    </li>
+
+    <li>
+        You can check the information of the students enrolled in the course here:
+
+        <div style="text-align: center;"><strong>Primer Corte &gt; Archivos de consulta &gt; Participants</strong></div>
+
+        where you will find information about the students enrolled in the course to contact them and form the group. Please take into account that you must find a group or you will not be able to present the Midterm Exam Three Party
+        Coalition Exercise Round <strong>1</strong>.
+    </li>
+
+    <li>
+        You must previously read and review the role play instructions (Program of Negotiation 2008). You can find (Program of Negotiation 2008) in the following route:
+        <div style="text-align: center;"><strong>Primer Corte &gt; Archivos de consulta &gt; Role play instrucctions</strong></div>
+    </li>
+
+    <li>
+        In the time slot indicated at <strong>Primer Corte &gt; Contenido complementario &gt; Archivos de consulta &gt; Presentations &gt; 000_syllabus_conflict_neg_… &gt; Detailed schedule</strong> you must enter through the route pointed out at the beginning.
+    </li>
+
+    <li>
+        Attendance is mandatory for all group members at the designated time unless there are reasons of force majeure or illness. In that case, the group member is required to send an excuse to the instructor.
+    </li>
+
+    <li>
+        You will participate in a negotiation simulation where the objective is to decide how to divide a specific number of points and to obtain the highest number of points where your grade will depend exclusively on the number of points
+        obtained.
+    </li>
+
+    <li>
+        Each student of the group will be randomly assigned to one and only one role as a negotiator of an organization. If your group is of 4 students, then a role will be played by 2 students. The respective roles are: Group A, Group B
+        and Group C
+    </li>
+
+    <li>
+        You will have a maximum of 20 minutes to inform the professor 2 things: "Was an agreement reached?" and "What was the agreement?". If you don't inform the professor and the 20 minutes end then it is assumed automatically that your
+        group didn't reach an agreement
+    </li>
+
+    <li>
+        Additionally, all members of the group that reach an agreement need to fill out and upload the format specified in:
+        <div style="text-align: center;"><strong>Primer Corte &gt; Archivos de consulta &gt; Role play instrucctions</strong></div>
+        This format should indicate whether an agreement was reached and what the agreement entailed. If this format is not filled out and upload correctly, it will be assumed that an agreement has not been reached
+    </li>
+</ol>
+
+<h4 style="text-align: center;">Grades</h4>
+<ol>
+    <li>
+        If an agreement is not reached between the parties of the negotiation, each member of the Group will obtain 0 points and the grade for each student will be <strong>20</strong> out of 50.
+    </li>
+    <li>
+        If an agreement is reached between some or all of the parties of the negotiation the Group that obtains the highest amount of points will have a grade of <strong>50</strong> out of 50, the Group that obtains the second highest amount of points
+        obtains a grade of <strong>42</strong> out of 50 and the group that obtains the lowest amount of points obtains a grade of <strong>37</strong> out of 50. In case of a tie between any of the Groups, the one who obtains the highest grade, the second highest grade or
+        the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 Groups.
+    </li>
+</ol>
+
+<h4 style="text-align: center;">Simulation Results Disclosure</h4>
+<ol>
+    <li>
+        For transparency, all the results of the group simulations will be published in:
+        <div style="text-align: center;"><strong>Primer Corte &gt; Archivos de consulta &gt; Simulation results</strong></div>
+        once the activity is closed.
+    </li>
+</ol>

@@ -1,0 +1,33 @@
+<ol>
+    <li>
+        <h5>
+            Magic Markers - ¿Cómo negociar bien?
+        </h5>
+        <p>
+            The following video about negotiation corresponds to part of the
+            didactic material offer by "Magic Markers", on how to negotiate.
+            In that way you can complement what you have learned about negotiation
+            and conflict management. The video answer the following concern: How
+            to negotiate properly?</p>
+        <div style="text-align: center; max-width: 80ch; margin: 0 auto;">
+            <a href="https://youtu.be/CnF26cfIfQM">https://youtu.be/CnF26cfIfQM</a>
+        </div>
+    </li>
+
+    <li>
+        <h5>
+            Negotiation Role-Play: Three-Party Coalition Exercise - Game Theory &amp; Negotiation Analytics
+        </h5>
+        <p>
+            The following videos are examples of a real negotiation
+            simulation that your are going to participate in the course
+            which is called Three-Party Coalition Exercise:
+        </p>
+        <div style="text-align: center; max-width: 80ch; margin: 0 auto;">
+            <a href="https://youtu.be/O2d6XuDm-ok">https://youtu.be/O2d6XuDm-ok</a>
+        </div>
+        <div style="text-align: center; max-width: 80ch; margin: 0 auto;">
+            <a href="https://youtu.be/oaOv_iXOvtY">https://youtu.be/oaOv_iXOvtY</a>
+        </div>
+    </li>
+</ol>

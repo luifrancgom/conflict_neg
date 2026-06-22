@@ -1,0 +1,75 @@
+<h4 style="text-align: center;">Instruccions</h4>
+
+<p><strong>Route to present:</strong> Generalidades &gt; Sesiones Virtuales: ...<br></p>
+
+<p><strong>Prerequisites:</strong></p>
+<ol>
+    <li>
+        Read and review role play instructions (Program of Negotiation 2008)
+    </li>
+    <li>
+        Read and review (Lewicki, Barry, and Saunders 2024, Chapter 20)
+    </li>
+    <li>
+        Have a headset with a built-in microphone to isolate noise from the environment
+    </li>
+</ol>
+
+<h4 style="text-align: center;">Specific instruccions</h4>
+<ol>
+    <li>
+        This activity is a large negotiation role-play. Coordinate with your classmates, as each student will be assigned a specific role. These role assignments, which determine your group, will be published once the activity opens in:
+        <div style="text-align: center;"><strong>Primer Corte &gt; Archivos de consulta &gt; Simulation results</strong></div>
+    </li>
+
+    <li>
+        You must previously read and review the role play instructions (Program of Negotiation 2008). You can find (Program of Negotiation 2008) in the following link:
+        <div style="text-align: center;"><strong>Primer Corte 30% &gt; Archivos de consulta &gt; Role play instrucctions</strong></div>
+    </li>
+
+    <li>
+        In the time slot indicated at the beginning all the participants of the course must enter through the link. Excused absences are only granted for force majeure or illness, requiring a submitted excuse from the absent member.
+    </li>
+
+    <li>
+        Every student will participate in a negotiation simulation where the objective is to decide how to divide a specific number of points and to obtain the highest number of points where your grade will depend exclusively on the number of points obtained.
+    </li>
+
+    <li>
+        Each student enrolled in the course will be randomly assigned to one and only one role. The respective roles are: Group A, Group B and Group C. In the sixth week of the course the conformation of the groups will be published on:
+
+        <div style="text-align: center;"><strong><strong>Primer Corte &gt; Archivos de consulta &gt; Simulation results</strong></strong></div>
+
+        Each Group must decide whether to appoint one representative per Group and the remaining students will act as constituents or if all the members of the Group will participate in the discussions.
+    </li>
+
+    <li>
+        The course will have a maximum of 30 minutes to inform the professor 2 things: "Was an agreement reached?" and "What was the agreement?". If the course doesn't inform the professor and the 30 minutes end then it is assumed automatically that the course didn't reach an agreement
+    </li>
+    <li>
+        Additionally, at least one member or the representatives of the groups that reach an agreement need to fill out and upload the format specified in:
+        <div style="text-align: center;"><strong>Primer Corte &gt; Archivos de consulta &gt; Role play instrucctions</strong></div>
+        This format should indicate whether an agreement was reached and what the agreement entailed. If this format is not filled out and upload correctly, it will be assumed that an agreement has not been reached
+    </li>
+</ol>
+
+<h4 style="text-align: center;">Grades</h4>
+<ol>
+    <li>
+        If an agreement is not reached between the parties of the negotiation, each member of the Group will obtain 0 points and the grade for each student will be <strong>20</strong> out of 50.
+    </li>
+    <li>
+        If an agreement is reached between some or all of the parties of the negotiation the Group that obtains the highest amount of points will have a grade of <strong>50</strong> out of 50, the Group that obtains the second highest amount of points
+        obtains a grade of <strong>42</strong> out of 50 and the group that obtains the lowest amount of points obtains a grade of <strong>37</strong> out of 50. In case of a tie between any of the Groups, the one who obtains the highest grade, the second highest grade or
+        the lowest grade will be assigned randomly depending on whether there is a tie between 2 or 3 Groups.
+    </li>
+</ol>
+
+<h4 style="text-align: center;">Simulation Results Disclosure</h4>
+<ol>
+    <li>
+        For transparency, all the results of the group simulations will be published in:
+        <div style="text-align: center;"><strong>Primer Corte &gt; Archivos de consulta &gt; Simulation results</strong></div>
+        once the activity is closed.
+    </li>
+</ol>
