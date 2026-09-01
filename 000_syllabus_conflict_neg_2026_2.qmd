@@ -277,7 +277,7 @@ exam <- tbl_schedule |>
     -   **Virtual meeting Presentation Syllabus**
         -   **Meeting time**: `r paste(params$schedule$start_syllabus_hour, params$schedule$end_syllabus_hour, sep = " - ")` hours
         -   **Prerequisites**:
-            -   Review the course program in advance, which can be downloaded by following the route *Primer corte 30% \> Learning Resources \> Support material \> Presentations \> 000_syllabus_conflict_neg\_...*
+            -   Review the course program in advance, which can be downloaded by following the route *Primer corte 30% \> Contenido y actividades complementarias \> Support material \> Presentations \> 000_syllabus_conflict_neg\_...*
             -   Have a headset with a built-in microphone to isolate noise from the environment
 
 -   `r format(x = virtual_meeting[[1]], format = "%B %e")`
