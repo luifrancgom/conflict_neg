@@ -7,6 +7,7 @@ author:
       - name: Universidad Militar Nueva Granada
 date: 2026-08-31
 date-modified: last-modified
+date-format: iso
 format:
   html: 
     number-sections: true
