@@ -81,6 +81,10 @@ umng_palette <- c(
 
 ##
 
+![Henry Mintzberg (1939 - ?)](000_images/001_henry_mintzberg.jpg){.nostretch #fig-henry-mintzberg width=40%}
+
+##
+
 ```{mermaid}
 %%| label: fig-manager-roles
 %%| fig-cap: The roles managers play [@openstax_featured_principles_2019, chap. 2, sec. 1.2]
