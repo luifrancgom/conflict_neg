@@ -170,7 +170,6 @@ power_distribution |>
     table.border.bottom.color = "black",
     table.font.size = px(36)
   )
-
 ```
 
 ##
@@ -222,7 +221,9 @@ power_distribution |>
 
     - $G_i$: grade of student $i$
     
-$$\max \frac{1}{n}G_1 + \cdots \frac{1}{n}G_n = \max \sum_{i = 1}^n \frac{1}{n}G_i$$
+$$
+\max \frac{1}{n}G_1 + \cdots \frac{1}{n}G_n = \max \sum_{i = 1}^n \frac{1}{n}G_i
+$$
 
 ##
 
@@ -234,7 +235,9 @@ $$\max \frac{1}{n}G_1 + \cdots \frac{1}{n}G_n = \max \sum_{i = 1}^n \frac{1}{n}G
 
     - $G_i$: grade of student $i$
     
-$$\max \min \{ G_1, \ldots, G_m \}$$
+$$
+\max \min \{ G_1, \ldots, G_m \}
+$$
 
 # Acknowledgments
 
