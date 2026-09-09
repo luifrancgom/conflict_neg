@@ -73,7 +73,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Understand how perceptions, knowledge and emotions affect a negotiation process.
+    - Examine how perceptual biases, cognitive processing, and emotional dynamics directly influence negotiation behavior and outcomes.
 
 # Perception
 

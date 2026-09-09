@@ -74,7 +74,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Understand and explore the main elements of the negotiation strategy, the process to select a strategy as well as the way in which most negotiations evolve to effectively plan a negotiation.
+    - Understand and explore the primary elements of negotiation strategy, the decision-making process involved in choosing an approach, and the common stages through which negotiations evolve in order to plan effectively.
 
 # The importance of planning in negotiations
 

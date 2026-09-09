@@ -75,7 +75,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Explore the tools and practices to improve communication processes in a negotiation.
+    - Explore practical tools, techniques, and best practices to improve verbal and non-verbal communication flows throughout a negotiation.
 
 # Three Party Coalition Exercise Round 2
 
