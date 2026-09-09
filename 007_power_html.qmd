@@ -73,7 +73,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Understand the role of power and the different sources from which this element arises in a negotiation.
+    - Understand the role of power and the diverse sources from which bargaining leverage arises in a negotiation.
 
 # Power in the context of a negotiation
 

@@ -75,7 +75,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Explore best practices in negotiation and conflict management to achieve successful negotiation.
+    - Examine core best practices in negotiation and conflict management to achieve sustainable, successful outcomes.
 
 # Final Exam Three Party Coalition Exercise Modified
 
@@ -335,7 +335,7 @@ flowchart TB
 
 -   Postgraduate education:
 
-    -   **UMNG**: <https://www.umng.edu.co/programas/posgrados/maestria-en-relaciones-y-negocios-internacionales>
+    -   **UMNG**: <https://umng.edu.co/programa/maestria-en-relaciones-y-negocios-internacionales/>
 
         -   **Maestría en Relaciones y Negocios Internacionales**: Negociación Internacional
 

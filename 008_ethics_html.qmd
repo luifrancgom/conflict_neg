@@ -73,7 +73,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Explore and understand the ethical standards commonly accepted in a negotiation process in order to detect and deal with deceptive tactics.
+    - Explore and understand widely accepted ethical standards in negotiation to identify, evaluate, and respond to deceptive tactics effectively.
 
 # Ethics and its relationship with negotiation
 
