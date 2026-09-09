@@ -75,7 +75,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Understand the basic elements of an integrative negotiation situation, as well as the strategies and tactics that can be applied in this context.
+    - Understand the fundamental principles of integrative negotiation, along with the strategies and tactics used to create mutual value.
     
 # Three Party Coalition Exercise Round 1
 

@@ -84,7 +84,7 @@ seed <- set.seed(seed = 1234)
 
 - **Purpose**
 
-    - Understand the basic elements of a distributive negotiation situation, as well as the strategies and tactics that can be applied in this context.
+    - Understand the core elements of distributive negotiation scenarios, along with the specific strategies and tactics applied in this context.
     
 # Elements of a distributive negotiation situation
 

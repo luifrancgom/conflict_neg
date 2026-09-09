@@ -75,7 +75,7 @@ umng_palette <- c(
 
 - **Purpose**
 
-    - Understand the definition of negotiation, the elements in general of this process and the main types of negotiation that have been identified in the literature as well as the relationship between negotiation and conflict management.
+    - Understand the definition of negotiation, key components of the negotiation process, major types of negotiation identified in the literature, and the relationship between negotiation and conflict management.
 
 # The roles managers play, negotiation and conflict resolution
 
